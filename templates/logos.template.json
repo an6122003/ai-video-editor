@@ -1,0 +1,79 @@
+{
+  "_readme": [
+    "The control surface for brand marks. Edit this file, run `node build-anaha.mjs`,",
+    "and Studio hot-reloads in about a second — no re-render needed while iterating.",
+    "",
+    "  file  — a filename inside media/logos/. Missing files render as a labelled",
+    "          placeholder, so you can lay the whole edit out before you have assets.",
+    "  at    — seconds. Seeded from transcript.json, i.e. the moment it is SAID.",
+    "  dur   — seconds on screen.",
+    "  slot  — topleft | topcenter | topright | wall",
+    "  w     — width in px on the 1080x1920 stage (height follows the aspect).",
+    "",
+    "Slots avoid the furniture: top row sits below the 250px platform chrome and",
+    "above the face; it also stays clear of the PiP (top-right, 62.45-92.35s).",
+    "`wall` is a full-frame card for B-roll moments — stack several marks in one",
+    "entry with `files`."
+  ],
+  "logos": [
+    {
+      "file": "gigabyte.png",
+      "at": 4.3,
+      "dur": 3.2,
+      "slot": "topleft",
+      "w": 340,
+      "note": "\"Đây là GIGABYTE AI TOP ATOM\""
+    },
+    {
+      "file": "nvidia.png",
+      "at": 9.6,
+      "dur": 2.6,
+      "slot": "topleft",
+      "w": 300,
+      "note": "\"một con GPU NVIDIA GB10\""
+    },
+    {
+      "file": "gpt-oss.png",
+      "at": 29.9,
+      "dur": 2.4,
+      "slot": "topleft",
+      "w": 300,
+      "note": "\"như kiểu GPT-OSS 120B\""
+    },
+    {
+      "file": "qwen.png",
+      "at": 47.9,
+      "dur": 3.0,
+      "slot": "topleft",
+      "w": 300,
+      "note": "\"Qwen2.5-VL-7B để đọc hình ảnh\""
+    },
+    {
+      "file": "bge.png",
+      "at": 53.4,
+      "dur": 2.6,
+      "slot": "topleft",
+      "w": 300,
+      "note": "\"BGE-M3 để embedding\""
+    },
+    {
+      "file": "rtx.png",
+      "at": 101.5,
+      "dur": 2.6,
+      "slot": "topleft",
+      "w": 300,
+      "note": "\"không thắng được 5090, 4090\""
+    },
+    {
+      "files": [
+        "gigabyte.png",
+        "phongvu.png"
+      ],
+      "at": 136.6,
+      "dur": 3.6,
+      "slot": "topcenter",
+      "w": 460,
+      "note": "sponsor pair on the thanks beat — mirrors the CapCut cut"
+    }
+  ]
+}

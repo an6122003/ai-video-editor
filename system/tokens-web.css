@@ -1,0 +1,89 @@
+:root {
+  /* Core palette */
+  --navy-950: #061225;
+  --navy-900: #091a33;
+  --navy-800: #102a50;
+  --blue-700: #1556d9;
+  --blue-600: #246bfe;
+  --blue-500: #3b82f6;
+  --blue-100: #dceafe;
+  --cyan-400: #24c8e5;
+  --yellow-400: #ffca4f;
+  --yellow-100: #fff1bd;
+  --coral-500: #ff6c58;
+  --cream: #f8f4e9;
+  --ink: #0d1b2f;
+  --muted: #58677d;
+  --line: #dfe7f1;
+  --surface: #f5f8fc;
+  --white: #ffffff;
+
+  /* Platform accents */
+  --youtube-red: #ff0033;
+  --youtube-red-dark: #c90028;
+  --tiktok-pink: #ff3b72;
+  --tiktok-cyan: #25f4ee;
+  --instagram-pink: #ed3a79;
+  --facebook-blue: #1877f2;
+
+  /* Semantic color roles */
+  --color-canvas: var(--surface);
+  --color-panel: var(--white);
+  --color-text: var(--ink);
+  --color-text-muted: var(--muted);
+  --color-brand: var(--blue-600);
+  --color-brand-strong: var(--blue-700);
+  --color-highlight: var(--yellow-400);
+  --color-border: var(--line);
+  --color-dark: var(--navy-900);
+
+  /* Typography */
+  --type-display: var(--font-heading), "Space Grotesk", sans-serif;
+  --type-body: var(--font-body), "Be Vietnam Pro", sans-serif;
+  --text-xs: 0.625rem;
+  --text-sm: 0.75rem;
+  --text-md: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: clamp(2.125rem, 3.7vw, 3rem);
+  --text-display: clamp(3.125rem, 5.1vw, 4.5rem);
+
+  /* Spacing: 4px base rhythm */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Shape and elevation */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.8125rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+  --shadow-sm: 5px 6px 0 rgba(13, 27, 47, 0.07);
+  --shadow: 0 20px 60px rgba(15, 35, 66, 0.09);
+  --shadow-blue: 0 14px 34px rgba(36, 107, 254, 0.26);
+  --stroke: 1px solid var(--color-border);
+
+  /* Layout */
+  --content-max: 73.75rem;
+  --content-gutter: clamp(1rem, 4vw, 3rem);
+  --section-space: clamp(5rem, 8vw, 6.75rem);
+  --grid-size: 3.25rem;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 180ms;
+  --duration-base: 280ms;
+  --duration-slow: 600ms;
+}
+

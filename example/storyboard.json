@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 144.73,
+    "layout": "portrait",
+    "themeId": "craft",
+    "seed": 813
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 144.73,
+    "bounds": { "x": 0, "y": 0, "width": 1080, "height": 1920 }
+  },
+  "subtitles": { "enabled": false },
+  "_notes": {
+    "style": "warm-paper / editorial — cream paper cards, Playfair Display italic headlines, Be Vietnam Pro body, JetBrains Mono data chips",
+    "frame": "clean (auto-picked: overlay + pip layouts suppress decorative chrome)",
+    "layoutPlan": "full-bleed overlay 0-62s and 92-144.7s; video drops to a bottom-right PiP pill for the benchmark stretch 62-92s",
+    "pipRect": { "left": 690, "top": 1250, "width": 350, "height": 622 },
+    "pipEnter": 61.95,
+    "pipExit": 91.9,
+    "motionVocabulary": [
+      "mask-reveal (kickers + rules, wipe from left)",
+      "kinetic-chars (hero titles, pop stagger)",
+      "slide-in bottom (detail lines, staggered rows)",
+      "count-up (every number)",
+      "grow-x (memory / metric bars)"
+    ],
+    "cardCount": 22,
+    "cardCountRationale": "144.7s at high information density (~7s/card base pace x 0.7) => auto estimate 21; landed on 22 after merging the product-name + spec beats and splitting the four-model pipeline into one 15s staged build."
+  },
+  "cards": [
+    {
+      "id": "card-01",
+      "intent": "Hook: four AI models at once, still under half the memory",
+      "startSec": 0.45,
+      "endSec": 5.45,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "MINI PC",
+        "stat": "4",
+        "statLabel": "MODEL AI CHẠY CÙNG LÚC",
+        "detail": "và vẫn chưa dùng hết một nửa bộ nhớ"
+      }
+    },
+    {
+      "id": "card-02",
+      "intent": "Product reveal with the two headline specs",
+      "startSec": 5.65,
+      "endSec": 13.4,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "THIẾT BỊ",
+        "title": "GIGABYTE AI TOP ATOM",
+        "chips": ["128GB UNIFIED MEMORY", "NVIDIA GB10"]
+      }
+    },
+    {
+      "id": "card-03",
+      "intent": "The question the video sets out to answer",
+      "startSec": 13.45,
+      "endSec": 17.4,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "CÂU HỎI",
+        "title": "128GB hữu ích tới đâu?",
+        "detail": "khi build một AI workflow hoàn chỉnh"
+      }
+    },
+    {
+      "id": "card-04",
+      "intent": "Form factor is mini, spec is not — rename it a workstation",
+      "startSec": 17.5,
+      "endSec": 26.0,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "line1": "Form factor: nhỏ như một mini PC",
+        "line2": "Cấu hình: khá khủng",
+        "reveal": "mini AI WORKSTATION"
+      }
+    },
+    {
+      "id": "card-05",
+      "intent": "Memory unlocks 100B+ parameter inference",
+      "startSec": 26.05,
+      "endSec": 32.0,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "MỞ KHOÁ",
+        "title": "LLM > 100 tỷ tham số",
+        "chip": "GPT-OSS 120B"
+      }
+    },
+    {
+      "id": "card-06",
+      "intent": "Pivot to the more realistic use case: many models at once",
+      "startSec": 32.05,
+      "endSec": 38.2,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "USE CASE THỰC TẾ HƠN",
+        "title": "Nhiều model cùng lúc",
+        "detail": "trong một AI workflow"
+      }
+    },
+    {
+      "id": "card-07",
+      "intent": "What was built: a multimodal RAG over a PDF folder",
+      "startSec": 38.4,
+      "endSec": 44.0,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "BUILD THỬ",
+        "title": "Multimodal RAG",
+        "detail": "hỏi đáp trên một folder tài liệu PDF"
+      }
+    },
+    {
+      "id": "card-08",
+      "intent": "Everything runs locally on the box",
+      "startSec": 44.05,
+      "endSec": 47.45,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": { "badge": "100% LOCAL", "detail": "không gọi ra cloud" }
+    },
+    {
+      "id": "card-09",
+      "intent": "Build the four-model pipeline one row at a time, synced to narration",
+      "startSec": 47.55,
+      "endSec": 62.4,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "PIPELINE",
+        "rows": [
+          { "at": 0.3, "model": "Qwen2.5-VL-7B", "role": "đọc hình ảnh, biểu đồ & nội dung PDF" },
+          { "at": 4.6, "model": "BGE-M3", "role": "embedding & tìm đoạn liên quan" },
+          { "at": 9.0, "model": "BGE-Reranker-v2-M3", "role": "lọc lại kết quả" },
+          { "at": 11.5, "model": "Qwen2.5-32B", "role": "reasoning & trả lời câu hỏi" }
+        ]
+      }
+    },
+    {
+      "id": "card-10",
+      "intent": "Four models resident in memory simultaneously — PiP stretch begins",
+      "startSec": 62.55,
+      "endSec": 68.2,
+      "accentIndex": 0,
+      "zone": "fullscreen",
+      "contentHints": {
+        "stat": "4",
+        "statLabel": "MODEL TRONG MEMORY CÙNG LÚC",
+        "detail": "mỗi model đảm nhiệm một phần riêng của pipeline"
+      }
+    },
+    {
+      "id": "card-11",
+      "intent": "Peak memory against usable memory — the headroom proof",
+      "startSec": 68.4,
+      "endSec": 73.95,
+      "accentIndex": 2,
+      "zone": "fullscreen",
+      "contentHints": {
+        "kicker": "PEAK MEMORY",
+        "value": 66,
+        "total": 121.6,
+        "unit": "GB",
+        "detail": "toàn bộ workflow chạy đồng thời"
+      }
+    },
+    {
+      "id": "card-12",
+      "intent": "End-to-end query latency and time-to-first-token",
+      "startSec": 74.05,
+      "endSec": 85.5,
+      "accentIndex": 1,
+      "zone": "fullscreen",
+      "contentHints": {
+        "kicker": "ĐỘ TRỄ",
+        "metrics": [
+          { "at": 0.6, "value": 2.2, "unit": "giây", "label": "trung bình mỗi query, end-to-end" },
+          { "at": 5.6, "value": 1.2, "unit": "giây", "label": "time-to-first-token" }
+        ]
+      }
+    },
+    {
+      "id": "card-13",
+      "intent": "Generation speed of the 32B reasoning model",
+      "startSec": 85.6,
+      "endSec": 89.0,
+      "accentIndex": 3,
+      "zone": "fullscreen",
+      "contentHints": {
+        "kicker": "QWEN2.5-32B",
+        "value": 8.3,
+        "unit": "token/s",
+        "detail": "tốc độ generate"
+      }
+    },
+    {
+      "id": "card-14",
+      "intent": "System throughput",
+      "startSec": 89.05,
+      "endSec": 91.9,
+      "accentIndex": 4,
+      "zone": "fullscreen",
+      "contentHints": {
+        "kicker": "THROUGHPUT",
+        "value": 26.9,
+        "unit": "query/phút",
+        "detail": "của cả hệ thống"
+      }
+    },
+    {
+      "id": "card-15",
+      "intent": "Verdict: this is the machine's strongest point",
+      "startSec": 92.1,
+      "endSec": 97.3,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": { "kicker": "KẾT LUẬN", "title": "Đây là điểm mạnh nhất" }
+    },
+    {
+      "id": "card-16",
+      "intent": "Honest caveat: raw performance loses to a discrete GPU",
+      "startSec": 97.4,
+      "endSec": 103.0,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "NÓI THẲNG",
+        "title": "Hiệu năng thuần: không thắng GPU rời",
+        "chips": ["RTX 5090", "RTX 4090"]
+      }
+    },
+    {
+      "id": "card-17",
+      "intent": "Hero: what it actually gives you is memory headroom",
+      "startSec": 103.1,
+      "endSec": 113.65,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "stat": "128",
+        "unit": "GB",
+        "title": "MEMORY HEADROOM",
+        "detail": "unified memory — thứ nó thực sự đem lại"
+      }
+    },
+    {
+      "id": "card-18",
+      "intent": "Prototype complex AI systems right on your desk",
+      "startSec": 113.7,
+      "endSec": 119.05,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "title": "Prototype hệ thống AI phức tạp",
+        "detail": "ngay trên bàn làm việc"
+      }
+    },
+    {
+      "id": "card-19",
+      "intent": "Who it is not for",
+      "startSec": 119.1,
+      "endSec": 124.1,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "NẾU BẠN CHỈ",
+        "items": ["chat với một model", "chạy AI agent cá nhân"],
+        "detail": "raw performance sẽ không quá vượt trội"
+      }
+    },
+    {
+      "id": "card-20",
+      "intent": "Who it is for — the four-item qualifier list",
+      "startSec": 124.2,
+      "endSec": 135.25,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "kicker": "NHƯNG NẾU BẠN",
+        "items": [
+          "build AI application",
+          "fine-tuning model",
+          "chạy nhiều model / model lớn",
+          "xử lý dữ liệu, giữ hoàn toàn local"
+        ],
+        "detail": "thì 128GB unified memory bắt đầu trở nên khá hợp lý"
+      }
+    },
+    {
+      "id": "card-21",
+      "intent": "Sponsor thanks",
+      "startSec": 135.35,
+      "endSec": 140.6,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": { "kicker": "CẢM ƠN", "chips": ["GIGABYTE", "PHONG VŨ"] }
+    },
+    {
+      "id": "card-22",
+      "intent": "Sign-off and follow",
+      "startSec": 140.7,
+      "endSec": 144.7,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "name": "AN",
+        "detail": "AI · công nghệ · xây dựng sản phẩm",
+        "cta": "FOLLOW"
+      }
+    }
+  ]
+}

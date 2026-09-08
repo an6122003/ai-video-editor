@@ -1,0 +1,159 @@
+/* ===========================================================================
+   An À Ha Design System — Video layer (v1.1-video)
+   ---------------------------------------------------------------------------
+   Extends web/tokens.css for 9:16 talking-head video. Nothing here replaces a
+   core token; this layer only adds what a 1080x1920 canvas needs and that a
+   1440px web page never did:
+
+     - a fixed pixel canvas (no clamp/vw — a video frame has one size)
+     - a type ramp sized for a phone-held 1080-wide frame
+     - safe areas for platform UI *and* for the speaker's face
+     - motion re-mapped from interaction tiers to narrative tiers
+
+   Core rules that carry over unchanged (see ../README.md):
+     - Space Grotesk display, Be Vietnam Pro body. Both cover Vietnamese.
+     - Sentence case body; uppercase only for compact labels.
+     - 1px borders + small offset shadow, never soft floating cards.
+     - One dominant accent per card plus neutrals.
+     - Platform colors only inside platform-specific analytics.
+   =========================================================================== */
+
+:root {
+  /* ---- canvas ------------------------------------------------------------
+     One frame, one size. 9:16 is the primary; the other two are derived by
+     keeping the horizontal values and scaling vertical ones. */
+  --v-w: 1080px;
+  --v-h: 1920px;
+  --v-ratio-portrait: 1080 / 1920; /* TikTok · Reels · Shorts  (primary) */
+  --v-ratio-feed: 1080 / 1350; /* IG feed — scale vertical by 0.703 */
+  --v-ratio-wide: 1920 / 1080; /* YouTube — re-flow, do not letterbox */
+
+  /* ---- safe areas --------------------------------------------------------
+     --v-safe-top/bottom keep content clear of platform chrome. --v-face-floor
+     is the video-only one: on a talking-head frame the speaker's head and
+     shoulders own everything above it, so overlay cards start below.
+     Measure per clip; 1150px suits a mid-chest framing. */
+  --v-safe-top: 250px;
+  --v-safe-bottom: 310px;
+  --v-gutter: 56px;
+  --v-face-floor: 1150px;
+
+  /* Lower stage: where an overlay card may live without covering the face. */
+  --v-stage-top: var(--v-face-floor);
+  --v-stage-bottom: var(--v-safe-bottom);
+
+  /* ---- type ramp ---------------------------------------------------------
+     The web ramp tops out near 72px on a 1440px page. Held at phone size a
+     1080px-wide frame reads much smaller, so every step is re-based. Floors
+     are hard: below them text stops surviving a 200px feed thumbnail. */
+  --v-text-stat: 200px; /* the one number a card is about */
+  --v-text-stat-sm: 132px; /* secondary metric */
+  --v-text-display: 116px; /* hero statement, title card */
+  --v-text-title: 84px; /* standard card headline */
+  --v-text-title-sm: 64px; /* long headline, 3+ lines */
+  --v-text-lead: 40px; /* supporting line under a headline */
+  --v-text-body: 34px; /* body — FLOOR 30px */
+  --v-text-label: 24px; /* sticker / eyebrow — FLOOR 20px */
+  --v-text-micro: 20px; /* axis ticks, citations — FLOOR 20px */
+
+  --v-leading-tight: 1.02; /* stat + display */
+  --v-leading-title: 1.08;
+  --v-leading-body: 1.45;
+  --v-tracking-display: -0.025em;
+  --v-tracking-label: 0.14em;
+
+  /* ---- surfaces ----------------------------------------------------------
+     Video cards are the web card at video scale. The offset shadow is the
+     brand signature and scales with the card (~2.5x the web value). */
+  --v-card-radius: 28px;
+  --v-card-pad: 44px;
+  --v-card-border: 2px; /* 1px web border, doubled so it survives encoding */
+  --v-shadow-card: 12px 15px 0 rgba(13, 27, 47, 0.1);
+  --v-shadow-dark: 18px 20px 0 rgba(36, 107, 254, 0.28);
+  --v-shadow-yellow: 12px 15px 0 rgba(255, 202, 79, 0.45);
+
+  /* Grid surface, scaled from the web --grid-size (3.25rem = 52px @1440). */
+  --v-grid-size: 64px;
+  --v-grid-line: rgba(13, 27, 47, 0.055);
+  --v-grid-line-dark: rgba(255, 255, 255, 0.06);
+
+  /* ---- motion ------------------------------------------------------------
+     The web system tiers motion by interaction (control / component /
+     entrance). Video has no pointer, so the same three durations re-map to
+     narrative roles. Durations and eases are unchanged — only their jobs are.
+
+       180ms  web: controls        video: exits, swaps
+       280ms  web: components      video: element-in-card, emphasis pop
+       600ms  web: large entrance  video: card entrance, chart draw
+
+     --ease-spring IS sanctioned here (unlike some systems that ban overshoot);
+     it is what makes a stat land. Reserve it for emphasis, never for a card. */
+  --v-dur-exit: 180ms;
+  --v-dur-element: 280ms;
+  --v-dur-card: 600ms;
+  --v-dur-chart: 900ms; /* count-up + chart draw run long on purpose */
+  --v-stagger: 80ms; /* between siblings in one card */
+  --v-ease-out: cubic-bezier(0.22, 1, 0.36, 1); /* GSAP: expo.out */
+  --v-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1); /* GSAP: back.out(1.56) */
+
+  /* ---- hold times --------------------------------------------------------
+     Video-only. A card must stay long enough to be read: roughly 0.35s per
+     word of its longest line, floored at 2.5s. Past ~8s a card needs a second
+     reveal (a stat, a chart, a list item) or it goes stale. */
+  --v-hold-min: 2.5s;
+  --v-hold-restage: 8s;
+
+  /* ---- alignment ---------------------------------------------------------
+     Video departs from the web system here. A page left-aligns because the eye
+     returns to a fixed left edge down a long scroll. A video card is a single
+     beat with no scroll, read once — so it centres, and its headline stays on
+     ONE line. A wrapped headline makes the eye travel and re-anchor mid-beat,
+     which is exactly the cost a 3-second card cannot pay.
+
+     Headlines are therefore sized to fit, not wrapped: measure the card's
+     inner width and scale the type down until the line fits (see
+     VIDEO-SYSTEM.md -> "Fit, don't wrap"). Body copy may wrap; headlines never. */
+  --v-align: center;
+  --v-card-inner: 880px; /* 1080 - 2x gutter - 2x padding */
+  --v-fit-per-glyph: 0.53; /* Space Grotesk 700, mixed case */
+  --v-fit-per-glyph-upper: 0.63; /* uppercase runs wider */
+  --v-title-max: 84px;
+  --v-title-max-upper: 76px;
+  --v-title-min: 38px;
+
+  /* ---- glass surface -----------------------------------------------------
+     A solid card is opaque by design, which is right when the words are the
+     whole point — but wrong when what is happening on camera still matters
+     (a product in hand, a screen being pointed at). The glass card keeps the
+     same geometry, border and offset shadow, and only swaps the fill for a
+     darkened translucent navy. Choose per card, not per video. */
+  --v-glass-fill: rgba(9, 26, 51, 0.66);
+  --v-glass-border: rgba(255, 255, 255, 0.18);
+  --v-glass-blur: 16px;
+  --v-glass-face: #ffffff;
+  --v-glass-sub: #c6d6ea;
+
+  /* ---- PiP placement -----------------------------------------------------
+     Platform furniture, not composition, decides this. On TikTok the right
+     action rail (profile / like / comment / share) runs roughly y 950-1650,
+     and the caption + handle occupy the bottom ~300px — so the bottom-right
+     corner, which looks like the natural home for a PiP, is the one place
+     guaranteed to be covered. Top-right clears both: the top safe area has
+     ended by y 250 and the rail has not started by y 900. */
+  --v-pip-x: 674px; /* 1080 - gutter - width */
+  --v-pip-y: 290px;
+  --v-pip-w: 350px;
+  --v-pip-h: 622px; /* 9:16 */
+  --v-rail-top: 950px; /* keep the pill above this */
+  --v-rail-x: 900px; /* and clear of this column below it */
+
+  /* ---- media -------------------------------------------------------------
+     Evidence images and cutouts. Cutouts are the creator's own photography;
+     see VIDEO-SYSTEM.md for the one rule that matters (never over the live
+     face). */
+  --v-evidence-radius: 20px;
+  --v-evidence-border: 10px; /* the white "print" margin */
+  --v-tape-w: 132px;
+  --v-tape-h: 44px;
+  --v-cutout-max-h: 900px;
+}

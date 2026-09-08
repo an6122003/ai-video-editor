@@ -1,0 +1,40 @@
+{
+  "_readme": [
+    "Images do one of two jobs (references/MEDIA-SOURCING.md §0):",
+    "  comprehension — the script names something the viewer cannot see",
+    "  attribution   — sponsor and vendor logos",
+    "Anything else is decoration. Where a card already carries the idea, no image.",
+    "",
+    "Edit this file, run `node build-video.mjs`, Studio hot-reloads. Missing files",
+    "render as labelled placeholders so the edit can be timed before assets exist.",
+    "",
+    "DELIBERATELY NOT PLACED — the cards already carry these:",
+    "  Qwen2.5-VL / BGE-M3 / BGE-Reranker / Qwen2.5-32B @ 47.9-62.4",
+    "      card-09 lists all four models with their roles. That list IS the visual;",
+    "      a logo beside it would split the beat.",
+    "  GPT-OSS 120B @ 29.9   card-05 already carries it as a chip.",
+    "  RTX 5090 / 4090 @ 101.5   card-16 already carries both as ghost chips.",
+    "  Every benchmark number   the charts draw them."
+  ],
+  "logos": [
+    {
+      "file": "ai-top-atom.png",
+      "at": 4.3,
+      "dur": 3.4,
+      "slot": "topright",
+      "w": 420,
+      "note": "COMPREHENSION — he is holding the unit but it reads dark and angled on camera; the clean product shot is what the viewer can actually parse. Official transparent PNG, hyperframes capture of gigabyte.com (curl + WebFetch both 403)."
+    },
+    {
+      "files": [
+        "gigabyte.svg",
+        "phongvu.png"
+      ],
+      "at": 136.6,
+      "dur": 3.6,
+      "slot": "topcenter",
+      "w": 420,
+      "note": "ATTRIBUTION — sponsor pair on the thanks beat. gigabyte.svg is their own wordmark from the site capture. phongvu.png is still a placeholder: their homepage runs a promo modal over the header and the only wordmarks in the capture are ~130px wide, too small to use — drop the real file into media/logos/."
+    }
+  ]
+}
