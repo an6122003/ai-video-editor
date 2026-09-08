@@ -53,20 +53,21 @@ example/              a real project's data files, media excluded
 ## Quick start
 
 ```bash
-node bin/fetch-fonts.mjs                       # once per project
-node bin/face-zone.mjs input.mp4 6             # measure the face
-node bin/build-video.mjs                       # < 1s
-npx hyperframes preview build --background     # Studio, hot-reloads
-npx hyperframes render build -o output.mp4 --fps 30
+npm install                          # hyperframes, pinned
+npm run fonts                        # once per project
+npm run face-zone -- input.mp4 6     # measure the face
+npm run build                        # < 1s
+npm run preview                      # Studio, hot-reloads on rebuild
+npm run render                       # once, at the end
 ```
 
 Three output modes off one build:
 
 | Command | Output |
 | --- | --- |
-| `build-video.mjs` | everything baked, with audio |
-| `build-video.mjs --overlay` | cards + assets, transparent, no audio |
-| `build-video.mjs --captions-only` | captions alone, transparent |
+| `npm run build` | everything baked, with audio |
+| `npm run build:overlay` | cards + assets, transparent, no audio |
+| `npm run build:captions` | captions alone, transparent |
 
 All three are frame-aligned, so they stack in an NLE.
 
@@ -109,8 +110,19 @@ caption band cover that corner on both axes.
 
 ## Requirements
 
+HyperFrames is **not vendored here** — it is a dependency. `package.json` pins
+it to the version this was built and validated against:
+
+```bash
+npm install          # installs hyperframes 0.7.109
+```
+
+The pin matters. `npx hyperframes` with no version resolves to `latest`, which
+is already a minor ahead (0.8.x) and was never tested against this pipeline —
+renderer behaviour shifts between minors. Use the npm scripts (`npm run build`,
+`npm run render`) so the pinned binary is the one that runs.
+
 - Node 20+, `ffmpeg` / `ffprobe`
-- HyperFrames CLI (`npx hyperframes`)
 - Whisper `large-v3` for non-English transcription — the `.en` models are
   English only
 - macOS for the face detector (uses the system Vision framework). Everything

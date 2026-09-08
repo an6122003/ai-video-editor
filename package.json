@@ -1,0 +1,26 @@
+{
+  "name": "ai-video-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Automated editing pipeline for 9:16 talking-head video, built on HyperFrames",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node bin/build-video.mjs",
+    "build:overlay": "node bin/build-video.mjs --overlay",
+    "build:captions": "node bin/build-video.mjs --captions-only",
+    "fonts": "node bin/fetch-fonts.mjs",
+    "topics": "node bin/topics.mjs",
+    "face-zone": "node bin/face-zone.mjs",
+    "media-index": "node bin/media-index.mjs",
+    "lint": "hyperframes lint build",
+    "check": "PRODUCER_BROWSER_GPU_MODE=hardware hyperframes check build",
+    "preview": "hyperframes preview build --background",
+    "render": "PRODUCER_BROWSER_GPU_MODE=hardware hyperframes render build -o output.mp4 --fps 30"
+  },
+  "devDependencies": {
+    "hyperframes": "0.7.109"
+  }
+}
