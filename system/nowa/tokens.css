@@ -1,0 +1,248 @@
+/* =============================================================
+   NOWA DESIGN SYSTEM — TOKENS
+   Single source of truth for every page + component in this repo
+   (marketing pages in pages/, showcase screens in app-ui/new/,
+   the design-system gallery, and the bundled design-system skill).
+   Locked variant: canvas = Sunlit cream (paper3), hero = Stage (1)
+   ============================================================= */
+:root {
+  /* =============================================
+     PALETTE — primitives
+     ============================================= */
+  --color-coral-flame: #ef493d;   /* THE action color — CTAs only */
+  --color-coral-glow: #f87a71;     /* coral on dark / hover lift */
+  --color-coral-blush: #fececa;    /* soft coral — pixel offsets, egg spot */
+  --color-ember-deep: #b9271c;     /* button side / shadow face */
+  --color-ember-darker: #7f241d;   /* brand dark accent surface */
+
+  --color-deep-ink: #161c24;       /* primary text + dark canvas */
+  --color-ink-charcoal: #212b36;   /* dark card faces, frames */
+  --color-slate-mid: #454f5b;      /* secondary text */
+  --color-mist-body: #637381;      /* tertiary / muted text */
+  --color-cloud-border: #c4cdd5;   /* borders on dark, muted text on dark */
+  --color-chalk-surface: #dfe3e8;  /* alt band surface, inactive meter cells */
+  --color-warm-parchment: #fdf5dd; /* CANVAS — Sunlit cream (paper3) ★ locked */
+  --color-ghost-white: #f4f6f8;    /* level-1 surface / blueprint */
+  --color-pure-white: #ffffff;     /* card faces, modal */
+
+  --color-amber-signal: #ffc107;   /* pixel sparkle, sample chip, device btn */
+  --color-leaf-success: #54d62c;   /* beta chip, success */
+  /* status set — semantic. Added 2026-08-05 by tokenizing hexes already shipping
+     in app-ui screens (safety-alerts, data-privacy, activity, growth-*).
+     Surfaces are muted card fills; inks are the only approved text color on them.
+     Coral is NEVER a status color — it stays action-only. */
+  --color-error: var(--color-ember-deep);   /* validation/error ink */
+  --color-error-surface: var(--color-coral-mist); /* #fdecea — error card fill */
+  --color-success-surface: #e7f6df;  /* done chips, verified badges */
+  --color-success-ink: #3f7a23;      /* text/icon on success-surface */
+  --color-info-surface: #e2eef7;     /* info badges, Executive-Function domain */
+  --color-info-ink: #2c5a7a;         /* text/icon on info-surface (was the "EF blue INTERIM") */
+  --color-warning-surface: #fff8e8;  /* alert card fill */
+  --color-warning-border: #f3dca0;   /* alert card 1px border (accent bar = amber-signal) */
+  --color-sky-button: #6c9bd2;     /* device blue button (.db.b) — hardware art only, never UI */
+
+  /* sage — the SAFETY / GUARANTEE / TRUST band (promoted 2026-07-02).
+     Use for: safety section, founder quote, guarantee & tally cards.
+     Ink/muted below are the ONLY approved text colors on sage. */
+  --color-sage-calm: #e2efdb;      /* sage band surface */
+  --color-sage-border: #c9dec3;    /* pxcard border on sage cards */
+  --color-sage-tint: #d3e7c9;      /* dither partner / subtle fill on sage */
+  --color-sage-ink: #1e3a2c;       /* headings/emphasis on sage */
+  --color-sage-muted: #4d6b58;     /* secondary text on sage */
+
+  /* warm bands */
+  --color-warm-sand: #fff3d6;      /* pre-order + mid-CTA trust band */
+  --color-bright-paper: #faf8f0;   /* "worklight" grid band (missions, compare) */
+
+  /* coral tints — committed / selected states */
+  --color-coral-mist: #fdecea;     /* committed card fill (.on / [open]) */
+  --color-coral-mist-soft: #fff5f4;/* table winner-column tint */
+
+  /* pastel accents (designer drop 2026-07-04) — DECORATIVE ONLY, never actions.
+     Borders: the fun-card 3px pixel borders (white face + pastel frame).
+     Tints: muted line-icon color on white (compare-table competitor columns). */
+  --color-pastel-coral: #f2a9a0;   /* fun-card border — coral family */
+  --color-pastel-amber: #f0cd83;   /* fun-card border — amber family */
+  --color-pastel-leaf: #9fd4a3;    /* fun-card border — leaf family */
+  --color-pastel-sky: #a8cceb;     /* fun-card border — sky family */
+  --color-tint-coral: #e59a90;     /* icon tint on white — coral family */
+  --color-tint-amber: #dcb35b;     /* icon tint on white — amber family */
+  --color-tint-sky: #8fbfe0;       /* icon tint on white — sky family */
+  --color-wordmark-blush: #f3e1db; /* pastel wordmark fill on ink (footer) */
+
+  /* original parchment retained for reference / theme switching */
+  --color-parchment-original: #edeae2; /* 1a */
+  --color-parchment-ivory: #f6f0e1;    /* 1b paper2 */
+  --color-parchment-cream: #fdf5dd;    /* 1c paper3 — active canvas */
+
+  /* =============================================
+     SURFACES — elevation ladder
+     ============================================= */
+  --surface-warm-parchment: #fdf5dd; /* Level 0 — base canvas (Sunlit cream) */
+  --surface-ghost-white: #f4f6f8;    /* Level 1 — blueprint / subtle fill */
+  --surface-chalk-surface: #dfe3e8;  /* Level 2 — alt section bands */
+  --surface-pure-white: #ffffff;     /* Level 3 — card faces / floating */
+  --surface-deep-ink: #161c24;       /* Level 4 — dark "night" sections */
+  --surface-ember-darker: #7f241d;   /* Level 5 — brand dark accent */
+
+  /* named bands (section backgrounds with a semantic job) */
+  --surface-sage-calm: var(--color-sage-calm);     /* safety / guarantee / founder trust */
+  --surface-warm-sand: var(--color-warm-sand);     /* pre-order / conversion moments */
+  --surface-bright-paper: var(--color-bright-paper); /* "worklight" demo bands (missions, compare) */
+
+  /* band tokens — set per-section to re-ink a dark band
+     (.dark reads these; defaults below) */
+  --band: var(--surface-deep-ink);
+  --band-ink: var(--color-pure-white);
+  --band-muted: var(--color-chalk-surface);
+  --band-accent: var(--color-coral-glow);
+  --band-note: var(--color-cloud-border);
+
+  /* =============================================
+     TYPOGRAPHY — families
+     ============================================= */
+  --font-onest: 'Onest', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; /* display / headings / UI labels */
+  --font-noto-sans: 'Noto Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; /* body */
+  --font-pixel: 'Tiny5', ui-sans-serif, sans-serif; /* PET-WORLD ONLY — sounds, levels, numbers, species names */
+  /* 'Departure Mono' is loaded by the pages but currently unused.
+     Reserve for terminal/HUD textures only; do NOT use as body or UI. */
+
+  /* =============================================
+     TYPOGRAPHY — scale (size / line-height)
+     ============================================= */
+  --text-caption: 12px;       --leading-caption: 1.333;
+  --text-body-sm: 14px;       --leading-body-sm: 1.429;
+  --text-body: 16px;          --leading-body: 1.6;
+  --text-subheading: 18px;    --leading-subheading: 1.556;
+  --text-heading-sm: 20px;    --leading-heading-sm: 1.4;
+  --text-heading: 24px;       --leading-heading: 1.333;
+  --text-heading-lg: 30px;    --leading-heading-lg: 1.2;
+  --text-heading-xl: 36px;    --leading-heading-xl: 1.222;
+  --text-display-alt: 48px;   --leading-display-alt: 1.0;
+  --text-display: 64px;       --leading-display: 1.25;
+  /* display headings tighten further in practice */
+  --leading-display-tight: 1.08;
+  --tracking-display: -0.025em;
+
+  /* =============================================
+     TYPOGRAPHY — weights
+     ============================================= */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* =============================================
+     SPACING — 4px base
+     ============================================= */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;   /* ★ added — referenced in source but was undefined */
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-96: 96px;
+
+  /* =============================================
+     LAYOUT
+     ============================================= */
+  --page-max-width: 1152px;
+  --page-max-width-content: 896px;
+  --page-max-width-narrow: 768px;
+  --section-gap: 96px;
+  --card-padding: 24px;
+  --element-gap: 16px;
+
+  /* =============================================
+     RADIUS — soft scale (use on PHOTOS/inputs/nav)
+     Note: the pixel system uses STEPPED corners, not these.
+     ============================================= */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-3xl: 32px;
+  --radius-4xl: 48px;
+  --radius-full: 9999px;
+
+  --radius-nav: 8px;
+  --radius-tags: 4px;
+  --radius-cards: 16px;
+  --radius-cards-lg: 24px;
+  --radius-inputs: 8px;
+  --radius-buttons: 9999px;
+  --radius-modals: 32px;
+  --radius-images: 16px;
+
+  /* =============================================
+     PIXEL SYSTEM — the signature
+     ============================================= */
+  --grid-line: rgba(22, 28, 36, .08);  /* graph-paper line on light */
+  --grid-line-dark: rgba(255, 255, 255, .06); /* graph-paper line on ink */
+  --grid-cell: 28px;                    /* graph-paper module */
+  /* stepped-corner notch scale — one notch per element size class.
+     PICK BY ELEMENT CLASS, not by arithmetic (decided 2026-08-05). The class
+     assignments below are the rule; 1/8-of-the-short-side is only a sanity
+     check for large surfaces that no class covers.
+     Chips, tags, buttons and tabs take sm (8) even at 20-24px tall — the notch
+     must stay VISIBLE at small size; that is the pixel tell. 2xs/xs are for
+     genuinely micro elements (sub-20px) only.
+     (5px one-offs in older CSS fold into xs or sm going forward.) */
+  --px-step-dot: 2px;  /* dots, 24–32px arrows */
+  --px-step-2xs: 3px;  /* micro tags (.show-card-tag) */
+  --px-step-xs: 4px;   /* stamps, save badges */
+  --px-step-sm6: 6px;  /* small chips, switchers, thumbnails (.g-badge, .po-switch) */
+  --px-step-sm: 8px;   /* buttons, tabs, chips, 44px icons */
+  --px-step-md: 12px;  /* cards, avatars, photos */
+
+  /* pixel shadow scale — hard offsets only, never blur */
+  --px-shadow-1: 2px 2px 0 rgba(22, 28, 36, .10);    /* chips, micro elements */
+  --px-shadow: 3px 3px 0 rgba(22, 28, 36, .12);      /* default card (light) */
+  --px-shadow-dark: 3px 3px 0 rgba(0, 0, 0, .18);    /* default card (on ink) */
+  --px-shadow-3: 4px 4px 0 rgba(22, 28, 36, .14);    /* hero-weight cards (deal, gallery) */
+  --px-shadow-dark-3: 4px 4px 0 rgba(0, 0, 0, .28);  /* hero-weight cards on ink */
+  --px-shadow-hover: 6px 6px 0 var(--color-coral-blush);      /* Tier-2 clickable hover */
+  --px-shadow-committed: 5px 5px 0 rgba(239, 73, 61, .32);    /* selected / open state */
+  --px-shadow-pop: 14px 14px 0 var(--color-coral-blush); /* hero stage offset */
+  --px-text-shadow-coral: 4px 4px 0 rgba(239, 73, 61, .18); /* display-price type treatment ($99) */
+
+  /* =============================================
+     MOTION
+     ============================================= */
+  --ease-default: cubic-bezier(.4, 0, .2, 1);
+  --ease-expo: cubic-bezier(0.19, 1, 0.22, 1);        /* reveals, entrances */
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);  /* UI transitions */
+  --duration-press: 70ms;   /* pixel press (steps(2)) — btn/tab/pbtn */
+  --duration-hover-2: 110ms;/* Tier-2 clickable-card hover */
+  --duration-fast: 150ms;   /* hovers, color, Tier-4 lift */
+  --duration-swap: 220ms;   /* content crossfade out-phase (mission tabs, labels) */
+  --duration-base: 300ms;   /* UI state */
+  --duration-reveal: 700ms; /* content entrance */
+  --duration-reveal-lg: 900ms; /* hero line reveal */
+  /* Motion laws (full spec in MOTION.md):
+     — pixel-press feel uses steps(2) timing, not a curve
+     — pet-world/organic motion is stepped/chunky; UI-chrome motion is smooth expo-out
+     — exits run ~75% of their entrance duration
+     — UI ceiling 300ms; entrances 500–900ms are landing-page-only */
+
+  /* =============================================
+     Z-INDEX — semantic scale (never hardcode 999)
+     ============================================= */
+  --z-rail: 30;
+  --z-nav: 40;
+  --z-picker: 60;     /* dev-only pickers/switchers */
+  --z-readbar: 80;
+  --z-overlay: 90;    /* modal scrim / sheets (app UI) */
+  --z-modal: 95;
+  --z-toast: 100;
+  --z-tooltip: 110;
+}
+
+/* text selection is brand-carrying */
+::selection { background: var(--color-coral-flame); color: #fff; }

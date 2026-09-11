@@ -1,0 +1,116 @@
+[
+ {
+  "at": 2.22,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b01 lower-third in"
+ },
+ {
+  "at": 12.2,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b02 cut to B-roll"
+ },
+ {
+  "at": 18.63,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b03 cut to B-roll"
+ },
+ {
+  "at": 26.93,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b04 cut to B-roll"
+ },
+ {
+  "at": 37.88,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b05b plate in"
+ },
+ {
+  "at": 47.62,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b06 callout in"
+ },
+ {
+  "at": 61.68,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b09b plate in"
+ },
+ {
+  "at": 67.78,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b10b plate in"
+ },
+ {
+  "at": 87.2,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b12 cut to B-roll"
+ },
+ {
+  "at": 100.15,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b14 plate in"
+ },
+ {
+  "at": 121.18,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b16 bignum in"
+ },
+ {
+  "at": 121.38,
+  "file": "sfx/tick.wav",
+  "db": -16,
+  "why": "b16 count-up"
+ },
+ {
+  "at": 133.15,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b18 cells in"
+ },
+ {
+  "at": 142.35,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b21 compare in"
+ },
+ {
+  "at": 153.7,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b22 cut to B-roll"
+ },
+ {
+  "at": 167.65,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b23b plate in"
+ },
+ {
+  "at": 176.28,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b24 checklist in"
+ },
+ {
+  "at": 185.67,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b25 cut to B-roll"
+ },
+ {
+  "at": 192.57,
+  "file": "sfx/chime.wav",
+  "db": -10,
+  "why": "b26 endcard"
+ }
+]

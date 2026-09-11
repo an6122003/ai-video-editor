@@ -21,6 +21,7 @@
     "render": "PRODUCER_BROWSER_GPU_MODE=hardware hyperframes render build -o output.mp4 --fps 30"
   },
   "devDependencies": {
+    "gsap": "^3.15.0",
     "hyperframes": "0.7.109"
   }
 }

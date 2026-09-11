@@ -1,11 +1,16 @@
 # Media — never committed. Footage, renders and sourced assets are large,
 # often third-party, and rebuildable.
+#
+# `media/*` rather than `media/`: git does not descend into an excluded
+# DIRECTORY, so `media/` would make the sources.json negation further down
+# unreachable no matter where it sits in the file. Matching the contents
+# instead ignores just as much and leaves the door open.
 *.mp4
 *.mov
 *.webm
 *.mp3
 *.wav
-media/
+media/*
 fonts/
 _fontfaces.css
 
@@ -27,3 +32,41 @@ media-library.json
 node_modules/
 .DS_Store
 package-lock.json
+
+# Pipeline additions (2026-09)
+.venv/
+projects/*/source/
+projects/*/work/
+projects/*/out/
+projects/*/broll/sheets/
+projects/*/build-*/
+projects/*/thumbs/out/
+projects/*/thumbs/frames/
+projects/*/thumbs/vendor/
+projects/*/thumbs/fonts/
+projects/*/work/*.gray
+projects/*/fonts/
+projects/*/_fontfaces.css
+projects/*/layouts/
+# The CONTENTS of media/, not the directory itself — git will not descend into
+# an excluded directory, so `media/` would make the negation below unreachable.
+projects/*/media/*
+# sources.json is the RECORD, not the payload: which image was approved for
+# which beat, from which domain, and the note saying why. Small text, and the
+# only place that decision is written down. The binaries and review.html stay
+# out; bin/image-search.mjs re-fetches the images from the manifest.
+!projects/*/media/sources.json
+projects/*/broll/thumbs/
+projects/*/broll/review.html
+
+# API keys — never commit
+.serpapi-key
+.env.local
+.env
+
+# ...but the cue sounds ARE committed. Four small files (500 KB all in) that
+# every project's sfx-cues.json points at, and without them the mixer drops
+# every cue — which is exactly how 122 placed cues went unnoticed for four
+# episodes. They are generated, not licensed, so there is nothing to clear.
+!sfx/
+!sfx/*.wav

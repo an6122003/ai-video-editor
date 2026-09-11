@@ -1,0 +1,17 @@
+# Optional: CUDA runtime wheels, only worth installing on a machine with an
+# NVIDIA card. About 2.5 GB, and inert without the hardware.
+#
+#   .venv/Scripts/python -m pip install -r requirements.txt -r requirements-gpu.txt
+#
+# On Windows these drop their DLLs under site-packages/nvidia/*/bin, where
+# neither PATH nor the Windows loader looks — bin/transcribe.py's
+# expose_nvidia_dlls() adds those directories at startup. Without it the model
+# constructs fine on cuda and then dies at the first encode, because
+# ctranslate2 loads cublas lazily.
+#
+# Skip this file entirely to run on CPU; see the table in requirements.txt for
+# what that costs (less than you would think — large-v3 is 0.67x realtime).
+
+nvidia-cublas-cu12==12.9.2.10
+nvidia-cuda-nvrtc-cu12==12.9.86
+nvidia-cudnn-cu12==9.25.1.1
