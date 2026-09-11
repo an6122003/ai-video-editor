@@ -56,7 +56,13 @@ projects/*/media/*
 # only place that decision is written down. The binaries and review.html stay
 # out; bin/image-search.mjs re-fetches the images from the manifest.
 !projects/*/media/sources.json
-projects/*/broll/thumbs/
+# Segment thumbnails DO travel: ~3 MB for a 40-clip library, and they are the
+# only reason bin/broll-review.mjs works on a fresh clone. They look derived,
+# but they are derived from 12.4 GB of footage a collaborator does not have, so
+# from their side these are source, not output. Without them the gallery is 124
+# broken images and no way to regenerate one.
+!projects/*/broll/thumbs/
+!projects/*/broll/thumbs/*.jpg
 projects/*/broll/review.html
 
 # API keys — never commit
