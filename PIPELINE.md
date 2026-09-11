@@ -212,14 +212,94 @@ node ../../bin/broll-review.mjs          # -> broll/review.html
 node ../../bin/broll-review.mjs --clip lap-loa --force
 ```
 
-One **thumbnail per segment** (pulled a third of the way in, past the transition)
-beside every field that describes it: action, tags, shot, motion, sequence,
-subject, in/out, quality, usable, note. Filter by tag or action, or show only
-what is marked unusable. Edit in place, press **Download corrections**, drop the
-file into `broll/described/` and re-run `broll-index.mjs` to fold it in.
+A **grid of cards, one per segment** — not per clip, because a 39-second take
+usually holds four different shots and "the one where he turns the shell over"
+is a segment. Each card carries the frame, the clip id, the in/out, the length,
+the frame shape and the action line, so a shot is picked by looking.
 
-The page never writes to disk. The describe pass stays append-only, so nothing
-already described can be silently overwritten by a stray edit.
+Search matches **what is in the shot** — action, subject, tags, shot, motion,
+sequence, note — as well as the clip id, so `screwdriver` finds four shots and
+`speaker grille` finds three. Filter by sequence or shot type, or show only what
+is marked unusable. The circle selects; **Copy selected** puts
+`{clip, start, end, why}` on the clipboard, which is the shape a plan references
+a shot by.
+
+Clicking a card opens an editor drawer with every field. Correct anything, press
+**Download corrections**, drop the file into `broll/described/` and re-run
+`broll-index.mjs` to fold it in. The page never writes to disk — the describe
+pass stays append-only, so nothing already described can be silently overwritten
+by a stray edit.
+
+The segment thumbnails are **committed** (~2.8 MB for 40 clips). They look like
+build output, but they are derived from footage a collaborator does not have, so
+from their side they are source. Without them a fresh clone renders 124 broken
+images and cannot regenerate one.
+
+### A library too big to hand over
+
+The footage and the knowledge about it are wildly different sizes, and the
+pipeline is worth nothing to anyone who cannot get both. For the 40-clip factory
+library:
+
+| | size | what it lets someone do |
+|---|---|---|
+| `library.json` | 180 KB | search all 124 shots |
+| `thumbs/` | 2.8 MB | see them |
+| `proxy/` (640p) | ~70 MB | watch, scrub, cut, draft-render |
+| `original/` | 12.4 GB | final render |
+
+A 640p proxy measures **2.5 MB/min against 419 MB/min** for the source — 166x
+smaller — so the whole 27.6-minute library is smaller than one finished episode.
+And the demand is lopsided: ep.01 puts **40 seconds** of B-roll on screen and
+touches **7 clips of 40**. Handing someone 12.4 GB to use 40 seconds is the
+thing this fixes.
+
+Publish to any static HTTPS server — no SDK, no credential, no object-store API:
+
+```bash
+node ../../bin/broll-publish.mjs --base https://media.example.com/broll/nowa-factory
+rsync -av --delete dist/broll/ you@server:/var/www/nowa-factory/
+```
+
+Clients then pull only the tier they need:
+
+```bash
+node ../../bin/broll-pull.mjs --remote https://media.example.com/broll/nowa-factory
+node ../../bin/broll-pull.mjs --proxies                              # + 82 MB, now watchable
+node ../../bin/broll-pull.mjs --plan build-9x16/plan.resolved.json   # + the 7 clips that plan uses
+```
+
+Measured end to end against a real server: a client who has pulled **3.1 MB and
+no video at all** renders all 124 cards with no broken images and finds three
+shots for `speaker grille`. Re-running pulls 0.0 MB, and every file is checked
+against the catalogue's sha256.
+
+There is deliberately **no byte-range mode**. Turning "the seconds this plan
+uses" into byte offsets means parsing the MP4's moov atom; slicing by
+proportional position yields fragments nothing decodes, so such a flag could
+only fall back to the whole file — looking like it saved bandwidth while
+downloading everything. If tier 3 ever hurts, the fix is for `broll-publish` to
+cut each described segment as its own file: measured on ep.01 that is 803 MB
+instead of 2.07 GB, needs no MP4 parsing, and every file stays valid on its own.
+
+Because a plan anchors to spoken phrases and references clips by id, **a client
+can write a complete, valid edit plan having never downloaded a frame.**
+
+**The catalogue is served, not committed.** The library grows on its own clock:
+you shoot more, describe it, re-publish, and every client sees the new shots by
+running `broll-pull` — nobody re-clones. The version is a fingerprint of the
+content, not a counter anyone has to remember to bump.
+
+`broll/library.lock` records the version a project was cut against — commit it.
+When the library moves on, the lock is what says whether an edit still refers to
+the footage it was made from.
+
+After any pull, `broll/index.json` is rewritten with `path` pointing at whatever
+is actually on disk. **Nothing downstream takes a flag**: `build-edit.mjs` builds
+from what it finds, so a proxy pull gives a soft draft and an original pull gives
+the real thing. `--ranges` falls back to the whole file on a server without Range
+support, or when a byte-sliced MP4 will not decode — a correct clip beats a
+clever one.
 
 ### The step between the script and the plan
 

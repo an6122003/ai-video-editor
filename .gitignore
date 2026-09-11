@@ -76,3 +76,8 @@ projects/*/broll/review.html
 # episodes. They are generated, not licensed, so there is nothing to clear.
 !sfx/
 !sfx/*.wav
+
+# Pulled media. broll-pull.mjs fetches these; they are never authored here.
+projects/*/broll/proxy/
+projects/*/broll/original/
+dist/
