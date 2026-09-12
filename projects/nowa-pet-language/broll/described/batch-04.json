@@ -1,0 +1,34 @@
+{
+  "dji-20260805102406-0032-d": [
+    { "start": 0, "end": 18, "action": "camera drifts over trays of finished units face-up in red foam — screens, colored buttons, several trays", "subject": ["finished units", "trays"], "shot": "medium", "motion": "handheld", "tags": ["finished", "units", "trays", "batch", "quantity"], "quality": 4, "usable": true, "sequence": "finished-trays" }
+  ],
+  "dji-20260805102436-0033-d": [
+    { "start": 0, "end": 5, "action": "macro of one finished unit's screen and top edge, tilted", "subject": ["unit", "screen"], "shot": "detail", "motion": "handheld", "tags": ["unit", "screen", "macro", "front"], "quality": 3, "usable": true },
+    { "start": 5, "end": 28, "action": "trays of finished units from several angles; 10s is the widest view with a dozen units", "subject": ["finished units", "trays"], "shot": "medium", "motion": "handheld", "tags": ["finished", "units", "trays", "batch", "quantity", "rows"], "quality": 4, "usable": true, "sequence": "finished-trays" }
+  ],
+  "dji-20260805103145-0035-d": [
+    { "start": 0, "end": 10, "action": "studio macro on a white surface: the red mic button and blue play button, then the red mic button alone — extreme close-up", "subject": ["mic button", "play button", "unit"], "shot": "detail", "motion": "static", "tags": ["buttons", "mic", "play", "macro", "product", "design", "material", "finish", "hero"], "quality": 5, "usable": true, "sequence": "product-macro", "note": "clean white-table product shots — 'material very good and high-grade'" },
+    { "start": 10, "end": 15, "action": "hand holds the unit front-on: screen (off), orange back / red mic / blue play buttons, white surface", "subject": ["unit", "screen", "three buttons", "hand"], "shot": "close-up", "motion": "static", "tags": ["front", "three-buttons", "screen", "product", "hero", "design"], "quality": 5, "usable": true, "sequence": "product-macro" },
+    { "start": 15, "end": 20, "action": "side/top edge: the red scroll wheel and the top button", "subject": ["scroll wheel", "top button", "unit edge"], "shot": "detail", "motion": "static", "tags": ["scroll", "wheel", "top-button", "dial", "product", "design", "hero"], "quality": 5, "usable": true, "sequence": "product-macro", "note": "matches 'there are scroll, there one button on the top'" },
+    { "start": 20, "end": 25, "action": "out-of-focus reposition", "subject": [], "shot": "detail", "motion": "handheld", "tags": [], "quality": 1, "usable": false },
+    { "start": 25, "end": 29, "action": "back of the unit: speaker grille dot grid, red scroll wheel and top button visible at the edge", "subject": ["speaker grille", "back", "scroll wheel"], "shot": "close-up", "motion": "static", "tags": ["speaker", "grille", "back", "scroll", "product", "design", "hero"], "quality": 5, "usable": true, "sequence": "product-macro", "note": "matches 'the speaker behind'" }
+  ],
+  "dji-20260805104511-0037-d": [
+    { "start": 0, "end": 5, "action": "close on one finished unit in its tray cell, neighbours at the edges", "subject": ["unit", "tray"], "shot": "close-up", "motion": "handheld", "tags": ["unit", "finished", "tray", "front"], "quality": 4, "usable": true, "sequence": "finished-trays" },
+    { "start": 5, "end": 15, "action": "trays of finished units, camera pulling out", "subject": ["finished units", "trays"], "shot": "medium", "motion": "handheld", "tags": ["finished", "units", "trays", "batch"], "quality": 4, "usable": true, "sequence": "finished-trays" }
+  ],
+  "dji-20260805104541-0038-d": [
+    { "start": 0, "end": 14, "action": "low dolly along rows of finished units in trays down the line, factory and workers soft in the background", "subject": ["finished units", "trays", "line", "factory"], "shot": "medium", "motion": "follow", "tags": ["finished", "units", "rows", "line", "depth", "batch", "quantity", "factory", "hero", "50-units"], "quality": 5, "usable": true, "sequence": "finished-trays", "note": "cinematic low tracking shot — strongest 'production' image" }
+  ],
+  "dji-20260805104613-0039-d": [
+    { "start": 0, "end": 15, "action": "low angle over trays of finished units", "subject": ["finished units", "trays"], "shot": "medium", "motion": "handheld", "tags": ["finished", "units", "trays", "batch"], "quality": 4, "usable": true, "sequence": "finished-trays" },
+    { "start": 15, "end": 20, "action": "higher angle over many trays on the green bench", "subject": ["finished units", "trays", "bench"], "shot": "medium", "motion": "handheld", "tags": ["finished", "units", "trays", "batch", "quantity", "rows"], "quality": 4, "usable": true, "sequence": "finished-trays" }
+  ],
+  "dji-20260805105802-0040-d": [
+    { "start": 0, "end": 33, "action": "team in yellow smocks walks the factory corridors and clean room: worker in pink smock at a parts station, phone filming, SMT/machine room with monitors", "subject": ["Nowa team", "factory corridor", "clean room", "machines", "worker"], "shot": "wide", "motion": "follow", "tags": ["factory", "tour", "team", "walk", "clean-room", "machines", "smt", "corridor"], "quality": 3, "usable": true, "sequence": "factory-visit", "note": "PORTRAIT orientation (rotated file) — inset/pillar only; 25s is a blurred pan" }
+  ],
+  "lap-mach-noi": [
+    { "start": 0, "end": 13, "action": "worker (blue wrist strap) fits a small connector/cable onto the PCB inside the shell with a white tool; bare LCD screen modules with ribbon cables lie on red foam beside the station", "subject": ["worker hands", "PCB", "connector", "cable", "LCD modules", "shell"], "shot": "close-up", "motion": "static", "tags": ["pcb", "connector", "cable", "wire", "screen", "lcd", "display-module", "assembly", "electronics", "station"], "quality": 4, "usable": true, "sequence": "connector-fit", "note": "LCD modules visible at left in 5-13s — the 'screen' component before install" },
+    { "start": 13, "end": 19, "action": "finished inner assembly — shell with PCB, speaker and red wires — sitting in a tray cell", "subject": ["inner assembly", "PCB", "speaker", "tray"], "shot": "close-up", "motion": "static", "tags": ["pcb", "speaker", "assembled", "inside", "tray", "electronics"], "quality": 4, "usable": true }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "frames": {
+    "hero": ["aroll", 3.0],
+    "speaker": ["dji-20260805100058-0025-d", 3.5],
+    "screen": ["test-products", 36]
+  },
+  "variants": [
+    { "id": "a", "layout": "face-card", "frame": "hero", "pos": "bottom-left", "maxWidth": 660,
+      "eyebrow": "LITTLE THING OF NOWA · EP. 02", "title": "Why the pet doesn't speak human", "sub": "Pika Pika, and why that's the point" },
+    { "id": "b", "layout": "bignum", "frame": "screen", "pos": "top-left", "maxWidth": 520,
+      "value": "0", "title": "human words. On purpose." },
+    { "id": "c", "layout": "split", "frame": "hero", "frame2": "speaker", "focus2": "52% 40%",
+      "title": "It has its own voice.", "sub": "Not English. Not a chatbot." }
+  ]
+}

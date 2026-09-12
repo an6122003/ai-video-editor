@@ -1,0 +1,12 @@
+{
+  "name": "nowa-pet-language",
+  "brand": "nowa",
+  "language": "en",
+  "source": {
+    "aroll": "H:/Coding Projects/source-video/Founder Videos Bank-20260908T173719Z-1-001/Founder Videos Bank/Why don_t Nowa_s pet respond in human languages.mov",
+    "broll": "H:/Coding Projects/source-video/DJI_001-20260906T142345Z-1-007/DJI_001"
+  },
+  "composition": { "width": 1920, "height": 1080, "fps": 30 },
+  "deliverables": ["youtube_16x9"],
+  "notes": "Little Thing of Nowa ep.02 — why the pet doesn't speak human language. Source 1280x720 @29.97 conformed to 1080p30. B-roll library shared with the other Nowa projects."
+}

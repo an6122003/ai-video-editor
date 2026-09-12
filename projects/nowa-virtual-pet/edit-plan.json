@@ -1,0 +1,914 @@
+{
+  "_readme": [
+    "Little Thing of Nowa, ep.03 — why Nowa is a virtual pet raising game.",
+    "",
+    "The argument: what game should sit on this hardware? → Tamagotchi stood out → the",
+    "2000s were the dopamine era, Tamagotchi wasn't → a Bandai designer wanted a pet for",
+    "people who couldn't have one → 100 million units → the loop is slow and frankly",
+    "annoying: feed it, play with it, put it to bed → caring costs you time, effort, money",
+    "and gives nothing back → and that is exactly why it worked: care becomes",
+    "responsibility becomes attachment → so that is the gameplay we reimagined → and the",
+    "pet still doesn't speak human, for the reasons in ep.02.",
+    "",
+    "Presentation: this is the longest episode, so it spends the layout library — 21",
+    "distinct presentations, no type-layout pair twice. The Tamagotchi beats use `plate`",
+    "scenes with CC-BY photographs from Wikimedia, credited on screen from the manifest.",
+    "",
+    "IP: the Tamagotchi PHOTOGRAPHS are CC BY (credited). The DEVICE is Bandai's product",
+    "design, shown editorially while discussing its design history. Flagged for human",
+    "sign-off before publishing — set approved:false in media/sources.json to pull them."
+  ],
+  "aroll": "out/01_aroll_clean.mp4",
+  "transcript": "work/transcript.clean.json",
+  "captions": {
+    "enabled": true,
+    "maxWords": 4
+  },
+  "face": {
+    "x0": 815,
+    "y0": 120,
+    "x1": 1155,
+    "y1": 600
+  },
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0.4,
+      "end": 5.4,
+      "visual": "card",
+      "intent": "hook",
+      "card": {
+        "type": "lower-third",
+        "layout": "bar",
+        "wordmark": true,
+        "eyebrow": "LITTLE THING OF NOWA · EP. 03",
+        "title": "Why Nowa is a virtual pet game",
+        "sub": "One design decision, by Daniel",
+        "maxWidth": 960,
+        "at": [
+          "let's talk gameplay",
+          -0.5
+        ],
+        "dur": 6.2
+      }
+    },
+    {
+      "id": "b02",
+      "start": 5.7,
+      "end": 16.6,
+      "visual": "broll",
+      "intent": "establisher — the hardware the game had to live on",
+      "broll": [
+        {
+          "clip": "dji-20260805104541-0038-d",
+          "in": 0,
+          "dur": 4.8,
+          "at": [
+            "looking for a lot of inspiration",
+            -0.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "start": 17.3,
+      "end": 28.8,
+      "visual": "broll",
+      "intent": "'looking at the history of game' — hold on the object the game had to run on",
+      "broll": [
+        {
+          "clip": "dji-20260805102055-0029-d",
+          "in": 26,
+          "dur": 4.6,
+          "at": [
+            "the history of game",
+            -0.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b04",
+      "start": 28.8,
+      "end": 42.6,
+      "visual": "card",
+      "intent": "the inspiration, with the actual object",
+      "card": {
+        "type": "plate",
+        "layout": "hero",
+        "eyebrow": "THE ONE THAT STOOD OUT",
+        "title": "Tamagotchi",
+        "caption": "A game about keeping something alive.",
+        "images": [
+          {
+            "file": "candidates/tamagotchi/11.png"
+          }
+        ],
+        "at": [
+          "the story of tamagotchi",
+          -0.4
+        ],
+        "dur": 7.5
+      }
+    },
+    {
+      "id": "b05",
+      "start": 42.6,
+      "end": 54.7,
+      "visual": "broll",
+      "intent": "'new hardware let many more games be produced' — a line making things",
+      "broll": [
+        {
+          "clip": "overview-2",
+          "in": 0,
+          "dur": 5.2,
+          "at": [
+            "the new kind of hardware",
+            -0.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b06",
+      "start": 54.7,
+      "end": 68.4,
+      "visual": "card",
+      "intent": "the era's philosophy, stamped",
+      "card": {
+        "type": "statement",
+        "layout": "blocks",
+        "eyebrow": "THE PHILOSOPHY OF THE ERA",
+        "text": "Design for dopamine. / Make them stick.",
+        "theme": "night",
+        "at": [
+          "this dopamine effects",
+          -1.6
+        ],
+        "until": [
+          "stick to the gameplay",
+          -0.4,
+          "start"
+        ],
+        "reveal": [
+          "this dopamine effects",
+          "stick to the gameplay"
+        ]
+      }
+    },
+    {
+      "id": "b07",
+      "start": 68.4,
+      "end": 82.4,
+      "visual": "card",
+      "intent": "who made it, and what she was actually after",
+      "card": {
+        "type": "plate",
+        "layout": "duo",
+        "eyebrow": "BANDAI, AND A SIMPLE THESIS",
+        "title": "A pet for people / who couldn't have one",
+        "caption": "Designed by a game designer at Bandai.",
+        "images": [
+          {
+            "file": "candidates/tamagotchi/10.jpg"
+          },
+          {
+            "file": "candidates/tamagotchi/11.png"
+          }
+        ],
+        "at": [
+          "from Bandai",
+          -0.6
+        ],
+        "until": [
+          "her thesis is very simple",
+          -0.2,
+          "start"
+        ]
+      }
+    },
+    {
+      "id": "b08",
+      "start": 82.4,
+      "end": 93.5,
+      "visual": "card",
+      "intent": "why they couldn't — his two reasons, as chips",
+      "card": {
+        "type": "list",
+        "layout": "chips",
+        "eyebrow": "WHY THEY COULDN'T",
+        "numbered": false,
+        "items": [
+          "The house is too small",
+          "The parents said no"
+        ],
+        "reveal": [
+          "their house is too small",
+          "the parents don't allow"
+        ],
+        "theme": "day",
+        "at": [
+          "who want to raise pets",
+          -0.4
+        ],
+        "until": [
+          "don't allow it",
+          1.4
+        ]
+      }
+    },
+    {
+      "id": "b10",
+      "start": 97.4,
+      "end": 105,
+      "visual": "broll",
+      "intent": "'she took the character of the pet and put it into the game' — our pet on a screen",
+      "broll": [
+        {
+          "clip": "test-products",
+          "in": 34,
+          "dur": 4.6,
+          "at": [
+            "all the character of the pet",
+            -0.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b12",
+      "start": 105,
+      "end": 109.6,
+      "visual": "card",
+      "intent": "the number, given the frame",
+      "card": {
+        "type": "bignum",
+        "layout": "hero",
+        "eyebrow": "SINCE RELEASE",
+        "value": 100,
+        "unit": "million",
+        "label": "units sold",
+        "sub": "over twenty-five years",
+        "theme": "night",
+        "at": [
+          "100 million units",
+          -1
+        ],
+        "dur": 6.5
+      }
+    },
+    {
+      "id": "b13",
+      "start": 109.8,
+      "end": 116.3,
+      "visual": "broll",
+      "intent": "'time-defining title' — rows of our own units, the same ambition",
+      "broll": [
+        {
+          "clip": "dji-20260805104613-0039-d",
+          "in": 0,
+          "dur": 4.6,
+          "at": [
+            "very successful",
+            -0.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b14",
+      "start": 116.7,
+      "end": 123.1,
+      "visual": "broll",
+      "intent": "back to our own object before the contrast",
+      "broll": [
+        {
+          "clip": "dji-20260805103145-0035-d",
+          "in": 10,
+          "dur": 4.4,
+          "at": [
+            "it's very funny",
+            -0.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b15",
+      "start": 123.3,
+      "end": 131.1,
+      "visual": "card",
+      "intent": "the contrast, as two plates",
+      "card": {
+        "type": "compare",
+        "layout": "versus",
+        "win": 1,
+        "theme": "night",
+        "left": {
+          "head": "EVERY OTHER GAME",
+          "big": "Dopamine",
+          "items": [
+            "Reward, then reward again"
+          ]
+        },
+        "right": {
+          "head": "TAMAGOTCHI",
+          "big": "Care",
+          "items": [
+            "Slow. Frankly annoying."
+          ]
+        },
+        "at": [
+          "not a dopamine",
+          -0.5
+        ],
+        "until": [
+          "annoying gameplay",
+          1.2
+        ],
+        "reveal": [
+          "not a dopamine",
+          "but it's a very slow"
+        ]
+      }
+    },
+    {
+      "id": "b16",
+      "start": 131.5,
+      "end": 147.2,
+      "visual": "broll",
+      "intent": "'something that relies on you' — the pet on the screen",
+      "broll": [
+        {
+          "clip": "dji-20260805094950-0020-d",
+          "in": 4,
+          "dur": 5,
+          "at": [
+            "you have to have a pet",
+            -0.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b17",
+      "start": 147.2,
+      "end": 159.6,
+      "visual": "card",
+      "intent": "what caring actually costs — a staircase, landing on each word",
+      "card": {
+        "type": "list",
+        "layout": "steps",
+        "eyebrow": "WHAT CARING COSTS YOU",
+        "numbered": false,
+        "items": [
+          "Your time",
+          "Your effort",
+          "Maybe even your money"
+        ],
+        "reveal": [
+          "sacrifice your time",
+          "sacrifice your effort",
+          "even money"
+        ],
+        "theme": "day",
+        "at": [
+          "sacrifice a part of yourself",
+          -0.6
+        ],
+        "until": [
+          "even money",
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "b18",
+      "start": 159.6,
+      "end": 175.1,
+      "visual": "card",
+      "intent": "the punchline of that list, at poster scale",
+      "card": {
+        "type": "statement",
+        "layout": "oversize",
+        "eyebrow": "AND IN RETURN",
+        "text": "Nothing. / Really, nothing.",
+        "theme": "night",
+        "at": [
+          "give you in return",
+          -0.3
+        ],
+        "until": [
+          "nothing really",
+          1
+        ]
+      }
+    },
+    {
+      "id": "b19",
+      "start": 175.1,
+      "end": 189.6,
+      "visual": "card",
+      "intent": "the thesis, in his words, over his face",
+      "card": {
+        "type": "quote",
+        "layout": "card",
+        "over": "footage",
+        "theme": "day",
+        "text": "Inherently, every human wants something to care for",
+        "attrib": "why a slow, annoying game sold a hundred million",
+        "at": [
+          "the desire to care for something",
+          -1.8
+        ],
+        "dur": 8.5
+      }
+    },
+    {
+      "id": "b20",
+      "start": 189.6,
+      "end": 203.9,
+      "visual": "broll",
+      "intent": "'you feed it by pressing this small little tiny button' — the buttons",
+      "broll": [
+        {
+          "clip": "dji-20260805103145-0035-d",
+          "in": 0,
+          "dur": 5,
+          "at": [
+            "every 30 minutes it beep",
+            -0.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b21",
+      "start": 203.9,
+      "end": 217,
+      "visual": "card",
+      "intent": "the whole loop — a panel, because these are chores and he is animated here",
+      "card": {
+        "type": "checklist",
+        "layout": "rows",
+        "eyebrow": "THE ENTIRE GAME LOOP",
+        "items": [
+          "Answer the beep",
+          "Feed it",
+          "Play a small game with it",
+          "Put it to bed on time"
+        ],
+        "theme": "day",
+        "at": [
+          "feed it by pressing",
+          -0.8
+        ],
+        "until": [
+          "go to bed on time",
+          -0.2,
+          "start"
+        ],
+        "reveal": [
+          "really beep and",
+          "feed it by pressing",
+          "play you know smaller game",
+          "go to bed on time"
+        ],
+        "v": "bottom"
+      }
+    },
+    {
+      "id": "b22",
+      "start": 217,
+      "end": 232.6,
+      "visual": "card",
+      "intent": "and none of the usual machinery — a bar, not a box",
+      "card": {
+        "type": "callout",
+        "layout": "bar",
+        "eyebrow": "AND YET",
+        "text": "No levels. No streaks. No rewards.",
+        "sub": "It got popular anyway.",
+        "at": [
+          "like dopamine effects",
+          -0.5
+        ],
+        "until": [
+          "so popular",
+          1
+        ]
+      }
+    },
+    {
+      "id": "b23",
+      "start": 232.6,
+      "end": 257.5,
+      "visual": "card",
+      "intent": "the chain he describes, lighting up as he names each link",
+      "card": {
+        "type": "process",
+        "layout": "rail",
+        "eyebrow": "WHAT CARING TURNS INTO",
+        "steps": [
+          "Sacrifice",
+          "Responsibility",
+          "Motivation",
+          "Attachment"
+        ],
+        "labels": [
+          "a bit of yourself",
+          "it depends on you",
+          "a reason to keep going",
+          "and it deepens"
+        ],
+        "active": -1,
+        "reveal": [
+          "sacrifice a little bit",
+          "there's a responsibility",
+          "a big motivation",
+          "an attachment"
+        ],
+        "theme": "night",
+        "at": [
+          "hit the nerve",
+          -0.4
+        ],
+        "until": [
+          "attachment you may have",
+          1.2
+        ]
+      }
+    },
+    {
+      "id": "b26",
+      "start": 257.7,
+      "end": 261.2,
+      "visual": "broll",
+      "intent": "'a real pet, or a baby' — back to the device before the aside",
+      "broll": [
+        {
+          "clip": "dji-20260805102337-0031-d",
+          "in": 0,
+          "dur": 4.2,
+          "at": [
+            "a real pet",
+            -0.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b27",
+      "start": 261.8,
+      "end": 267.3,
+      "visual": "card",
+      "intent": "the personal aside — a sticker, because it is an aside",
+      "card": {
+        "type": "callout",
+        "layout": "sticker",
+        "eyebrow": "FULL DISCLOSURE",
+        "text": "He just had a baby",
+        "v": "bottom",
+        "at": [
+          "I just had a baby",
+          -0.4
+        ],
+        "dur": 5
+      }
+    },
+    {
+      "id": "b28",
+      "start": 268,
+      "end": 295.2,
+      "visual": "card",
+      "intent": "'that is how Nowa was born' — three of our own clips framed on the brand ground, rather than two more full-frame cutaways",
+      "card": {
+        "type": "plate",
+        "layout": "trio",
+        "eyebrow": "SO WE BUILT IT",
+        "title": "That is how / Nowa was born",
+        "caption": "The same loop, on hardware that can carry it.",
+        "media": [
+          {
+            "clip": "dji-20260805100940-0028-d",
+            "in": 0
+          },
+          {
+            "clip": "dji-20260805094747-0018-d",
+            "in": 20
+          },
+          {
+            "clip": "dji-20260805104613-0039-d",
+            "in": 0
+          }
+        ],
+        "theme": "day",
+        "at": [
+          "the gameplay we want to do",
+          -0.6
+        ],
+        "until": [
+          "was very much inspired",
+          -0.4,
+          "start"
+        ]
+      }
+    },
+    {
+      "id": "b30",
+      "start": 295.2,
+      "end": 307.1,
+      "visual": "broll+card",
+      "intent": "what we changed — hardware, a little AI, developmental value",
+      "broll": [
+        {
+          "clip": "dji-20260805094747-0018-d",
+          "in": 19,
+          "dur": 4.4,
+          "at": [
+            "the upgraded hardware",
+            -0.6
+          ]
+        }
+      ],
+      "card": {
+        "type": "checklist",
+        "layout": "grid",
+        "eyebrow": "WHAT WE CHANGED",
+        "cols": 1,
+        "items": [
+          "Upgraded hardware",
+          "A little AI",
+          "Real developmental value"
+        ],
+        "reveal": [
+          "upgraded hardware",
+          "a little bit of AI",
+          "developmental value"
+        ],
+        "theme": "day",
+        "v": "bottom",
+        "at": [
+          "the upgraded hardware",
+          -0.4
+        ],
+        "until": [
+          "developmental value",
+          1
+        ]
+      }
+    },
+    {
+      "id": "b31",
+      "start": 307.7,
+      "end": 317.6,
+      "visual": "card",
+      "intent": "the deliberate choice, masked lines",
+      "card": {
+        "type": "statement",
+        "layout": "masked",
+        "eyebrow": "ON PURPOSE",
+        "text": "The pet does not / speak human language",
+        "sub": "It was never going to be another chatbot.",
+        "theme": "night",
+        "at": [
+          "intentionally designed the pet",
+          -0.4
+        ],
+        "until": [
+          "another ChatGPT",
+          1.4
+        ],
+        "reveal": [
+          "intentionally designed the pet",
+          "didn't speak in human language"
+        ]
+      }
+    },
+    {
+      "id": "b33",
+      "start": 317.8,
+      "end": 327.1,
+      "visual": "broll",
+      "intent": "'a thousand of these talking to them' — the app and the device",
+      "broll": [
+        {
+          "clip": "5",
+          "in": 100,
+          "dur": 5,
+          "at": [
+            "talking to them constantly",
+            -2.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b34",
+      "start": 327.2,
+      "end": 334.5,
+      "visual": "card",
+      "intent": "who it is for",
+      "card": {
+        "type": "bignum",
+        "layout": "split",
+        "eyebrow": "WHO IT IS FOR",
+        "value": "3–10",
+        "count": false,
+        "label": "years old",
+        "sub": "old enough to care for something, young enough to imagine it",
+        "theme": "day",
+        "at": [
+          "the age of three to 10",
+          -1
+        ],
+        "dur": 4
+      }
+    },
+    {
+      "id": "b35b",
+      "start": 331.3,
+      "end": 334.5,
+      "visual": "card",
+      "intent": "the quality he is after",
+      "card": {
+        "type": "quote",
+        "layout": "center",
+        "over": "footage",
+        "theme": "night",
+        "text": "Something a little more mysterious",
+        "at": [
+          "a little more mysterious",
+          -0.8
+        ],
+        "dur": 5
+      }
+    },
+    {
+      "id": "b36",
+      "start": 335,
+      "end": 348.2,
+      "visual": "broll",
+      "intent": "before the Groot beat — the pet on screen",
+      "broll": [
+        {
+          "clip": "test-products",
+          "in": 20,
+          "dur": 5,
+          "at": [
+            "really inspiring",
+            -0.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b37",
+      "start": 348.2,
+      "end": 363.8,
+      "visual": "card",
+      "intent": "the Groot device, in type — never their artwork",
+      "card": {
+        "type": "statement",
+        "layout": "center",
+        "eyebrow": "ONE PHRASE, ANY MEANING",
+        "text": "I am Groot. / I am Groot. / I am Groot.",
+        "theme": "night",
+        "at": [
+          "speak only one phrase",
+          0.2
+        ],
+        "until": [
+          "you can understand",
+          -0.3,
+          "start"
+        ]
+      }
+    },
+    {
+      "id": "b38",
+      "start": 363.8,
+      "end": 379.2,
+      "visual": "card",
+      "intent": "the readings he lists — a panel, so his delivery carries them",
+      "card": {
+        "type": "list",
+        "layout": "panel",
+        "eyebrow": "AND YOU STILL KNOW",
+        "numbered": false,
+        "items": [
+          "Angry",
+          "Having fun",
+          "Surprised",
+          "Questioning himself"
+        ],
+        "reveal": [
+          "is he angry",
+          "having fun",
+          "is he surprised",
+          "questioning himself"
+        ],
+        "theme": "day",
+        "at": [
+          "is he angry",
+          -0.2
+        ],
+        "until": [
+          "one simple phrase",
+          1
+        ],
+        "v": "top"
+      }
+    },
+    {
+      "id": "b39",
+      "start": 379.2,
+      "end": 391.4,
+      "visual": "broll",
+      "intent": "'their own kind of language' — the speaker that makes it",
+      "broll": [
+        {
+          "clip": "dji-20260805100058-0025-d",
+          "in": 0,
+          "dur": 4.6,
+          "at": [
+            "their own kind of language",
+            -1.6
+          ]
+        },
+        {
+          "clip": "dji-20260805100058-0025-d",
+          "in": 10,
+          "dur": 4.4
+        }
+      ]
+    },
+    {
+      "id": "b40",
+      "start": 391.4,
+      "end": 404.9,
+      "visual": "broll",
+      "intent": "'what the pet is trying to say' — the speaker and the test screens",
+      "broll": [
+        {
+          "clip": "dji-20260805100940-0028-d",
+          "in": 15,
+          "dur": 5,
+          "at": [
+            "the pet actually are feeling",
+            -0.6
+          ]
+        },
+        {
+          "clip": "lap-loa",
+          "in": 24,
+          "dur": 4.6
+        }
+      ]
+    },
+    {
+      "id": "b41",
+      "start": 404.9,
+      "end": 417.1,
+      "visual": "card",
+      "intent": "the closing position",
+      "card": {
+        "type": "callout",
+        "layout": "panel",
+        "eyebrow": "THE POSITION",
+        "text": "Not how I want my own kids to grow up",
+        "sub": "From someone who works in AI.",
+        "v": "top",
+        "at": [
+          "very healthy for the kid",
+          -0.6
+        ],
+        "until": [
+          "my own kids",
+          -0.6,
+          "start"
+        ]
+      }
+    },
+    {
+      "id": "b42",
+      "start": 417.1,
+      "end": 420.2,
+      "visual": "card",
+      "intent": "sign-off",
+      "card": {
+        "type": "endcard",
+        "layout": "split",
+        "title": "Little Thing of Nowa",
+        "sub": "Episode three · by Daniel",
+        "cta": "See you in the next one",
+        "at": [
+          "the virtual pet didn't speak",
+          -1.2
+        ],
+        "dur": 7.5
+      }
+    }
+  ]
+}

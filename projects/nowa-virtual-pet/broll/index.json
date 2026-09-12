@@ -1,0 +1,5237 @@
+{
+  "generatedAt": "2026-09-08T10:48:43.651Z",
+  "source": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001",
+  "tileSec": 5,
+  "sheet": {
+    "cols": 4,
+    "rows": 4,
+    "tileWidth": 480
+  },
+  "totals": {
+    "clips": 40,
+    "seconds": 1655.1,
+    "sheets": 46
+  },
+  "clips": [
+    {
+      "id": "dji-20260805093900-0004-d",
+      "file": "DJI_20260805093900_0004_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805093900_0004_D.MP4",
+      "shotAt": "2026-08-05T09:39:00",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 38.772,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805093900-0004-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            }
+          ],
+          "covers": [
+            0,
+            38.77
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "action": "worker turns an assembled white Nowa unit in both hands, inspecting the back shell with the speaker grille",
+          "subject": [
+            "worker hands",
+            "assembled device",
+            "speaker grille",
+            "back shell"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "inspection",
+            "assembled",
+            "speaker",
+            "device",
+            "hands",
+            "qc"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "final-inspection",
+          "note": "ESD smock + blue wrist strap; green ESD mat, red anti-static foam"
+        },
+        {
+          "start": 13,
+          "end": 28,
+          "action": "worker opens the case and presses the inner assembly together — blue component visible inside the open shell",
+          "subject": [
+            "worker hands",
+            "open shell",
+            "inner assembly"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "assembly",
+            "case",
+            "open",
+            "press-fit",
+            "hands"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "case-close"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "action": "worker holds a closed white shell; black tray with red foam cells behind",
+          "subject": [
+            "device shell",
+            "tray"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "shell",
+            "tray",
+            "hands"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "action": "pan across black trays of red foam cells holding rows of white units and half-assembled shells",
+          "subject": [
+            "trays",
+            "many units",
+            "shells"
+          ],
+          "shot": "medium",
+          "motion": "pan",
+          "tags": [
+            "batch",
+            "units",
+            "trays",
+            "quantity",
+            "50-units",
+            "production",
+            "evt"
+          ],
+          "quality": 4,
+          "usable": true,
+          "note": "the 'we made 50 units' shot — rows of units in trays"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094125-0007-d",
+      "file": "DJI_20260805094125_0007_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094125_0007_D.MP4",
+      "shotAt": "2026-08-05T09:41:25",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 47.748,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094125-0007-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            }
+          ],
+          "covers": [
+            0,
+            47.75
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "action": "hand picks up a probe/tweezers at the workstation, black tweezers on the gray mat",
+          "subject": [
+            "hand",
+            "tweezers",
+            "workstation"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "tools",
+            "tweezers",
+            "workstation"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 4,
+          "end": 9,
+          "action": "over-the-shoulder: worker holds a Nowa unit FRONT side up — screen and the orange, red and blue buttons visible",
+          "subject": [
+            "worker",
+            "device front",
+            "screen",
+            "colored buttons"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "device",
+            "front",
+            "screen",
+            "buttons",
+            "colors",
+            "assembled",
+            "hero"
+          ],
+          "quality": 4,
+          "usable": true,
+          "note": "best early shot of the assembled front face with all three colored buttons"
+        },
+        {
+          "start": 9,
+          "end": 45,
+          "action": "worker seats the green PCB into the white bottom shell and connects a white cable connector with tweezers",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "bottom shell",
+            "cable connector",
+            "tweezers"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "pcb",
+            "board",
+            "assembly",
+            "connector",
+            "cable",
+            "tweezers",
+            "electronics",
+            "hands"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "pcb-fit",
+          "note": "long steady stretch — pick any 4–8s window"
+        },
+        {
+          "start": 45,
+          "end": 48,
+          "action": "camera swings away, worker's head in frame, blur",
+          "subject": [
+            "worker"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "transition"
+          ],
+          "quality": 1,
+          "usable": false
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094301-0009-d",
+      "file": "DJI_20260805094301_0009_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094301_0009_D.MP4",
+      "shotAt": "2026-08-05T09:43:01",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 23.957,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094301-0009-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            }
+          ],
+          "covers": [
+            0,
+            23.96
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "action": "motion blur — sleeve passes the lens",
+          "subject": [],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [],
+          "quality": 1,
+          "usable": false
+        },
+        {
+          "start": 4,
+          "end": 9,
+          "action": "worker places the PCB into the shell; green tray of small parts (screws/pins) to the right, sheet of black adhesive pads top-left",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "shell",
+            "parts tray",
+            "adhesive pads"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "pcb",
+            "assembly",
+            "parts",
+            "screws",
+            "tray",
+            "station"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "pcb-fit"
+        },
+        {
+          "start": 9,
+          "end": 19,
+          "action": "worker does fine work on the board in the shell with a black tool (screwdriver/probe)",
+          "subject": [
+            "worker hands",
+            "tool",
+            "PCB"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "assembly",
+            "screwdriver",
+            "tool",
+            "pcb",
+            "hands"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "action": "hand rests beside the green parts tray — station idle",
+          "subject": [
+            "hand",
+            "parts tray"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "idle",
+            "parts",
+            "tray"
+          ],
+          "quality": 2,
+          "usable": false
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094330-0010-d",
+      "file": "DJI_20260805094330_0010_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094330_0010_D.MP4",
+      "shotAt": "2026-08-05T09:43:30",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 21.088,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094330-0010-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            }
+          ],
+          "covers": [
+            0,
+            21.09
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "action": "hands position the PCB inside the white shell; green parts tray and adhesive-dot sheet at the station",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "shell",
+            "parts tray"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "pcb",
+            "assembly",
+            "station",
+            "parts"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "pcb-fit"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "action": "sleeve motion blur across frame",
+          "subject": [],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [],
+          "quality": 1,
+          "usable": false
+        },
+        {
+          "start": 13,
+          "end": 21,
+          "action": "worker lifts the shell with fitted PCB up to look at it",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "shell"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "inspection",
+            "pcb",
+            "lift"
+          ],
+          "quality": 2,
+          "usable": true,
+          "note": "some motion blur"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094355-0011-d",
+      "file": "DJI_20260805094355_0011_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094355_0011_D.MP4",
+      "shotAt": "2026-08-05T09:43:55",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 4.872,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094355-0011-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            }
+          ],
+          "covers": [
+            0,
+            4.87
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "top-down: two open shells with PCBs fitted, side by side on red anti-static foam",
+          "subject": [
+            "two units",
+            "PCB",
+            "open shells",
+            "red foam"
+          ],
+          "shot": "detail",
+          "motion": "static",
+          "tags": [
+            "pcb",
+            "two-units",
+            "pair",
+            "top-down",
+            "electronics"
+          ],
+          "quality": 3,
+          "usable": true,
+          "note": "PORTRAIT orientation (rotated file) — only usable as an inset/pillar, not full-frame 16:9"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094410-0012-d",
+      "file": "DJI_20260805094410_0012_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094410_0012_D.MP4",
+      "shotAt": "2026-08-05T09:44:10",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 3.871,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094410-0012-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            }
+          ],
+          "covers": [
+            0,
+            3.87
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "action": "a single open unit (shell + PCB) sits alone on the green mat, slight tilt and softness",
+          "subject": [
+            "open unit",
+            "PCB",
+            "green mat"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "pcb",
+            "unit",
+            "mat"
+          ],
+          "quality": 2,
+          "usable": true,
+          "note": "very short; filler only"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094524-0015-d",
+      "file": "DJI_20260805094524_0015_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094524_0015_D.MP4",
+      "shotAt": "2026-08-05T09:45:24",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 17.317,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094524-0015-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            }
+          ],
+          "covers": [
+            0,
+            17.32
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "action": "hands seat the PCB into the shell on the gray mat",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "shell"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "pcb",
+            "assembly",
+            "hands",
+            "board"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "pcb-fit"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "action": "hands connect the red/white wire lead to the board inside the shell",
+          "subject": [
+            "worker hands",
+            "wire",
+            "connector",
+            "PCB"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "cable",
+            "wire",
+            "connector",
+            "pcb",
+            "assembly"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "pcb-fit"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094547-0016-d",
+      "file": "DJI_20260805094547_0016_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094547_0016_D.MP4",
+      "shotAt": "2026-08-05T09:45:47",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 22.592,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094547-0016-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            }
+          ],
+          "covers": [
+            0,
+            22.59
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "action": "hand with blue ESD wrist strap resting on the mat",
+          "subject": [
+            "hand",
+            "wrist strap"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "idle",
+            "esd"
+          ],
+          "quality": 2,
+          "usable": false
+        },
+        {
+          "start": 4,
+          "end": 14,
+          "action": "worker holds the FRONT shell open side up: the orange, red and blue silicone button membranes seen from inside, fitting a button and routing a cable",
+          "subject": [
+            "worker hands",
+            "front shell interior",
+            "colored buttons",
+            "cable"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "buttons",
+            "front-shell",
+            "inside",
+            "membrane",
+            "colors",
+            "assembly",
+            "cable"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "button-fit",
+          "note": "shows how the three colored buttons sit in the top case — good for 'three buttons' line"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "action": "hands handle a small part over the open front shell",
+          "subject": [
+            "worker hands",
+            "small part",
+            "front shell"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "assembly",
+            "buttons",
+            "part"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "button-fit"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "action": "empty mat, hand withdraws — idle",
+          "subject": [
+            "mat",
+            "hand"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "idle"
+          ],
+          "quality": 2,
+          "usable": false
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094705-0017-d",
+      "file": "DJI_20260805094705_0017_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094705_0017_D.MP4",
+      "shotAt": "2026-08-05T09:47:05",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 36.703,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094705-0017-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            }
+          ],
+          "covers": [
+            0,
+            36.7
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "action": "camera settles on the station — red foam, black tray edge, worker's arm",
+          "subject": [
+            "station",
+            "tray"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "transition"
+          ],
+          "quality": 2,
+          "usable": false
+        },
+        {
+          "start": 4,
+          "end": 24,
+          "action": "worker fits a small white part with its cable into the shell over the PCB, using tweezers",
+          "subject": [
+            "worker hands",
+            "shell",
+            "PCB",
+            "small part",
+            "tweezers"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "assembly",
+            "pcb",
+            "component",
+            "tweezers",
+            "cable",
+            "hands"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "pcb-fit"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "action": "green tray of small black parts (clips/screws); sleeve crosses frame",
+          "subject": [
+            "parts tray",
+            "small parts"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "parts",
+            "screws",
+            "tray"
+          ],
+          "quality": 2,
+          "usable": true
+        },
+        {
+          "start": 28,
+          "end": 37,
+          "action": "two open units side by side on the green mat, PCBs fitted, round black speaker with red gasket visible — static",
+          "subject": [
+            "two units",
+            "PCB",
+            "speaker",
+            "open shells"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "tags": [
+            "pcb",
+            "speaker",
+            "two-units",
+            "electronics",
+            "components",
+            "inside"
+          ],
+          "quality": 4,
+          "usable": true,
+          "note": "clean static hero of the internals — speaker + board in the shell"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094747-0018-d",
+      "file": "DJI_20260805094747_0018_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094747_0018_D.MP4",
+      "shotAt": "2026-08-05T09:47:47",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 63.897,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094747-0018-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            },
+            {
+              "n": 13,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            63.9
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "action": "two hands press the PCB down into the white shell",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "shell"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "pcb",
+            "assembly",
+            "press",
+            "hands",
+            "board"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "pcb-fit"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "action": "camera pulls back; shell on the mat, blue ESD cord, sleeve in frame",
+          "subject": [
+            "shell",
+            "esd cord"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "transition"
+          ],
+          "quality": 2,
+          "usable": false
+        },
+        {
+          "start": 19,
+          "end": 40,
+          "action": "hands seat connectors and press the board corners into place, steady close-up",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "connectors",
+            "shell"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "pcb",
+            "connector",
+            "assembly",
+            "hands",
+            "board",
+            "press-fit"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "pcb-fit",
+          "note": "long steady stretch"
+        },
+        {
+          "start": 40,
+          "end": 54,
+          "action": "blue ESD wrist strap in the foreground while hands press the case shut over the board",
+          "subject": [
+            "wrist strap",
+            "worker hands",
+            "case"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "esd",
+            "assembly",
+            "case",
+            "hands"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "case-close"
+        },
+        {
+          "start": 54,
+          "end": 59,
+          "action": "hand slides the finished unit onto the green mat, top-down",
+          "subject": [
+            "hand",
+            "unit",
+            "mat"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "done",
+            "unit",
+            "handoff"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 59,
+          "end": 64,
+          "action": "stack of black trays with red foam on the line, two units placed in the top tray, tweezers on the mat",
+          "subject": [
+            "trays",
+            "units",
+            "tweezers"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "tags": [
+            "trays",
+            "batch",
+            "station",
+            "line"
+          ],
+          "quality": 3,
+          "usable": true
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094924-0019-d",
+      "file": "DJI_20260805094924_0019_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094924_0019_D.MP4",
+      "shotAt": "2026-08-05T09:49:24",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 10.377,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094924-0019-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            }
+          ],
+          "covers": [
+            0,
+            10.38
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "action": "trays of FINISHED Nowa units face up — screens with a green tape corner, blue/red/orange buttons, rows in red foam cells; one screen lit with text",
+          "subject": [
+            "finished units",
+            "screens",
+            "colored buttons",
+            "trays"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "batch",
+            "50-units",
+            "front",
+            "screen",
+            "buttons",
+            "trays",
+            "hero",
+            "quantity"
+          ],
+          "quality": 5,
+          "usable": true,
+          "note": "the money shot for 'we made 50 units' / 'first time all components come together'"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805094950-0020-d",
+      "file": "DJI_20260805094950_0020_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805094950_0020_D.MP4",
+      "shotAt": "2026-08-05T09:49:50",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 54.421,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805094950-0020-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            }
+          ],
+          "covers": [
+            0,
+            54.42
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "action": "worker at the test bench holds a finished unit, screen ON running the factory test menu (progress bar, then a red graphic, then a green pass bar); second unit and keyboard beside",
+          "subject": [
+            "worker hands",
+            "finished unit",
+            "screen",
+            "test menu",
+            "keyboard"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "test",
+            "software",
+            "screen",
+            "qc",
+            "bench",
+            "factory-test",
+            "buttons"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "bench-test"
+        },
+        {
+          "start": 20,
+          "end": 54,
+          "action": "worker plugs earphones into the 3.5 mm jack and steps through on-screen test prompts, pressing the buttons",
+          "subject": [
+            "worker hands",
+            "unit",
+            "earphones",
+            "3.5mm jack",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "test",
+            "earphone",
+            "3.5mm",
+            "jack",
+            "audio",
+            "buttons",
+            "screen",
+            "qc"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "bench-test",
+          "note": "tile at 40s has hand blur; 20-35 and 45-54 are clean"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805095502-0022-d",
+      "file": "DJI_20260805095502_0022_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805095502_0022_D.MP4",
+      "shotAt": "2026-08-05T09:55:02",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 59.593,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805095502-0022-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            }
+          ],
+          "covers": [
+            0,
+            59.59
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "action": "tight close-up of the unit under test: screen steps through 22/33 → 24/33 PASS (green) → 27/33 LED test → 29/33 'Insert headphone & listen' → 30/33 vibration → 31/33 PASS → 35s test complete summary 'PASS 29 · FAIL 2'",
+          "subject": [
+            "unit",
+            "screen",
+            "test steps",
+            "hands",
+            "colored buttons"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "test",
+            "software",
+            "screen",
+            "pass",
+            "led",
+            "vibration",
+            "headphone",
+            "checklist",
+            "qc",
+            "factory-test",
+            "33-steps",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "bench-test",
+          "note": "readable English+Chinese test captions on the device screen — perfect for 'software that tests all of the components'; 35-40 shows the PASS/FAIL summary"
+        },
+        {
+          "start": 40,
+          "end": 55,
+          "action": "pulled back: worker (yellow smock) at the test bench connects the cable/earphones, keyboard and monitor behind",
+          "subject": [
+            "worker",
+            "unit",
+            "cable",
+            "keyboard",
+            "bench"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "test",
+            "bench",
+            "station",
+            "cable",
+            "qc"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "bench-test"
+        },
+        {
+          "start": 55,
+          "end": 60,
+          "action": "over the worker's shoulder at the PC monitor with the unit on the bench",
+          "subject": [
+            "worker",
+            "monitor",
+            "unit"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "bench",
+            "monitor",
+            "test",
+            "station"
+          ],
+          "quality": 3,
+          "usable": true
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805095809-0023-d",
+      "file": "DJI_20260805095809_0023_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805095809_0023_D.MP4",
+      "shotAt": "2026-08-05T09:58:09",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 120.96,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805095809-0023-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            },
+            {
+              "n": 13,
+              "t": 60
+            },
+            {
+              "n": 14,
+              "t": 65
+            },
+            {
+              "n": 15,
+              "t": 70
+            },
+            {
+              "n": 16,
+              "t": 75
+            }
+          ],
+          "covers": [
+            0,
+            80
+          ]
+        },
+        {
+          "file": "sheets/dji-20260805095809-0023-d-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 80
+            },
+            {
+              "n": 2,
+              "t": 85
+            },
+            {
+              "n": 3,
+              "t": 90
+            },
+            {
+              "n": 4,
+              "t": 95
+            },
+            {
+              "n": 5,
+              "t": 100
+            },
+            {
+              "n": 6,
+              "t": 105
+            },
+            {
+              "n": 7,
+              "t": 110
+            },
+            {
+              "n": 8,
+              "t": 115
+            },
+            {
+              "n": 9,
+              "t": 120
+            }
+          ],
+          "covers": [
+            80,
+            120.96
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "action": "Nowa team in yellow ESD smocks and caps with factory staff (blue / white smocks) around the test station; a worker tests units at a PC while the group watches",
+          "subject": [
+            "Nowa team",
+            "factory staff",
+            "test station",
+            "monitor",
+            "worker"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "factory",
+            "visit",
+            "shenzhen",
+            "people",
+            "test-station",
+            "collaboration"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-visit",
+          "note": "faces of team and staff visible"
+        },
+        {
+          "start": 20,
+          "end": 40,
+          "action": "the team walks and talks along the assembly line — wide factory floor, ESD line, shelving, air ducts",
+          "subject": [
+            "Nowa team",
+            "assembly line",
+            "factory floor"
+          ],
+          "shot": "wide",
+          "motion": "follow",
+          "tags": [
+            "team",
+            "factory",
+            "line",
+            "floor",
+            "walk",
+            "shenzhen",
+            "visit",
+            "establishing"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-visit",
+          "note": "best establishing shot of the factory floor with the team in it"
+        },
+        {
+          "start": 40,
+          "end": 60,
+          "action": "worker at a station with trays of units and a monitor; team members observe and check phones",
+          "subject": [
+            "worker",
+            "trays of units",
+            "monitor",
+            "team"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "station",
+            "units",
+            "trays",
+            "observe",
+            "factory"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "factory-visit"
+        },
+        {
+          "start": 60,
+          "end": 80,
+          "action": "group discussion by the blue parts racks; factory manager in blue smock gesturing, team listening",
+          "subject": [
+            "team",
+            "factory manager",
+            "racks"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "discussion",
+            "coordination",
+            "factory",
+            "people",
+            "meeting"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-visit",
+          "note": "good for 'external coordination' / 'support team from China'"
+        },
+        {
+          "start": 80,
+          "end": 95,
+          "action": "four team members in yellow smocks talking on the floor, phones in hand, line behind",
+          "subject": [
+            "Nowa team",
+            "phones"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "talk",
+            "factory",
+            "people"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "factory-visit"
+        },
+        {
+          "start": 95,
+          "end": 121,
+          "action": "team leans over the seated test operator, inspecting a unit in her hands; then the operator alone holding the unit",
+          "subject": [
+            "team",
+            "test operator",
+            "unit"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "inspect",
+            "unit",
+            "test",
+            "operator",
+            "collaboration"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-visit"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805100022-0024-d",
+      "file": "DJI_20260805100022_0024_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805100022_0024_D.MP4",
+      "shotAt": "2026-08-05T10:00:22",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 16.149,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805100022-0024-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            }
+          ],
+          "covers": [
+            0,
+            16.15
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "action": "pan across pallets of stacked black round PCBs in the factory warehouse — another product's boards, not Nowa's",
+          "subject": [
+            "pcb pallets",
+            "warehouse"
+          ],
+          "shot": "wide",
+          "motion": "pan",
+          "tags": [
+            "factory",
+            "pcb",
+            "warehouse",
+            "scale",
+            "manufacturing",
+            "other-product"
+          ],
+          "quality": 3,
+          "usable": true,
+          "note": "factory-scale context only; these are NOT Nowa boards (Nowa PCB is green). first 2s blurred"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805100058-0025-d",
+      "file": "DJI_20260805100058_0025_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805100058_0025_D.MP4",
+      "shotAt": "2026-08-05T10:00:58",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 25.993,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805100058-0025-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            }
+          ],
+          "covers": [
+            0,
+            25.99
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "action": "worker fits the round black speaker into the back shell and routes its wire with tweezers",
+          "subject": [
+            "worker hands",
+            "speaker",
+            "back shell",
+            "tweezers",
+            "wire"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "speaker",
+            "assembly",
+            "back-shell",
+            "wire",
+            "tweezers",
+            "hands",
+            "audio"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "speaker-fit",
+          "note": "the speaker going in — matches 'the speaker behind'"
+        },
+        {
+          "start": 9,
+          "end": 19,
+          "action": "worker turns the closed back shell, speaker grille facing camera, pressing it shut",
+          "subject": [
+            "worker hands",
+            "back shell",
+            "speaker grille"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "speaker",
+            "grille",
+            "back",
+            "case",
+            "inspection",
+            "hands"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "speaker-fit"
+        },
+        {
+          "start": 19,
+          "end": 26,
+          "action": "camera pans off to trays of finished units, sleeve crosses frame",
+          "subject": [
+            "trays",
+            "units"
+          ],
+          "shot": "medium",
+          "motion": "pan",
+          "tags": [
+            "transition",
+            "trays"
+          ],
+          "quality": 2,
+          "usable": false
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805100702-0026-d",
+      "file": "DJI_20260805100702_0026_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805100702_0026_D.MP4",
+      "shotAt": "2026-08-05T10:07:02",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 104.512,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805100702-0026-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            },
+            {
+              "n": 13,
+              "t": 60
+            },
+            {
+              "n": 14,
+              "t": 65
+            },
+            {
+              "n": 15,
+              "t": 70
+            },
+            {
+              "n": 16,
+              "t": 75
+            }
+          ],
+          "covers": [
+            0,
+            80
+          ]
+        },
+        {
+          "file": "sheets/dji-20260805100702-0026-d-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 80
+            },
+            {
+              "n": 2,
+              "t": 85
+            },
+            {
+              "n": 3,
+              "t": 90
+            },
+            {
+              "n": 4,
+              "t": 95
+            },
+            {
+              "n": 5,
+              "t": 100
+            }
+          ],
+          "covers": [
+            80,
+            104.51
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "action": "three Nowa team members in yellow smocks examine a first unit up close — one holds it up, the others lean in; factory line behind",
+          "subject": [
+            "Nowa team",
+            "unit",
+            "factory floor"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "inspect",
+            "first-unit",
+            "unit",
+            "people",
+            "shenzhen",
+            "visit",
+            "excited"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-visit",
+          "note": "the 'first time we put this together' moment — team seeing the unit"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "action": "camera behind a team member's shoulder, blur",
+          "subject": [
+            "team"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "transition"
+          ],
+          "quality": 1,
+          "usable": false
+        },
+        {
+          "start": 20,
+          "end": 60,
+          "action": "team and factory staff cluster at the test station: units in hand, phones out taking photos, monitor showing the factory test software with green PASS cells",
+          "subject": [
+            "Nowa team",
+            "factory staff",
+            "test station",
+            "monitor",
+            "units",
+            "phones"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "test-station",
+            "monitor",
+            "software",
+            "discussion",
+            "factory",
+            "people",
+            "qc"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-visit"
+        },
+        {
+          "start": 60,
+          "end": 100,
+          "action": "team members talk beside the line with phones; factory manager in blue smock; monitor with test results in the foreground",
+          "subject": [
+            "Nowa team",
+            "factory manager",
+            "monitor",
+            "line"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "coordination",
+            "factory",
+            "manager",
+            "talk",
+            "people"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "factory-visit"
+        },
+        {
+          "start": 100,
+          "end": 105,
+          "action": "arm sweeps across the bench — blur",
+          "subject": [],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [],
+          "quality": 1,
+          "usable": false
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805100940-0028-d",
+      "file": "DJI_20260805100940_0028_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805100940_0028_D.MP4",
+      "shotAt": "2026-08-05T10:09:40",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 83.755,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805100940-0028-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            },
+            {
+              "n": 13,
+              "t": 60
+            },
+            {
+              "n": 14,
+              "t": 65
+            },
+            {
+              "n": 15,
+              "t": 70
+            },
+            {
+              "n": 16,
+              "t": 75
+            }
+          ],
+          "covers": [
+            0,
+            80
+          ]
+        },
+        {
+          "file": "sheets/dji-20260805100940-0028-d-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 80
+            }
+          ],
+          "covers": [
+            80,
+            83.75
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "unit in hand boots: coral splash screen with the white Nowa logo",
+          "subject": [
+            "unit",
+            "screen",
+            "boot logo",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "boot",
+            "logo",
+            "screen",
+            "splash",
+            "power-on",
+            "brand",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "factory-test-33",
+          "note": "boot splash with the Nowa mark"
+        },
+        {
+          "start": 5,
+          "end": 15,
+          "action": "test 2/33: WiFi scan — list of NOWA-xxx networks, then 'Scanning WiFi' blue screen; 11/33 charging OK (red screen)",
+          "subject": [
+            "unit",
+            "screen",
+            "wifi list",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "wifi",
+            "test",
+            "network",
+            "charging",
+            "screen",
+            "software",
+            "factory-test"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "factory-test-33",
+          "note": "matches 'can the Wi-Fi work'"
+        },
+        {
+          "start": 15,
+          "end": 40,
+          "action": "13/33 PASS (green) → 16/33 speaker test with progress bar → white-screen display test → 21/33 PASS → checkerboard display test",
+          "subject": [
+            "unit",
+            "screen",
+            "test steps",
+            "hands",
+            "buttons"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "speaker",
+            "display",
+            "screen-test",
+            "checkerboard",
+            "pass",
+            "test",
+            "software",
+            "color",
+            "factory-test"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "factory-test-33",
+          "note": "matches 'can the speaker work', 'the screen works', 'the color that we want'"
+        },
+        {
+          "start": 40,
+          "end": 70,
+          "action": "24/33 brightness bar → 27/33 LED PASS → 29/33 'Insert headphone & listen' → 31/33 vibration motor → PASS → test complete summary 'PASS 30 · FAIL 1'",
+          "subject": [
+            "unit",
+            "screen",
+            "test steps",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "brightness",
+            "led",
+            "headphone",
+            "vibration",
+            "pass",
+            "fail",
+            "summary",
+            "test",
+            "software",
+            "factory-test",
+            "checklist"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "factory-test-33",
+          "note": "65-72s shows the red PASS/FAIL summary screen"
+        },
+        {
+          "start": 70,
+          "end": 84,
+          "action": "unit lifted away, cable in hand, then arm blur over the bench",
+          "subject": [
+            "unit",
+            "cable",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "transition"
+          ],
+          "quality": 2,
+          "usable": false
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805102055-0029-d",
+      "file": "DJI_20260805102055_0029_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805102055_0029_D.MP4",
+      "shotAt": "2026-08-05T10:20:55",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 38.338,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805102055-0029-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            }
+          ],
+          "covers": [
+            0,
+            38.34
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "one finished unit face-up in its red foam cell, handwritten label on the tray edge",
+          "subject": [
+            "unit",
+            "tray",
+            "label"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "unit",
+            "finished",
+            "tray",
+            "front",
+            "buttons",
+            "screen"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        },
+        {
+          "start": 5,
+          "end": 25,
+          "action": "camera glides over trays of finished units face-up — screens with green tape corners, colored buttons — several trays at an angle",
+          "subject": [
+            "finished units",
+            "trays"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "batch",
+            "trays",
+            "50-units",
+            "quantity",
+            "production",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "finished-trays"
+        },
+        {
+          "start": 25,
+          "end": 38,
+          "action": "wider dolly along the line: rows and rows of finished units in trays stretching down the bench",
+          "subject": [
+            "finished units",
+            "trays",
+            "bench"
+          ],
+          "shot": "wide",
+          "motion": "follow",
+          "tags": [
+            "finished",
+            "units",
+            "batch",
+            "rows",
+            "line",
+            "scale",
+            "quantity",
+            "50-units",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "finished-trays",
+          "note": "the strongest 'batch' image — dozens of units in a row"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805102230-0030-d",
+      "file": "DJI_20260805102230_0030_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805102230_0030_D.MP4",
+      "shotAt": "2026-08-05T10:22:30",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 26.393,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805102230-0030-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            }
+          ],
+          "covers": [
+            0,
+            26.39
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "macro of a unit's front face, slightly soft",
+          "subject": [
+            "unit",
+            "screen"
+          ],
+          "shot": "detail",
+          "motion": "handheld",
+          "tags": [
+            "unit",
+            "front",
+            "macro"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 5,
+          "end": 26,
+          "action": "trays of finished units at the bench — tweezers, keyboard and cables at the edge; camera drifts closer",
+          "subject": [
+            "finished units",
+            "trays",
+            "bench"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "trays",
+            "batch",
+            "bench"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805102337-0031-d",
+      "file": "DJI_20260805102337_0031_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805102337_0031_D.MP4",
+      "shotAt": "2026-08-05T10:23:37",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 24.363,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805102337-0031-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            }
+          ],
+          "covers": [
+            0,
+            24.36
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "macro of the unit front: screen above the three buttons — orange back, red mic, blue play — crisp",
+          "subject": [
+            "unit",
+            "screen",
+            "three buttons"
+          ],
+          "shot": "detail",
+          "motion": "static",
+          "tags": [
+            "buttons",
+            "three-buttons",
+            "front",
+            "screen",
+            "product",
+            "macro",
+            "hero",
+            "design"
+          ],
+          "quality": 5,
+          "usable": true,
+          "note": "best product close-up of the three buttons — for 'there are three buttons'"
+        },
+        {
+          "start": 5,
+          "end": 24,
+          "action": "trays of finished units, worker's sleeve passes at 5s, then rows of units with reflective screens",
+          "subject": [
+            "finished units",
+            "trays"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "trays",
+            "batch",
+            "rows"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays",
+          "note": "skip 5-7s (sleeve)"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805102406-0032-d",
+      "file": "DJI_20260805102406_0032_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805102406_0032_D.MP4",
+      "shotAt": "2026-08-05T10:24:06",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 17.751,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805102406-0032-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            }
+          ],
+          "covers": [
+            0,
+            17.75
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "action": "camera drifts over trays of finished units face-up in red foam — screens, colored buttons, several trays",
+          "subject": [
+            "finished units",
+            "trays"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "trays",
+            "batch",
+            "quantity"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805102436-0033-d",
+      "file": "DJI_20260805102436_0033_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805102436_0033_D.MP4",
+      "shotAt": "2026-08-05T10:24:36",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 28.032,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805102436-0033-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            }
+          ],
+          "covers": [
+            0,
+            28.03
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "macro of one finished unit's screen and top edge, tilted",
+          "subject": [
+            "unit",
+            "screen"
+          ],
+          "shot": "detail",
+          "motion": "handheld",
+          "tags": [
+            "unit",
+            "screen",
+            "macro",
+            "front"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 5,
+          "end": 28,
+          "action": "trays of finished units from several angles; 10s is the widest view with a dozen units",
+          "subject": [
+            "finished units",
+            "trays"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "trays",
+            "batch",
+            "quantity",
+            "rows"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805103145-0035-d",
+      "file": "DJI_20260805103145_0035_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805103145_0035_D.MP4",
+      "shotAt": "2026-08-05T10:31:45",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 29.129,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805103145-0035-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            }
+          ],
+          "covers": [
+            0,
+            29.13
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "action": "studio macro on a white surface: the red mic button and blue play button, then the red mic button alone — extreme close-up",
+          "subject": [
+            "mic button",
+            "play button",
+            "unit"
+          ],
+          "shot": "detail",
+          "motion": "static",
+          "tags": [
+            "buttons",
+            "mic",
+            "play",
+            "macro",
+            "product",
+            "design",
+            "material",
+            "finish",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "product-macro",
+          "note": "clean white-table product shots — 'material very good and high-grade'"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "action": "hand holds the unit front-on: screen (off), orange back / red mic / blue play buttons, white surface",
+          "subject": [
+            "unit",
+            "screen",
+            "three buttons",
+            "hand"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "front",
+            "three-buttons",
+            "screen",
+            "product",
+            "hero",
+            "design"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "product-macro"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "action": "side/top edge: the red scroll wheel and the top button",
+          "subject": [
+            "scroll wheel",
+            "top button",
+            "unit edge"
+          ],
+          "shot": "detail",
+          "motion": "static",
+          "tags": [
+            "scroll",
+            "wheel",
+            "top-button",
+            "dial",
+            "product",
+            "design",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "product-macro",
+          "note": "matches 'there are scroll, there one button on the top'"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "action": "out-of-focus reposition",
+          "subject": [],
+          "shot": "detail",
+          "motion": "handheld",
+          "tags": [],
+          "quality": 1,
+          "usable": false
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "action": "back of the unit: speaker grille dot grid, red scroll wheel and top button visible at the edge",
+          "subject": [
+            "speaker grille",
+            "back",
+            "scroll wheel"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "speaker",
+            "grille",
+            "back",
+            "scroll",
+            "product",
+            "design",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "product-macro",
+          "note": "matches 'the speaker behind'"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805104511-0037-d",
+      "file": "DJI_20260805104511_0037_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805104511_0037_D.MP4",
+      "shotAt": "2026-08-05T10:45:11",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 15.449,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805104511-0037-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            }
+          ],
+          "covers": [
+            0,
+            15.45
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "close on one finished unit in its tray cell, neighbours at the edges",
+          "subject": [
+            "unit",
+            "tray"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "unit",
+            "finished",
+            "tray",
+            "front"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        },
+        {
+          "start": 5,
+          "end": 15,
+          "action": "trays of finished units, camera pulling out",
+          "subject": [
+            "finished units",
+            "trays"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "trays",
+            "batch"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805104541-0038-d",
+      "file": "DJI_20260805104541_0038_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805104541_0038_D.MP4",
+      "shotAt": "2026-08-05T10:45:41",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 13.514,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805104541-0038-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            }
+          ],
+          "covers": [
+            0,
+            13.51
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "action": "low dolly along rows of finished units in trays down the line, factory and workers soft in the background",
+          "subject": [
+            "finished units",
+            "trays",
+            "line",
+            "factory"
+          ],
+          "shot": "medium",
+          "motion": "follow",
+          "tags": [
+            "finished",
+            "units",
+            "rows",
+            "line",
+            "depth",
+            "batch",
+            "quantity",
+            "factory",
+            "hero",
+            "50-units"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "finished-trays",
+          "note": "cinematic low tracking shot — strongest 'production' image"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805104613-0039-d",
+      "file": "DJI_20260805104613_0039_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805104613_0039_D.MP4",
+      "shotAt": "2026-08-05T10:46:13",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 19.586,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805104613-0039-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            }
+          ],
+          "covers": [
+            0,
+            19.59
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "action": "low angle over trays of finished units",
+          "subject": [
+            "finished units",
+            "trays"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "trays",
+            "batch"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "action": "higher angle over many trays on the green bench",
+          "subject": [
+            "finished units",
+            "trays",
+            "bench"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "trays",
+            "batch",
+            "quantity",
+            "rows"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "dji-20260805105802-0040-d",
+      "file": "DJI_20260805105802_0040_D.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\DJI_20260805105802_0040_D.MP4",
+      "shotAt": "2026-08-05T10:58:02",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 32.532,
+      "sheets": [
+        {
+          "file": "sheets/dji-20260805105802-0040-d-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            }
+          ],
+          "covers": [
+            0,
+            32.53
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "action": "team in yellow smocks walks the factory corridors and clean room: worker in pink smock at a parts station, phone filming, SMT/machine room with monitors",
+          "subject": [
+            "Nowa team",
+            "factory corridor",
+            "clean room",
+            "machines",
+            "worker"
+          ],
+          "shot": "wide",
+          "motion": "follow",
+          "tags": [
+            "factory",
+            "tour",
+            "team",
+            "walk",
+            "clean-room",
+            "machines",
+            "smt",
+            "corridor"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "factory-visit",
+          "note": "PORTRAIT orientation (rotated file) — inset/pillar only; 25s is a blurred pan"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "lap-mach-noi",
+      "file": "Lắp mạch nối.mp4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\Lắp mạch nối.mp4",
+      "shotAt": "2026-08-05T14:33:14",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 18.619,
+      "sheets": [
+        {
+          "file": "sheets/lap-mach-noi-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            }
+          ],
+          "covers": [
+            0,
+            18.62
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "action": "worker (blue wrist strap) fits a small connector/cable onto the PCB inside the shell with a white tool; bare LCD screen modules with ribbon cables lie on red foam beside the station",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "connector",
+            "cable",
+            "LCD modules",
+            "shell"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "pcb",
+            "connector",
+            "cable",
+            "wire",
+            "screen",
+            "lcd",
+            "display-module",
+            "assembly",
+            "electronics",
+            "station"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "connector-fit",
+          "note": "LCD modules visible at left in 5-13s — the 'screen' component before install"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "action": "finished inner assembly — shell with PCB, speaker and red wires — sitting in a tray cell",
+          "subject": [
+            "inner assembly",
+            "PCB",
+            "speaker",
+            "tray"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "pcb",
+            "speaker",
+            "assembled",
+            "inside",
+            "tray",
+            "electronics"
+          ],
+          "quality": 4,
+          "usable": true
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "lap-man-hinh",
+      "file": "Lắp màn hình.mp4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\Lắp màn hình.mp4",
+      "shotAt": "2026-08-05T14:35:30",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 40.707,
+      "sheets": [
+        {
+          "file": "sheets/lap-man-hinh-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            }
+          ],
+          "covers": [
+            0,
+            40.71
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "worker lifts an LCD screen module (grey back, red label) with tweezers over the open shell and PCB",
+          "subject": [
+            "worker hands",
+            "LCD module",
+            "tweezers",
+            "PCB",
+            "shell"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "screen",
+            "lcd",
+            "display",
+            "module",
+            "assembly",
+            "tweezers",
+            "component"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "screen-fit",
+          "note": "the screen as a loose component — 'there are screen in the front'"
+        },
+        {
+          "start": 5,
+          "end": 10,
+          "action": "a completed unit front (screen fitted, three buttons) lies face-up on the grey mat beside two tweezers — top-down",
+          "subject": [
+            "unit",
+            "screen",
+            "three buttons",
+            "tweezers"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "unit",
+            "front",
+            "screen",
+            "buttons",
+            "top-down",
+            "done",
+            "product"
+          ],
+          "quality": 4,
+          "usable": true
+        },
+        {
+          "start": 10,
+          "end": 41,
+          "action": "worker seats the LCD ribbon-cable connector onto the PCB with tweezers; speaker with red wire visible in the shell",
+          "subject": [
+            "worker hands",
+            "ribbon cable",
+            "connector",
+            "PCB",
+            "tweezers",
+            "speaker"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "screen",
+            "lcd",
+            "ribbon",
+            "connector",
+            "pcb",
+            "assembly",
+            "tweezers",
+            "electronics",
+            "hands"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "screen-fit",
+          "note": "long steady close-up — good 6-10s windows anywhere 12-38"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "lap-loa",
+      "file": "Lắp loa.mp4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\Lắp loa.mp4",
+      "shotAt": "2026-08-05T14:36:00",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 90.49,
+      "sheets": [
+        {
+          "file": "sheets/lap-loa-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            },
+            {
+              "n": 13,
+              "t": 60
+            },
+            {
+              "n": 14,
+              "t": 65
+            },
+            {
+              "n": 15,
+              "t": 70
+            },
+            {
+              "n": 16,
+              "t": 75
+            }
+          ],
+          "covers": [
+            0,
+            80
+          ]
+        },
+        {
+          "file": "sheets/lap-loa-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 80
+            },
+            {
+              "n": 2,
+              "t": 85
+            },
+            {
+              "n": 3,
+              "t": 90
+            }
+          ],
+          "covers": [
+            80,
+            90.49
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "camera swings onto the station — tray with a shell, blur",
+          "subject": [
+            "tray"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "transition"
+          ],
+          "quality": 1,
+          "usable": false
+        },
+        {
+          "start": 5,
+          "end": 20,
+          "action": "worker at the speaker station: tray of six open shells each holding a round black speaker and a blue module; sheet of black adhesive pads; worker picks up a shell",
+          "subject": [
+            "worker",
+            "tray of shells",
+            "speakers",
+            "blue modules",
+            "adhesive pads"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "tags": [
+            "speaker",
+            "station",
+            "tray",
+            "shells",
+            "assembly",
+            "batch",
+            "six"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "speaker-fit"
+        },
+        {
+          "start": 20,
+          "end": 90,
+          "action": "worker fits the speaker and blue module into shell after shell, tray of six in front — steady repetitive close-up of hands pressing the parts in and routing the red wire",
+          "subject": [
+            "worker hands",
+            "speaker",
+            "blue module",
+            "shell",
+            "tray",
+            "red wire"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "speaker",
+            "assembly",
+            "hands",
+            "press-fit",
+            "wire",
+            "repetition",
+            "station",
+            "audio"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "speaker-fit",
+          "note": "very long steady stretch; 40s tile has motion blur — pick 22-38, 45-60 or 62-88"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "overview-2",
+      "file": "overview 2.mp4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\overview 2.mp4",
+      "shotAt": "2026-08-05T14:41:58",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 55.689,
+      "sheets": [
+        {
+          "file": "sheets/overview-2-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            }
+          ],
+          "covers": [
+            0,
+            55.69
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "action": "the assembly line: workers in white ESD smocks seated at stations along a long green bench with red foam runner; Nowa team member in yellow at left; factory manager in blue walks the aisle",
+          "subject": [
+            "assembly line",
+            "workers",
+            "stations",
+            "bench",
+            "factory manager"
+          ],
+          "shot": "wide",
+          "motion": "handheld",
+          "tags": [
+            "line",
+            "stations",
+            "workers",
+            "factory",
+            "assembly-line",
+            "establishing",
+            "multi-station",
+            "15-stations",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "line-overview",
+          "note": "THE establishing shot for 'factory in China that specialises in putting the components together' and 'about 15 stations'"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "action": "yellow smock fills the frame — blur",
+          "subject": [],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "transition"
+          ],
+          "quality": 1,
+          "usable": false
+        },
+        {
+          "start": 18,
+          "end": 40,
+          "action": "portraits of individual workers at their stations: one with a green parts tray, one with a fixture/tool, one holding a probe, one sorting labels/paperwork",
+          "subject": [
+            "workers",
+            "stations",
+            "parts tray",
+            "fixture",
+            "labels"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "workers",
+            "station",
+            "one-task",
+            "line",
+            "people",
+            "assembly",
+            "process"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "line-overview",
+          "note": "matches 'each person will handle putting one thing together'"
+        },
+        {
+          "start": 40,
+          "end": 56,
+          "action": "trays with PCBs and shells travel down the line past workers' backs; tray of green boards in the foreground",
+          "subject": [
+            "trays",
+            "PCBs",
+            "shells",
+            "workers",
+            "line"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "line",
+            "trays",
+            "pcb",
+            "flow",
+            "process",
+            "workers"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "line-overview"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "lap-oc-vit",
+      "file": "lắp ốc vít.mp4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\lắp ốc vít.mp4",
+      "shotAt": "2026-08-05T14:42:48",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 39.606,
+      "sheets": [
+        {
+          "file": "sheets/lap-oc-vit-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            }
+          ],
+          "covers": [
+            0,
+            39.61
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "action": "worker holds the shell with PCB steady on the mat while fastening it — hands over the board, a finger points at a screw point at 15s",
+          "subject": [
+            "worker hands",
+            "PCB",
+            "shell",
+            "screws"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "screws",
+            "fasten",
+            "pcb",
+            "assembly",
+            "hands",
+            "hold"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "screw-fit"
+        },
+        {
+          "start": 30,
+          "end": 35,
+          "action": "black electric screwdriver comes in and drives a screw into the board",
+          "subject": [
+            "electric screwdriver",
+            "PCB",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "screwdriver",
+            "screws",
+            "tool",
+            "fasten",
+            "assembly"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "screw-fit",
+          "note": "the actual screwdriving moment"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "action": "hands withdraw, blue wrist strap, empty mat",
+          "subject": [
+            "hands",
+            "mat"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "idle"
+          ],
+          "quality": 2,
+          "usable": false
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "test-products",
+      "file": "Test products.mp4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\Test products.mp4",
+      "shotAt": "2026-08-10T17:56:44",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 88.055,
+      "sheets": [
+        {
+          "file": "sheets/test-products-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            },
+            {
+              "n": 13,
+              "t": 60
+            },
+            {
+              "n": 14,
+              "t": 65
+            },
+            {
+              "n": 15,
+              "t": 70
+            },
+            {
+              "n": 16,
+              "t": 75
+            }
+          ],
+          "covers": [
+            0,
+            80
+          ]
+        },
+        {
+          "file": "sheets/test-products-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 80
+            },
+            {
+              "n": 2,
+              "t": 85
+            }
+          ],
+          "covers": [
+            80,
+            88.06
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "action": "operator at the test bench (white keyboard, trays of units behind) runs the factory test: WiFi network list → 2/33 scan complete → 12/33 press back button → 15/33 speaker",
+          "subject": [
+            "operator hands",
+            "unit",
+            "screen",
+            "test steps",
+            "keyboard"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "test",
+            "wifi",
+            "buttons",
+            "speaker",
+            "screen",
+            "software",
+            "factory-test",
+            "qc",
+            "bench"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-test-33b"
+        },
+        {
+          "start": 20,
+          "end": 55,
+          "action": "20/33 button test split screen 'Back FAIL / Select PASS' → green PASS screens → 25/33 pixel-character icon on blue → 26/33 brightness 100% → 27/33 PASS → 28/33 volume 100%",
+          "subject": [
+            "unit",
+            "screen",
+            "test steps",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "test",
+            "buttons",
+            "pass",
+            "fail",
+            "brightness",
+            "volume",
+            "screen",
+            "software",
+            "factory-test",
+            "checklist"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-test-33b",
+          "note": "35s tile shows a pixel-art character on the test screen"
+        },
+        {
+          "start": 55,
+          "end": 80,
+          "action": "29/33 'Insert headphone & listen' — operator plugs the earphones in → PASS → 31/33 vibration motor",
+          "subject": [
+            "unit",
+            "earphones",
+            "3.5mm jack",
+            "screen",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "headphone",
+            "earphone",
+            "3.5mm",
+            "jack",
+            "audio",
+            "vibration",
+            "test",
+            "factory-test"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-test-33b"
+        },
+        {
+          "start": 80,
+          "end": 88,
+          "action": "unit resting on the keyboard showing a WiFi-pairing screen with a red wifi glyph; then the operator's hand and keyboard",
+          "subject": [
+            "unit",
+            "screen",
+            "wifi icon",
+            "keyboard"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "wifi",
+            "pairing",
+            "screen",
+            "setup"
+          ],
+          "quality": 3,
+          "usable": true,
+          "note": "80-83 usable; tail is idle"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "1",
+      "file": "1.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\1.MP4",
+      "shotAt": "2026-08-11T19:06:26",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 15.249,
+      "sheets": [
+        {
+          "file": "sheets/1-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            }
+          ],
+          "covers": [
+            0,
+            15.25
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "close on trays of finished units in red foam",
+          "subject": [
+            "finished units",
+            "trays"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "trays",
+            "batch"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "finished-trays"
+        },
+        {
+          "start": 5,
+          "end": 15,
+          "action": "wide over the bench: many trays of finished units in rows, line stretching back",
+          "subject": [
+            "finished units",
+            "trays",
+            "bench"
+          ],
+          "shot": "wide",
+          "motion": "handheld",
+          "tags": [
+            "finished",
+            "units",
+            "rows",
+            "batch",
+            "quantity",
+            "50-units",
+            "bench",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "sequence": "finished-trays"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "2",
+      "file": "2.mp4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\2.mp4",
+      "shotAt": "2026-08-11T19:26:14",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 49.85,
+      "sheets": [
+        {
+          "file": "sheets/2-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            }
+          ],
+          "covers": [
+            0,
+            49.85
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "action": "team in yellow visitor smocks walks the factory corridor past SMT machines and stacked boxes; one turns and flashes a peace sign at 15s",
+          "subject": [
+            "Nowa team",
+            "corridor",
+            "machines",
+            "boxes"
+          ],
+          "shot": "wide",
+          "motion": "follow",
+          "tags": [
+            "factory",
+            "tour",
+            "team",
+            "walk",
+            "machines",
+            "smt",
+            "corridor",
+            "fun"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-tour"
+        },
+        {
+          "start": 15,
+          "end": 40,
+          "action": "wide factory floor: SMT line, reel carts, workers at distant stations; team walks ahead toward the line",
+          "subject": [
+            "factory floor",
+            "SMT line",
+            "reel cart",
+            "team"
+          ],
+          "shot": "wide",
+          "motion": "follow",
+          "tags": [
+            "factory",
+            "floor",
+            "smt",
+            "scale",
+            "establishing",
+            "team",
+            "walk",
+            "manufacturing"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-tour",
+          "note": "20s tile is a clean wide of the floor without people in the way"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "action": "yellow smock fills frame — blur",
+          "subject": [],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "transition"
+          ],
+          "quality": 1,
+          "usable": false
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "action": "worker seated at the line with a green parts tray, team member at left",
+          "subject": [
+            "worker",
+            "line",
+            "parts tray"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "worker",
+            "station",
+            "line",
+            "assembly"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "line-overview"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "3",
+      "file": "3.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\3.MP4",
+      "shotAt": "2026-08-11T19:31:56",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 20.554,
+      "sheets": [
+        {
+          "file": "sheets/3-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            }
+          ],
+          "covers": [
+            0,
+            20.55
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "action": "worker drives screws into the PCB in the shell with a green electric screwdriver, blue wrist strap",
+          "subject": [
+            "worker hands",
+            "electric screwdriver",
+            "PCB",
+            "shell",
+            "screws"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "screws",
+            "screwdriver",
+            "fasten",
+            "pcb",
+            "assembly",
+            "tool",
+            "hands"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "screw-fit",
+          "note": "cleanest screwdriving shot"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "action": "the screwed unit sits alone on the green mat",
+          "subject": [
+            "unit",
+            "PCB",
+            "mat"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "tags": [
+            "unit",
+            "pcb",
+            "done"
+          ],
+          "quality": 3,
+          "usable": true
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "4",
+      "file": "4.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\4.MP4",
+      "shotAt": "2026-08-11T19:38:14",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 42.176,
+      "sheets": [
+        {
+          "file": "sheets/4-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            }
+          ],
+          "covers": [
+            0,
+            42.18
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "action": "test bench, unit in hand: 27/33 PASS → 29/33 PASS → 30/33 microphone PASS (green) → 31/33 vibration",
+          "subject": [
+            "unit",
+            "screen",
+            "test steps",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "test",
+            "microphone",
+            "pass",
+            "vibration",
+            "screen",
+            "software",
+            "factory-test"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-test-33c"
+        },
+        {
+          "start": 20,
+          "end": 30,
+          "action": "red test-complete summary screen 'PASS 30 · FAIL 1'; operator then writes on the unit with a marker to tag it",
+          "subject": [
+            "unit",
+            "summary screen",
+            "marker",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "summary",
+            "pass",
+            "fail",
+            "marking",
+            "label",
+            "qc",
+            "test"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "factory-test-33c",
+          "note": "20-27 summary screen; 28-33 marker"
+        },
+        {
+          "start": 30,
+          "end": 42,
+          "action": "operator sets the tested unit down among trays at the keyboard",
+          "subject": [
+            "unit",
+            "trays",
+            "keyboard",
+            "hands"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "bench",
+            "trays",
+            "done",
+            "handoff"
+          ],
+          "quality": 3,
+          "usable": true
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "5",
+      "file": "5.MP4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\5.MP4",
+      "shotAt": "2026-08-11T19:39:56",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 119.787,
+      "sheets": [
+        {
+          "file": "sheets/5-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            },
+            {
+              "n": 13,
+              "t": 60
+            },
+            {
+              "n": 14,
+              "t": 65
+            },
+            {
+              "n": 15,
+              "t": 70
+            },
+            {
+              "n": 16,
+              "t": 75
+            }
+          ],
+          "covers": [
+            0,
+            80
+          ]
+        },
+        {
+          "file": "sheets/5-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 80
+            },
+            {
+              "n": 2,
+              "t": 85
+            },
+            {
+              "n": 3,
+              "t": 90
+            },
+            {
+              "n": 4,
+              "t": 95
+            },
+            {
+              "n": 5,
+              "t": 100
+            },
+            {
+              "n": 6,
+              "t": 105
+            },
+            {
+              "n": 7,
+              "t": 110
+            },
+            {
+              "n": 8,
+              "t": 115
+            }
+          ],
+          "covers": [
+            80,
+            119.79
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "action": "row of workers in white smocks seated at stations along the line",
+          "subject": [
+            "workers",
+            "line",
+            "stations"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "workers",
+            "line",
+            "stations",
+            "assembly-line",
+            "people"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "line-overview"
+        },
+        {
+          "start": 5,
+          "end": 10,
+          "action": "Nowa team member in yellow works hands-on at a station with green trays",
+          "subject": [
+            "team member",
+            "station",
+            "green trays"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "hands-on",
+            "station",
+            "assembly"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "line-overview"
+        },
+        {
+          "start": 10,
+          "end": 25,
+          "action": "line bench with trays; factory manager in blue walks the aisle; pink-smock worker at a station",
+          "subject": [
+            "bench",
+            "trays",
+            "factory manager",
+            "worker"
+          ],
+          "shot": "wide",
+          "motion": "handheld",
+          "tags": [
+            "line",
+            "factory",
+            "manager",
+            "aisle",
+            "walk"
+          ],
+          "quality": 3,
+          "usable": true,
+          "sequence": "line-overview"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "action": "hands test two units at the bench, one screen lit",
+          "subject": [
+            "hands",
+            "two units",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "test",
+            "units",
+            "bench"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 30,
+          "end": 35,
+          "action": "blur / a press fixture on the line",
+          "subject": [
+            "fixture"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "fixture",
+            "jig"
+          ],
+          "quality": 2,
+          "usable": false
+        },
+        {
+          "start": 35,
+          "end": 45,
+          "action": "female operator in white cap works with a pink-smock colleague, units in trays; then a team member at a station with green trays",
+          "subject": [
+            "operators",
+            "units",
+            "trays",
+            "team member"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "workers",
+            "station",
+            "units",
+            "people",
+            "assembly"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "line-overview"
+        },
+        {
+          "start": 45,
+          "end": 55,
+          "action": "green trays of loose silicone buttons — red, blue and orange — sorted by colour",
+          "subject": [
+            "button parts",
+            "green trays",
+            "colours"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "buttons",
+            "parts",
+            "components",
+            "colors",
+            "silicone",
+            "red",
+            "blue",
+            "orange",
+            "detail",
+            "hero"
+          ],
+          "quality": 5,
+          "usable": true,
+          "note": "the three button colours as raw parts — 'a lot of components that go into this'"
+        },
+        {
+          "start": 55,
+          "end": 70,
+          "action": "factory manager in blue holds a finished unit at a station with a hanging electric screwdriver; hands with unit and screwdriver",
+          "subject": [
+            "factory manager",
+            "unit",
+            "electric screwdriver",
+            "station"
+          ],
+          "shot": "medium",
+          "motion": "handheld",
+          "tags": [
+            "manager",
+            "unit",
+            "screwdriver",
+            "station",
+            "assembly",
+            "coordination"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 70,
+          "end": 80,
+          "action": "line bench with a worker; three team members in yellow gather round a laptop at the end of the line",
+          "subject": [
+            "line",
+            "team",
+            "laptop"
+          ],
+          "shot": "wide",
+          "motion": "handheld",
+          "tags": [
+            "team",
+            "laptop",
+            "line",
+            "discussion",
+            "software"
+          ],
+          "quality": 3,
+          "usable": true
+        },
+        {
+          "start": 80,
+          "end": 120,
+          "action": "team members hold a Nowa unit in a GREEN silicone bumper case beside a phone running the app — pointing at the device screen, pairing device and phone",
+          "subject": [
+            "Nowa unit",
+            "green silicone case",
+            "phone",
+            "app",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "tags": [
+            "app",
+            "phone",
+            "pairing",
+            "parents-app",
+            "green-case",
+            "bumper",
+            "software",
+            "setup",
+            "hero"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "app-pairing",
+          "note": "matches 'Nowa Parents app… you need a device to pair with'; green case is a protective bumper prototype"
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "6",
+      "file": "6.mp4",
+      "path": "H:\\Coding Projects\\source-video\\DJI_001-20260906T142345Z-1-007\\DJI_001\\6.mp4",
+      "shotAt": "2026-08-11T19:47:44",
+      "width": 3840,
+      "height": 2160,
+      "fps": 29.97,
+      "duration": 72.673,
+      "sheets": [
+        {
+          "file": "sheets/6-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 5
+            },
+            {
+              "n": 3,
+              "t": 10
+            },
+            {
+              "n": 4,
+              "t": 15
+            },
+            {
+              "n": 5,
+              "t": 20
+            },
+            {
+              "n": 6,
+              "t": 25
+            },
+            {
+              "n": 7,
+              "t": 30
+            },
+            {
+              "n": 8,
+              "t": 35
+            },
+            {
+              "n": 9,
+              "t": 40
+            },
+            {
+              "n": 10,
+              "t": 45
+            },
+            {
+              "n": 11,
+              "t": 50
+            },
+            {
+              "n": 12,
+              "t": 55
+            },
+            {
+              "n": 13,
+              "t": 60
+            },
+            {
+              "n": 14,
+              "t": 65
+            },
+            {
+              "n": 15,
+              "t": 70
+            }
+          ],
+          "covers": [
+            0,
+            72.67
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "action": "worker fits the speaker with its red wire into the shell holding the PCB",
+          "subject": [
+            "worker hands",
+            "speaker",
+            "PCB",
+            "shell",
+            "red wire"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "speaker",
+            "assembly",
+            "pcb",
+            "wire",
+            "hands"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "case-close"
+        },
+        {
+          "start": 10,
+          "end": 55,
+          "action": "worker seats the blue module and speaker, tucks the wires and lowers the back shell onto the front — pressing the two halves together from several angles",
+          "subject": [
+            "worker hands",
+            "blue module",
+            "speaker",
+            "back shell",
+            "front shell"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "case",
+            "close",
+            "seal",
+            "top-bottom",
+            "assembly",
+            "press-fit",
+            "hands",
+            "shell"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "case-close",
+          "note": "the 'top part and bottom part of the case sealed together' moment — 45-58 is the actual closing"
+        },
+        {
+          "start": 55,
+          "end": 65,
+          "action": "worker snaps the case shut and turns the closed unit over in both hands",
+          "subject": [
+            "worker hands",
+            "closed unit"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "case",
+            "closed",
+            "sealed",
+            "done",
+            "unit",
+            "inspection"
+          ],
+          "quality": 4,
+          "usable": true,
+          "sequence": "case-close"
+        },
+        {
+          "start": 65,
+          "end": 73,
+          "action": "closed unit front visible in hands, then set down by the tray",
+          "subject": [
+            "unit",
+            "hands",
+            "tray"
+          ],
+          "shot": "close-up",
+          "motion": "static",
+          "tags": [
+            "unit",
+            "done",
+            "front",
+            "tray"
+          ],
+          "quality": 3,
+          "usable": true
+        }
+      ],
+      "described": true
+    }
+  ]
+}

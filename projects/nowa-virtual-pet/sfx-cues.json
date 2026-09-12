@@ -1,0 +1,206 @@
+[
+ {
+  "at": 0.52,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b01 lower-third in"
+ },
+ {
+  "at": 9.7,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b02 cut to B-roll"
+ },
+ {
+  "at": 19.1,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b03 cut to B-roll"
+ },
+ {
+  "at": 28.72,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b04 plate in"
+ },
+ {
+  "at": 42.6,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b05 cut to B-roll"
+ },
+ {
+  "at": 57.98,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b06 statement in"
+ },
+ {
+  "at": 76.15,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b07 plate in"
+ },
+ {
+  "at": 83.72,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b08 list in"
+ },
+ {
+  "at": 97.83,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b10 cut to B-roll"
+ },
+ {
+  "at": 105.05,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b12 bignum in"
+ },
+ {
+  "at": 105.25,
+  "file": "sfx/tick.wav",
+  "db": -16,
+  "why": "b12 count-up"
+ },
+ {
+  "at": 118.13,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b14 cut to B-roll"
+ },
+ {
+  "at": 134.5,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b16 cut to B-roll"
+ },
+ {
+  "at": 152.98,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b17 list in"
+ },
+ {
+  "at": 162.75,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b18 statement in"
+ },
+ {
+  "at": 173.38,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b19 quote in"
+ },
+ {
+  "at": 194.03,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b20 cut to B-roll"
+ },
+ {
+  "at": 200.95,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b21 list in"
+ },
+ {
+  "at": 218.28,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b22 callout in"
+ },
+ {
+  "at": 232.28,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b23 process in"
+ },
+ {
+  "at": 258.87,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b26 cut to B-roll"
+ },
+ {
+  "at": 274.7,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b28 cut to B-roll"
+ },
+ {
+  "at": 283.87,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b29 cut to B-roll"
+ },
+ {
+  "at": 295.13,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b30 cut to B-roll"
+ },
+ {
+  "at": 308.25,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b31 statement in"
+ },
+ {
+  "at": 323,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b33 cut to B-roll"
+ },
+ {
+  "at": 328.55,
+  "file": "sfx/tick.wav",
+  "db": -16,
+  "why": "b34 count-up"
+ },
+ {
+  "at": 332.38,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b35b quote in"
+ },
+ {
+  "at": 353.22,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b37 statement in"
+ },
+ {
+  "at": 361.08,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b38 list in"
+ },
+ {
+  "at": 377.47,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b39 cut to B-roll"
+ },
+ {
+  "at": 391.6,
+  "file": "sfx/whoosh.wav",
+  "db": -14,
+  "why": "b40 cut to B-roll"
+ },
+ {
+  "at": 405.55,
+  "file": "sfx/impact-soft.wav",
+  "db": -12,
+  "why": "b41 callout in"
+ },
+ {
+  "at": 417,
+  "file": "sfx/chime.wav",
+  "db": -10,
+  "why": "b42 endcard"
+ }
+]

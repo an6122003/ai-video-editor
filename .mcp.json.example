@@ -1,0 +1,27 @@
+{
+  "_readme": [
+    "Copy to .mcp.json and put the real token in, then any agent opened in this",
+    "repo can search the B-roll library without downloading video.",
+    "",
+    "Get the block with the token already filled in from",
+    "https://cyrusstudio.space/broll/ -> Connect an agent -> Copy agent brief.",
+    "",
+    ".mcp.json is gitignored on purpose. The token is a credential: anything",
+    "holding it can read and download the whole library. Committing it to a repo",
+    "is the likeliest way it ever leaks -- far likelier than anyone intercepting",
+    "it, since every request is over TLS.",
+    "",
+    "It grants strictly less than the studio password does: read-only, one",
+    "library, no write path of any kind. It can be rotated without locking",
+    "anyone out of the studio, because it is deliberately not the same secret."
+  ],
+  "mcpServers": {
+    "nowa-broll": {
+      "type": "http",
+      "url": "https://cyrusstudio.space/api/broll/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    }
+  }
+}

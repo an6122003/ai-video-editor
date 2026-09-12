@@ -81,3 +81,6 @@ projects/*/broll/review.html
 projects/*/broll/proxy/
 projects/*/broll/original/
 dist/
+
+# Holds the B-roll library bearer token. .mcp.json.example is the template.
+.mcp.json

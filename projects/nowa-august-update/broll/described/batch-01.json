@@ -1,0 +1,41 @@
+{
+  "dji-20260805093900-0004-d": [
+    { "start": 0, "end": 13, "action": "worker turns an assembled white Nowa unit in both hands, inspecting the back shell with the speaker grille", "subject": ["worker hands", "assembled device", "speaker grille", "back shell"], "shot": "close-up", "motion": "handheld", "tags": ["inspection", "assembled", "speaker", "device", "hands", "qc"], "quality": 4, "usable": true, "sequence": "final-inspection", "note": "ESD smock + blue wrist strap; green ESD mat, red anti-static foam" },
+    { "start": 13, "end": 28, "action": "worker opens the case and presses the inner assembly together — blue component visible inside the open shell", "subject": ["worker hands", "open shell", "inner assembly"], "shot": "close-up", "motion": "handheld", "tags": ["assembly", "case", "open", "press-fit", "hands"], "quality": 3, "usable": true, "sequence": "case-close" },
+    { "start": 28, "end": 33, "action": "worker holds a closed white shell; black tray with red foam cells behind", "subject": ["device shell", "tray"], "shot": "close-up", "motion": "handheld", "tags": ["shell", "tray", "hands"], "quality": 3, "usable": true },
+    { "start": 33, "end": 39, "action": "pan across black trays of red foam cells holding rows of white units and half-assembled shells", "subject": ["trays", "many units", "shells"], "shot": "medium", "motion": "pan", "tags": ["batch", "units", "trays", "quantity", "50-units", "production", "evt"], "quality": 4, "usable": true, "note": "the 'we made 50 units' shot — rows of units in trays" }
+  ],
+  "dji-20260805094125-0007-d": [
+    { "start": 0, "end": 4, "action": "hand picks up a probe/tweezers at the workstation, black tweezers on the gray mat", "subject": ["hand", "tweezers", "workstation"], "shot": "close-up", "motion": "handheld", "tags": ["tools", "tweezers", "workstation"], "quality": 3, "usable": true },
+    { "start": 4, "end": 9, "action": "over-the-shoulder: worker holds a Nowa unit FRONT side up — screen and the orange, red and blue buttons visible", "subject": ["worker", "device front", "screen", "colored buttons"], "shot": "close-up", "motion": "handheld", "tags": ["device", "front", "screen", "buttons", "colors", "assembled", "hero"], "quality": 4, "usable": true, "note": "best early shot of the assembled front face with all three colored buttons" },
+    { "start": 9, "end": 45, "action": "worker seats the green PCB into the white bottom shell and connects a white cable connector with tweezers", "subject": ["worker hands", "PCB", "bottom shell", "cable connector", "tweezers"], "shot": "close-up", "motion": "handheld", "tags": ["pcb", "board", "assembly", "connector", "cable", "tweezers", "electronics", "hands"], "quality": 4, "usable": true, "sequence": "pcb-fit", "note": "long steady stretch — pick any 4–8s window" },
+    { "start": 45, "end": 48, "action": "camera swings away, worker's head in frame, blur", "subject": ["worker"], "shot": "medium", "motion": "handheld", "tags": ["transition"], "quality": 1, "usable": false }
+  ],
+  "dji-20260805094301-0009-d": [
+    { "start": 0, "end": 4, "action": "motion blur — sleeve passes the lens", "subject": [], "shot": "close-up", "motion": "handheld", "tags": [], "quality": 1, "usable": false },
+    { "start": 4, "end": 9, "action": "worker places the PCB into the shell; green tray of small parts (screws/pins) to the right, sheet of black adhesive pads top-left", "subject": ["worker hands", "PCB", "shell", "parts tray", "adhesive pads"], "shot": "close-up", "motion": "handheld", "tags": ["pcb", "assembly", "parts", "screws", "tray", "station"], "quality": 3, "usable": true, "sequence": "pcb-fit" },
+    { "start": 9, "end": 19, "action": "worker does fine work on the board in the shell with a black tool (screwdriver/probe)", "subject": ["worker hands", "tool", "PCB"], "shot": "close-up", "motion": "handheld", "tags": ["assembly", "screwdriver", "tool", "pcb", "hands"], "quality": 3, "usable": true },
+    { "start": 19, "end": 24, "action": "hand rests beside the green parts tray — station idle", "subject": ["hand", "parts tray"], "shot": "close-up", "motion": "static", "tags": ["idle", "parts", "tray"], "quality": 2, "usable": false }
+  ],
+  "dji-20260805094330-0010-d": [
+    { "start": 0, "end": 9, "action": "hands position the PCB inside the white shell; green parts tray and adhesive-dot sheet at the station", "subject": ["worker hands", "PCB", "shell", "parts tray"], "shot": "close-up", "motion": "handheld", "tags": ["pcb", "assembly", "station", "parts"], "quality": 3, "usable": true, "sequence": "pcb-fit" },
+    { "start": 9, "end": 13, "action": "sleeve motion blur across frame", "subject": [], "shot": "close-up", "motion": "handheld", "tags": [], "quality": 1, "usable": false },
+    { "start": 13, "end": 21, "action": "worker lifts the shell with fitted PCB up to look at it", "subject": ["worker hands", "PCB", "shell"], "shot": "close-up", "motion": "handheld", "tags": ["inspection", "pcb", "lift"], "quality": 2, "usable": true, "note": "some motion blur" }
+  ],
+  "dji-20260805094355-0011-d": [
+    { "start": 0, "end": 5, "action": "top-down: two open shells with PCBs fitted, side by side on red anti-static foam", "subject": ["two units", "PCB", "open shells", "red foam"], "shot": "detail", "motion": "static", "tags": ["pcb", "two-units", "pair", "top-down", "electronics"], "quality": 3, "usable": true, "note": "PORTRAIT orientation (rotated file) — only usable as an inset/pillar, not full-frame 16:9" }
+  ],
+  "dji-20260805094410-0012-d": [
+    { "start": 0, "end": 4, "action": "a single open unit (shell + PCB) sits alone on the green mat, slight tilt and softness", "subject": ["open unit", "PCB", "green mat"], "shot": "medium", "motion": "handheld", "tags": ["pcb", "unit", "mat"], "quality": 2, "usable": true, "note": "very short; filler only" }
+  ],
+  "dji-20260805094524-0015-d": [
+    { "start": 0, "end": 10, "action": "hands seat the PCB into the shell on the gray mat", "subject": ["worker hands", "PCB", "shell"], "shot": "close-up", "motion": "handheld", "tags": ["pcb", "assembly", "hands", "board"], "quality": 3, "usable": true, "sequence": "pcb-fit" },
+    { "start": 10, "end": 17, "action": "hands connect the red/white wire lead to the board inside the shell", "subject": ["worker hands", "wire", "connector", "PCB"], "shot": "close-up", "motion": "handheld", "tags": ["cable", "wire", "connector", "pcb", "assembly"], "quality": 3, "usable": true, "sequence": "pcb-fit" }
+  ],
+  "dji-20260805094547-0016-d": [
+    { "start": 0, "end": 4, "action": "hand with blue ESD wrist strap resting on the mat", "subject": ["hand", "wrist strap"], "shot": "close-up", "motion": "static", "tags": ["idle", "esd"], "quality": 2, "usable": false },
+    { "start": 4, "end": 14, "action": "worker holds the FRONT shell open side up: the orange, red and blue silicone button membranes seen from inside, fitting a button and routing a cable", "subject": ["worker hands", "front shell interior", "colored buttons", "cable"], "shot": "close-up", "motion": "handheld", "tags": ["buttons", "front-shell", "inside", "membrane", "colors", "assembly", "cable"], "quality": 4, "usable": true, "sequence": "button-fit", "note": "shows how the three colored buttons sit in the top case — good for 'three buttons' line" },
+    { "start": 14, "end": 19, "action": "hands handle a small part over the open front shell", "subject": ["worker hands", "small part", "front shell"], "shot": "close-up", "motion": "handheld", "tags": ["assembly", "buttons", "part"], "quality": 3, "usable": true, "sequence": "button-fit" },
+    { "start": 19, "end": 23, "action": "empty mat, hand withdraws — idle", "subject": ["mat", "hand"], "shot": "close-up", "motion": "static", "tags": ["idle"], "quality": 2, "usable": false }
+  ]
+}

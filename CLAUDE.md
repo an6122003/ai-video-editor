@@ -108,6 +108,44 @@ Design tokens and the reasoning behind each value: `system/tokens-video.css`,
 `system/tokens-web.css`, `system/VIDEO-SYSTEM.md` (byte-identical to
 `references/DESIGN-SYSTEM.md` — edit both or neither).
 
+## The B-roll library (read this before hunting for footage)
+
+Described footage lives at **https://cyrusstudio.space/broll/**, and it speaks
+MCP at `https://cyrusstudio.space/api/broll/mcp` (bearer token, ask the owner or
+copy the brief from the site's *Connect an agent* view).
+
+**If the MCP server is connected, use it before touching the filesystem.** The
+catalogue is ~180 KB of written descriptions over 12.4 GB of video. Nearly every
+footage question — *"do we have a shot of the speaker grille?"*, *"what covers
+assembly?"* — is answerable from `search_broll` alone, and answering it by
+downloading video is the main way to waste an hour and a lot of bandwidth.
+
+- **Search with a natural phrase, not a keyword.** Results are RANKED by how many
+  terms match, so a fuller description sorts better and never returns less.
+  `"worker tightening a screw on the circuit board"` beats `"screw"`.
+- **Never search filenames.** A camera calls everything `DJI_0004`; the entire
+  value of the describe pass is that a human wrote down what is happening.
+- **A result is a SHOT, not a clip.** A 39-second take usually holds four. Each
+  row carries `clip`, `start`, `end` — that in/out is what a plan cuts against,
+  and the file is longer than the shot.
+- **Only call `get_broll_clip` when you need the file itself.** It returns URLs;
+  they accept HTTP `Range`, so take the seconds you need, not 271 MB.
+- **An empty search is not proof of absence.** Call `broll_facets` for the shot
+  types, sequences and tags this library actually uses, then search those words.
+
+Propose shots as `{clip, start, end, why}` — the shape `edit-plan.json`
+references a shot by, and the same shape the library's *Copy selection* button
+emits, so a human picking in the browser and an agent picking over MCP produce
+interchangeable output.
+
+**Without the MCP server**, `bin/broll-pull.mjs --remote <base>` fetches the
+catalogue (≈3 MB, no video) and `broll/index.json` becomes locally searchable.
+Do that rather than asking someone to send you footage.
+
+**Your job is the recall, not the taste.** Reading 124 descriptions and
+remembering what is in them is what you are good at. Deciding what the edit
+should feel like is not — propose, and let the human choose.
+
 ## Doctrine that is load-bearing
 
 These are encoded as constraints in the builder and enforced in review. Full text
