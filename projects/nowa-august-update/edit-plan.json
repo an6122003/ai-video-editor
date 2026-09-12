@@ -1,0 +1,185 @@
+{
+  "_readme": [
+    "Director's plan for the Nowa August update. Times are seconds on the CLEAN A-roll,",
+    "but every placement is anchored to a spoken phrase ([phrase, offset]) so the plan",
+    "survives a re-cut or a re-supplied source. `start`/`end` on a beat are the hint the",
+    "phrase resolver uses when a phrase occurs more than once.",
+    "",
+    "Doctrine: the hook (first 20s) stays on his face. B-roll goes where the words are",
+    "about things the viewer cannot see (the factory, the units, the tests). Cards go",
+    "where the words carry a number, a list or a phase. One thing owns the coral per view.",
+    "",
+    "The source arrived with cutaways already baked in (work/baked-segments.json). The two",
+    "roadmap text cards are covered by our own full-frame B-roll; the press machine, test",
+    "rig, climate chamber, App Store page and molding footage are kept — we have nothing better."
+  ],
+  "aroll": "out/01_aroll_clean.mp4",
+  "transcript": "work/transcript.clean.json",
+  "captions": { "enabled": true, "maxWords": 4 },
+  "face": { "x0": 980, "y0": 150, "x1": 1200, "y1": 620 },
+  "beats": [
+    { "id": "b01", "start": 0.4, "end": 11.6, "visual": "card", "intent": "hook — face + brand lower-third",
+      "card": { "type": "lower-third", "wordmark": true, "eyebrow": "AUGUST 2026 · MANUFACTURING UPDATE", "title": "From EVT in Shenzhen to your hands", "maxWidth": 1100, "theme": "day", "at": ["Hello", 0.6], "dur": 6.5 } },
+
+    { "id": "b03", "start": 20.0, "end": 35.7, "visual": "broll", "intent": "'we were in Shenzhen' — the team on the factory floor; also covers the baked roadmap card at 22.5-25",
+      "broll": [
+        { "clip": "dji-20260805095809-0023-d", "in": 20, "dur": 5.5, "at": ["on track", -0.2] },
+        { "clip": "dji-20260805100702-0026-d", "in": 0, "dur": 6.5 }
+      ] },
+
+    { "id": "b05", "start": 35.9, "end": 49.8, "visual": "broll+card", "intent": "three phases — process card lights EVT/DVT/PVT as he names them; trays underneath cover the baked trays shot",
+      "broll": [ { "clip": "dji-20260805102055-0029-d", "in": 5, "dur": 10, "at": ["The first phase is", -0.3] } ],
+      "card": { "type": "process", "eyebrow": "HARDWARE MANUFACTURING", "steps": ["EVT", "DVT", "PVT"], "labels": ["Engineering validation", "Design validation", "Production validation"], "active": -1,
+        "reveal": ["first phase is", "second phase is", "final test is"], "theme": "night", "side": "left", "at": ["three phases", -0.2], "until": ["production validation test", 0.5] } },
+
+    { "id": "b08", "start": 49.8, "end": 61.0, "visual": "broll", "intent": "'it is testing' — the line at work",
+      "broll": [ { "clip": "overview-2", "in": 0, "dur": 6, "at": ["it is testing", 0.3] } ] },
+
+    { "id": "b09", "start": 61.0, "end": 68.7, "visual": "broll", "intent": "'the production batch we ship' — rows of finished units",
+      "broll": [ { "clip": "dji-20260805104541-0038-d", "in": 0, "dur": 6, "at": ["productions batch", -0.6] } ] },
+
+    { "id": "b11", "start": 75.9, "end": 91.5, "visual": "broll+card", "intent": "he shows the device in hand (stay on him), then '50 units' — trays + the number",
+      "broll": [ { "clip": "dji-20260805102055-0029-d", "in": 25, "dur": 6, "at": ["50 of these units", -0.8] } ],
+      "card": { "type": "bignum", "eyebrow": "EVT BUILD", "value": 50, "label": "units built", "sub": "the first time every component came together", "theme": "day", "side": "left", "at": ["50 of these units", -0.2], "dur": 6.5 } },
+
+    { "id": "b12", "start": 91.5, "end": 107.1, "visual": "broll", "intent": "he points at each part — product macros as insets so his demo stays visible",
+      "broll": [
+        { "clip": "dji-20260805103145-0035-d", "in": 10, "at": ["screen in the front", -0.3], "until": ["three buttons", 0.1], "treatment": "inset", "side": "right" },
+        { "clip": "dji-20260805103145-0035-d", "in": 15, "at": ["there are scroll", 0.0], "until": ["on the tops", 0.1], "treatment": "inset", "side": "right" },
+        { "clip": "dji-20260805103145-0035-d", "in": 25, "dur": 2.6, "at": ["speaker behind", -0.3], "treatment": "inset", "side": "right" }
+      ] },
+
+    { "id": "b13", "start": 107.1, "end": 118.4, "visual": "broll", "intent": "3.5mm jack — the earphone test",
+      "broll": [ { "clip": "dji-20260805094950-0020-d", "in": 20, "dur": 3, "at": ["earphone", -0.5], "treatment": "inset", "side": "right" } ] },
+
+    { "id": "b14", "start": 118.4, "end": 133.8, "visual": "broll", "intent": "'components coming together in the factory… top and bottom sealed' — PCB press, then the case closing",
+      "broll": [
+        { "clip": "dji-20260805094747-0018-d", "in": 19, "dur": 4, "at": ["component coming together", -0.3] },
+        { "clip": "6", "in": 45, "dur": 5.5, "at": ["top part", -0.5] }
+      ] },
+
+    { "id": "b16", "start": 134.0, "end": 146.7, "visual": "card", "intent": "no footage of CAD — a callout carries the idea",
+      "card": { "type": "callout", "eyebrow": "BEFORE EVT", "text": "The product existed only as CAD files and 3D prints", "theme": "night", "side": "left", "at": ["exists only on CAD", -1.2], "dur": 8.5 } },
+
+    { "id": "b17", "start": 146.9, "end": 150.7, "visual": "broll", "intent": "'first time we put this together' — the team holding the first unit",
+      "broll": [ { "clip": "dji-20260805100702-0026-d", "in": 0, "dur": 4, "at": ["first time we put this together", -0.4] } ] },
+
+    { "id": "b18", "start": 150.9, "end": 164.4, "visual": "broll", "intent": "'test whether there is any major issue' — bench test close-up",
+      "broll": [ { "clip": "dji-20260805095502-0022-d", "in": 0, "dur": 6, "at": ["whether or not this have", -0.3] } ] },
+
+    { "id": "b19", "start": 164.4, "end": 191.0, "visual": "broll+card", "intent": "support team from China (manager discussion); then the component checklist lands on each named part over the factory test screens",
+      "broll": [
+        { "clip": "dji-20260805095809-0023-d", "in": 60, "dur": 5, "at": ["support team from china", -0.4] },
+        { "clip": "dji-20260805100940-0028-d", "in": 15, "dur": 8, "at": ["download the games", -0.2] }
+      ],
+      "card": { "type": "checklist", "eyebrow": "EVT CHECKS", "title": "Does every part work?", "items": ["Speaker", "Scroll", "Screen", "Interaction", "Chips", "Battery"],
+        "reveal": ["speaker okay", "scroll okay", "screen okay", "interaction okay", "can the chips", "the battery"], "theme": "night", "side": "left", "at": ["download the games", -0.3], "until": ["first phase", 1.0] } },
+
+    { "id": "b21", "start": 191.0, "end": 206.5, "visual": "broll", "intent": "'the assembling logic' — workers at their stations",
+      "broll": [ { "clip": "overview-2", "in": 18, "dur": 6, "at": ["assembling logic", -0.5] } ] },
+
+    { "id": "b22", "start": 206.5, "end": 221.2, "visual": "broll", "intent": "'a factory in China that specialises…' — the line; covers baked workers/PCB shots",
+      "broll": [
+        { "clip": "overview-2", "in": 0, "dur": 6, "at": ["factory in China", -0.3] },
+        { "clip": "dji-20260805094747-0018-d", "in": 0, "dur": 6, "at": ["wrap them up", -0.2] }
+      ] },
+
+    { "id": "b23", "start": 221.2, "end": 236.8, "visual": "broll", "intent": "'each person handles one thing' — station montage: speaker, screen, screws, case",
+      "broll": [
+        { "clip": "lap-loa", "in": 25, "dur": 4, "at": ["each person will handle", -0.3] },
+        { "clip": "lap-man-hinh", "in": 14, "dur": 4 },
+        { "clip": "lap-oc-vit", "in": 30, "dur": 4 },
+        { "clip": "6", "in": 48, "dur": 4 }
+      ] },
+
+    { "id": "b24", "start": 236.8, "end": 249.8, "visual": "broll+card", "intent": "'roughly 15 stations' — the row of workers + the number",
+      "broll": [ { "clip": "5", "in": 0, "dur": 5, "at": ["15 station", -1.0] } ],
+      "card": { "type": "bignum", "eyebrow": "ASSEMBLY LINE", "value": 15, "label": "stations", "sub": "one task per person", "theme": "day", "side": "left", "at": ["15 station", -0.5], "dur": 6 } },
+
+    { "id": "b25", "start": 250.6, "end": 274.1, "visual": "broll+card", "intent": "the software test — Wi-Fi, Bluetooth, speaker, screen, colour, buttons — the 33-step test screens with a checklist landing on each word",
+      "broll": [
+        { "clip": "dji-20260805100940-0028-d", "in": 5, "dur": 10, "at": ["can the Wi", -1.0] },
+        { "clip": "dji-20260805095502-0022-d", "in": 0, "dur": 8 }
+      ],
+      "card": { "type": "checklist", "eyebrow": "FACTORY SOFTWARE TEST", "title": "33 steps, every unit", "items": ["Wi-Fi", "Bluetooth", "Speaker", "Screen", "Colour", "Buttons"],
+        "reveal": ["can the Wi", "can the Bluetooth", "can the speaker work", "the screen works", "the color that we want", "all the button"], "theme": "day", "side": "left", "at": ["can the Wi", -0.6], "until": ["all the button", 0.6] } },
+
+    { "id": "b28", "start": 286.6, "end": 300.4, "visual": "broll+card", "intent": "'button pressing test, a hundred thousand times' — the loose buttons, then the baked press-machine footage takes over under the number",
+      "broll": [ { "clip": "5", "in": 46, "dur": 3, "at": ["button pressing test", -0.5] } ],
+      "card": { "type": "bignum", "eyebrow": "ENDURANCE", "value": 100000, "fmt": ",d", "label": "button presses", "sub": "over two to three days", "theme": "night", "side": "left", "at": ["hundred thousand", -0.4], "dur": 7 } },
+
+    { "id": "b30", "start": 314.6, "end": 334.0, "visual": "card", "intent": "handling tests over the baked climate-chamber footage, then the count",
+      "card": { "type": "checklist", "eyebrow": "HANDLING TESTS", "title": "Built for small hands", "items": ["Button endurance", "Scroller", "Drop", "Temperature", "Humidity"],
+        "reveal": [0.1, 0.5, "the drop test", "the temperature test", "the humidity test"], "theme": "day", "side": "left", "at": ["Even the scroller", -0.6], "until": ["humidity test", 1.5] } },
+
+    { "id": "b31", "start": 327.3, "end": 334.0, "visual": "card",
+      "card": { "type": "bignum", "eyebrow": "IN TOTAL", "value": 14, "label": "tests per device", "theme": "night", "side": "left", "at": ["14 tests", -0.4], "dur": 5.5 } },
+
+    { "id": "b32", "start": 334.3, "end": 349.8, "visual": "broll+card", "intent": "'a very good result' — a PASS screen; then the DVT number",
+      "broll": [ { "clip": "dji-20260805100940-0028-d", "in": 62, "dur": 5, "at": ["very good result", -0.4] } ],
+      "card": { "type": "bignum", "eyebrow": "NEXT: DVT", "value": 200, "label": "units", "sub": "near production-ready quality", "theme": "day", "side": "left", "at": ["next 200 units", -0.5], "dur": 7 } },
+
+    { "id": "b34", "start": 361.7, "end": 372.8, "visual": "card", "intent": "who gets the DVT batch",
+      "card": { "type": "checklist", "eyebrow": "THE DVT BATCH GOES TO", "items": ["Reviewers", "KOLs & UGC creators", "Tester families", "Advisors"],
+        "reveal": ["reviewers", "KOLs", "Testo family", "our advisors"], "theme": "night", "side": "left", "at": ["reviewers", -0.5], "until": ["our advisors", 1.2] } },
+
+    { "id": "b35", "start": 373.0, "end": 388.5, "visual": "broll", "intent": "'feedback on the gameplay or the apps' — phone paired with the unit",
+      "broll": [ { "clip": "5", "in": 85, "dur": 6, "at": ["gameplay or the apps", -1.5] } ] },
+
+    { "id": "b36", "start": 388.5, "end": 400.9, "visual": "card", "intent": "certification — no footage, a callout",
+      "card": { "type": "callout", "eyebrow": "IN PROGRESS", "text": "US toy-safety certification", "sub": "Every unit passes before we sell", "theme": "day", "side": "left", "at": ["certification", -0.5], "dur": 8 } },
+
+    { "id": "b40", "start": 431.9, "end": 442.7, "visual": "broll", "intent": "'by the time we ship to the hands of our customer' — finished units",
+      "broll": [ { "clip": "1", "in": 5, "dur": 5, "at": ["hands of our customer", -0.8] } ] },
+
+    { "id": "b41", "start": 443.0, "end": 453.8, "visual": "broll+card", "intent": "Nowa Parents app launched — phone + unit; the baked App Store page follows",
+      "broll": [ { "clip": "5", "in": 100, "dur": 5.5, "at": ["Nowa Parents", -0.3] } ],
+      "card": { "type": "callout", "eyebrow": "NOW LIVE", "text": "Nowa Parents app", "sub": "App Store · Google Play", "theme": "night", "side": "left", "at": ["Nowa Parents", -0.6], "dur": 7.5 } },
+
+    { "id": "b43", "start": 459.9, "end": 473.2, "visual": "broll", "intent": "'you need a device to pair with' — pairing",
+      "broll": [ { "clip": "5", "in": 108, "dur": 6, "at": ["need a device to pair", -0.3] } ] },
+
+    { "id": "b45", "start": 473.8, "end": 488.7, "visual": "broll", "intent": "'gameplay is running very smoothly' — a game screen on the device",
+      "broll": [ { "clip": "test-products", "in": 35, "dur": 6, "at": ["gameplay is running", -0.8] } ] },
+
+    { "id": "b47", "start": 497.6, "end": 508.3, "visual": "card", "intent": "what is being tuned",
+      "card": { "type": "callout", "eyebrow": "NOW TUNING", "text": "Sound, speaker balance, scroll speed, effects", "theme": "night", "side": "left", "at": ["optimizing sound", -0.4], "dur": 8 } },
+
+    { "id": "b49", "start": 515.6, "end": 529.8, "visual": "broll+card", "intent": "the roadmap, DVT active; trays cover the baked roadmap card at 517-522.5",
+      "broll": [ { "clip": "dji-20260805104613-0039-d", "in": 0, "dur": 7, "at": ["dvt which is the next 200", -0.8] } ],
+      "card": { "type": "timeline", "eyebrow": "ROADMAP", "items": [ { "when": "Mid September", "what": "DVT — 200 units ship" }, { "when": "End of September", "what": "PVT — production" }, { "when": "October", "what": "Official launch" } ], "active": 0,
+        "theme": "day", "side": "left", "at": ["dvt which is the next 200", -0.5], "until": ["out to your hands", 0.8] } },
+
+    { "id": "b50", "start": 530.3, "end": 546.0, "visual": "broll", "intent": "'it's great looking' — product macro; the baked molding-factory shot follows",
+      "broll": [ { "clip": "dji-20260805103145-0035-d", "in": 0, "dur": 5, "at": ["great looking", -0.3] } ] },
+
+    { "id": "b52", "start": 551.0, "end": 562.3, "visual": "card", "intent": "roadmap again, PVT active",
+      "card": { "type": "timeline", "eyebrow": "ROADMAP", "items": [ { "when": "Mid September", "what": "DVT — 200 units ship" }, { "when": "End of September", "what": "PVT — production" }, { "when": "October", "what": "Official launch" } ], "active": 1,
+        "theme": "night", "side": "left", "at": ["reach PVT", -0.8], "dur": 7 } },
+
+    { "id": "b53", "start": 562.8, "end": 573.2, "visual": "broll", "intent": "'first products to our pre-orders' — the dolly along finished units",
+      "broll": [ { "clip": "dji-20260805104541-0038-d", "in": 0, "dur": 6, "at": ["pre orders", -2.5] } ] },
+
+    { "id": "b54", "start": 573.4, "end": 576.9, "visual": "card",
+      "card": { "type": "bignum", "eyebrow": "SO FAR", "value": "100+", "label": "pre-orders", "sub": "heading toward 200", "theme": "day", "side": "left", "at": ["hundred plus", -0.3], "dur": 4.5 } },
+
+    { "id": "b55", "start": 577.0, "end": 588.7, "visual": "card", "intent": "roadmap, October active",
+      "card": { "type": "timeline", "eyebrow": "ROADMAP", "items": [ { "when": "Mid September", "what": "DVT — 200 units ship" }, { "when": "End of September", "what": "PVT — production" }, { "when": "October", "what": "Official launch" } ], "active": 2,
+        "theme": "night", "side": "left", "at": ["pre launching", -0.5], "dur": 10 } },
+
+    { "id": "b58", "start": 593.6, "end": 605.3, "visual": "broll", "intent": "'a lot more external coordination' — the team with the factory manager",
+      "broll": [ { "clip": "dji-20260805095809-0023-d", "in": 95, "dur": 6, "at": ["external coordination", -2.0] } ] },
+
+    { "id": "b63", "start": 629.8, "end": 645.4, "visual": "card", "intent": "the ask",
+      "card": { "type": "callout", "eyebrow": "WHAT'S NEXT", "text": "Missions that make the game great for kids", "sub": "We'll need your help here", "theme": "day", "side": "left", "at": ["mission part", -1.0], "dur": 9 } },
+
+    { "id": "b64", "start": 645.4, "end": 661.1, "visual": "broll", "intent": "'the final products in the hands of customers' — boot logo, then the units",
+      "broll": [
+        { "clip": "dji-20260805100940-0028-d", "in": 0, "dur": 4, "at": ["final products", -0.3] },
+        { "clip": "1", "in": 5, "dur": 5 }
+      ] },
+
+    { "id": "b65", "start": 661.1, "end": 664.7, "visual": "card", "intent": "end card over the goodbye and the 3s tail",
+      "card": { "type": "endcard", "title": "Thank you for your patience", "sub": "DVT units mid-September · PVT end of September · October launch", "cta": "Next update: DVT", "at": ["thank you and see you", -0.2], "dur": 4.8 } }
+  ]
+}

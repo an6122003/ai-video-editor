@@ -1,0 +1,644 @@
+{
+  "_readme": [
+    "Little Thing of Nowa, ep.02 — why the pet doesn't speak human language.",
+    "",
+    "The argument: everyone asked why it isn't an AI chatbot → these kids will have AI",
+    "agents everywhere by 10 → I want them imaginative instead → they already get",
+    "everything too early → Pokemon's animals never speak human and the bond works →",
+    "'Pika Pika' is one sound carrying a range of emotion → I Am Groot, three words, any",
+    "feeling → so the kid should interpret → and I'm sick of toys bolting on AI lazily →",
+    "Miko speaks in its own voice, and the voice changes as the pet grows.",
+    "",
+    "IP: Pokemon and Guardians of the Galaxy are other people's property. Nothing of",
+    "theirs appears on screen — his own spoken words are set as type instead, which is",
+    "his speech, not their artwork. Do not source Pikachu or Groot imagery for this.",
+    "",
+    "Presentation: no card type is used more than three times and none repeats twice in a",
+    "row. Full-frame statements/lists/quotes carry the argument's turns; panels carry the",
+    "asides; the no-text graphics (cells, annotate) carry the two moments that are better",
+    "seen than read. The voice B-roll (speaker fitting, grille macro, audio tests) is",
+    "saved for the payoff, where he explains that the pet has its own voice."
+  ],
+  "aroll": "out/01_aroll_clean.mp4",
+  "transcript": "work/transcript.clean.json",
+  "captions": {
+    "enabled": true,
+    "maxWords": 4
+  },
+  "face": {
+    "x0": 806,
+    "y0": 86,
+    "x1": 1246,
+    "y1": 640
+  },
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0.4,
+      "end": 6.1,
+      "visual": "card",
+      "intent": "hook — series brand and the question",
+      "card": {
+        "type": "lower-third",
+        "wordmark": true,
+        "eyebrow": "LITTLE THING OF NOWA · EP. 02",
+        "title": "Why the pet doesn't speak human",
+        "sub": "One design decision, by Daniel",
+        "maxWidth": 940,
+        "at": [
+          "Why is it that the pet",
+          -0.4
+        ],
+        "dur": 6.5
+      }
+    },
+    {
+      "id": "b02",
+      "start": 6.4,
+      "end": 15.1,
+      "visual": "broll",
+      "intent": "establisher — the thing we are talking about",
+      "broll": [
+        {
+          "clip": "dji-20260805104541-0038-d",
+          "in": 0,
+          "dur": 4.4,
+          "at": [
+            "a very funny question",
+            -0.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "start": 15.3,
+      "end": 26.1,
+      "visual": "card",
+      "intent": "the objection, stated plainly so the rest can answer it",
+      "card": {
+        "type": "callout",
+        "eyebrow": "WHAT EVERYONE ASKED",
+        "text": "Why not just make it an AI companion?",
+        "sub": "Let it speak English. Give the kid someone to talk to.",
+        "v": "top",
+        "at": [
+          "why didn't you just make it",
+          -0.3
+        ],
+        "until": [
+          "another companion to talk to",
+          0.8
+        ]
+      }
+    },
+    {
+      "id": "b05",
+      "start": 38.5,
+      "end": 50.3,
+      "visual": "card",
+      "intent": "the world they are born into — full frame, masked lines",
+      "card": {
+        "type": "statement",
+        "eyebrow": "THE WORLD THEY GROW UP IN",
+        "text": "By ten or eleven / they will have a dozen AI agents / all talking to them",
+        "theme": "night",
+        "enter": "dither",
+        "at": [
+          "roughly maybe age",
+          -0.6
+        ],
+        "until": [
+          "help them with multiple things",
+          0.6
+        ]
+      }
+    },
+    {
+      "id": "b07",
+      "start": 56.4,
+      "end": 61.6,
+      "visual": "card",
+      "intent": "no-text: 'a bunch of different Alexas' as cells lighting up, one per room",
+      "card": {
+        "type": "cells",
+        "count": 8,
+        "filled": 8,
+        "at": [
+          "a bunch of different Alexas",
+          -0.5
+        ],
+        "until": [
+          "able to interact with",
+          0.5
+        ]
+      }
+    },
+    {
+      "id": "b09",
+      "start": 67.8,
+      "end": 74.8,
+      "visual": "card",
+      "intent": "his aim, in his own words, over his own face",
+      "card": {
+        "type": "quote",
+        "text": "Teach kids to be a little more imaginative",
+        "attrib": "the reason for the whole thing",
+        "over": "footage",
+        "theme": "night",
+        "at": [
+          "teach kids to be a little",
+          -1.6
+        ],
+        "until": [
+          "more imaginative",
+          0.9
+        ]
+      }
+    },
+    {
+      "id": "b10",
+      "start": 74.8,
+      "end": 84.3,
+      "visual": "card",
+      "intent": "full-frame numbered list, each line landing on 'too early'",
+      "card": {
+        "type": "list",
+        "eyebrow": "WHAT THEY ALREADY GET TOO EARLY",
+        "items": [
+          "The internet",
+          "Everything",
+          "All the knowledge there is"
+        ],
+        "reveal": [
+          "too early with internet",
+          "too early with everything",
+          "too early with the knowledge"
+        ],
+        "theme": "day",
+        "enter": "wipe",
+        "at": [
+          "too early with internet",
+          -1.6
+        ],
+        "until": [
+          "anything anywhere",
+          0.9
+        ]
+      }
+    },
+    {
+      "id": "b11",
+      "start": 84.6,
+      "end": 91.3,
+      "visual": "card",
+      "intent": "who it is for",
+      "card": {
+        "type": "bignum",
+        "eyebrow": "THE AGE WE DESIGN FOR",
+        "value": "3–10",
+        "count": false,
+        "label": "years old",
+        "sub": "when imagining is still the main thing you do",
+        "v": "bottom",
+        "at": [
+          "the age we're targeting",
+          -1.4
+        ],
+        "dur": 5.6
+      }
+    },
+    {
+      "id": "b12",
+      "start": 91.7,
+      "end": 99.9,
+      "visual": "broll",
+      "intent": "'a very different kind of experience with the pet' — the pet on the screen",
+      "broll": [
+        {
+          "clip": "test-products",
+          "in": 34,
+          "dur": 4.4,
+          "at": [
+            "a very different kind of experience",
+            -0.5
+          ]
+        },
+        {
+          "clip": "dji-20260805102337-0031-d",
+          "in": 0,
+          "dur": 3.6
+        }
+      ]
+    },
+    {
+      "id": "b13",
+      "start": 99.9,
+      "end": 108.5,
+      "visual": "card",
+      "intent": "the reference, named in type only — no third-party artwork",
+      "card": {
+        "type": "callout",
+        "eyebrow": "THE REFERENCE",
+        "text": "Pokémon",
+        "sub": "The animals never speak a human word. The bond works anyway.",
+        "at": [
+          "intrigued by the series",
+          -0.3
+        ],
+        "until": [
+          "familiar with it",
+          0.8
+        ]
+      }
+    },
+    {
+      "id": "b15",
+      "start": 119.9,
+      "end": 125.1,
+      "visual": "broll",
+      "intent": "back to the real object before the Pika beat",
+      "broll": [
+        {
+          "clip": "dji-20260805100940-0028-d",
+          "in": 0,
+          "dur": 4.2,
+          "at": [
+            "they can interact perfectly fine",
+            -2.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b16",
+      "start": 125.3,
+      "end": 136,
+      "visual": "card",
+      "intent": "the quoted sound as type — the whole idea in two syllables",
+      "card": {
+        "type": "statement",
+        "text": "Pika Pika.",
+        "sub": "Two syllables. A different feeling every time.",
+        "theme": "day",
+        "enter": "dither",
+        "at": [
+          "it say Pika Pika",
+          0.2
+        ],
+        "until": [
+          "a different range of emotion",
+          3
+        ]
+      }
+    },
+    {
+      "id": "b17",
+      "start": 136,
+      "end": 143.8,
+      "visual": "broll",
+      "intent": "where the sound comes out — the mic and speaker macro",
+      "broll": [
+        {
+          "clip": "dji-20260805103145-0035-d",
+          "in": 0,
+          "dur": 4.6,
+          "at": [
+            "you get to interpret",
+            -1.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b18",
+      "start": 144,
+      "end": 153.2,
+      "visual": "card",
+      "intent": "full-frame list, unnumbered, one emotion per spoken clause",
+      "card": {
+        "type": "list",
+        "eyebrow": "ONE SOUND, AND YOU DECIDE",
+        "numbered": false,
+        "items": [
+          "Angry",
+          "Surprised",
+          "Happy",
+          "Tricked",
+          "Sad"
+        ],
+        "reveal": [
+          "feel angry",
+          "feel surprised",
+          "feel happy",
+          "being tricked",
+          "or sad"
+        ],
+        "theme": "night",
+        "enter": "wipe",
+        "at": [
+          "It may feel angry",
+          -0.5
+        ],
+        "until": [
+          "or sad",
+          1.2
+        ]
+      }
+    },
+    {
+      "id": "b20",
+      "start": 153.2,
+      "end": 159.3,
+      "visual": "card",
+      "intent": "his exact contrast, as two columns",
+      "card": {
+        "type": "compare",
+        "win": 1,
+        "left": {
+          "head": "LANGUAGE",
+          "big": "Words",
+          "items": [
+            "One meaning, handed to you",
+            "Nothing left to work out"
+          ]
+        },
+        "right": {
+          "head": "VOICE",
+          "big": "Sound",
+          "items": [
+            "A range of emotion",
+            "You interpret it yourself"
+          ]
+        },
+        "theme": "day",
+        "enter": "wipe",
+        "at": [
+          "through the expression of voice",
+          -0.6
+        ],
+        "until": [
+          "expression of language",
+          1
+        ]
+      }
+    },
+    {
+      "id": "b21",
+      "start": 159.7,
+      "end": 167.5,
+      "visual": "broll",
+      "intent": "he is talking about a CHARACTER — so show ours, on the screen",
+      "broll": [
+        {
+          "clip": "dji-20260805094950-0020-d",
+          "in": 4,
+          "dur": 4.6,
+          "at": [
+            "happened to watch this character",
+            -0.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b22",
+      "start": 167.8,
+      "end": 187.2,
+      "visual": "card",
+      "intent": "three identical lines, brightening as he says each one",
+      "card": {
+        "type": "quote",
+        "text": "I am Groot. I am Groot. I am Groot.",
+        "attrib": "same three words, any feeling you like",
+        "theme": "night",
+        "enter": "dither",
+        "at": [
+          "it just says I Am Groot",
+          0.5
+        ],
+        "until": [
+          "saying I am Groot",
+          1
+        ]
+      }
+    },
+    {
+      "id": "b23b",
+      "start": 180,
+      "end": 187.2,
+      "visual": "broll",
+      "intent": "hold on the product while he lands the point about emotion carrying the meaning",
+      "broll": [
+        {
+          "clip": "dji-20260805103145-0035-d",
+          "in": 10,
+          "dur": 4.4,
+          "at": [
+            "no idea what he exactly means",
+            -0.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b24",
+      "start": 187.2,
+      "end": 199.4,
+      "visual": "broll",
+      "intent": "back to the product while he plays the two readings",
+      "broll": [
+        {
+          "clip": "dji-20260805102055-0029-d",
+          "in": 26,
+          "dur": 4.6,
+          "at": [
+            "becoming the form of communication",
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b25",
+      "start": 199.4,
+      "end": 215.1,
+      "visual": "card",
+      "intent": "the thesis — masked lines, the biggest type in the video",
+      "card": {
+        "type": "statement",
+        "text": "They should imagine / and interpret / what the pet is trying to say",
+        "theme": "night",
+        "over": "footage",
+        "enter": "dither",
+        "at": [
+          "they should imagine",
+          -0.6
+        ],
+        "until": [
+          "trying to say",
+          1.4
+        ]
+      }
+    },
+    {
+      "id": "b26",
+      "start": 215.1,
+      "end": 230.5,
+      "visual": "broll",
+      "intent": "'each kid interprets differently' — the pet on screen, then the batch",
+      "broll": [
+        {
+          "clip": "test-products",
+          "in": 34,
+          "dur": 4.2,
+          "at": [
+            "each kid can interpret differently",
+            -0.4
+          ]
+        },
+        {
+          "clip": "1",
+          "in": 5,
+          "dur": 4.6,
+          "at": [
+            "the beauty of imagination",
+            0.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b27",
+      "start": 230.5,
+      "end": 242.5,
+      "visual": "card",
+      "intent": "the complaint, in his words",
+      "card": {
+        "type": "callout",
+        "eyebrow": "WHY IT MATTERS",
+        "text": "Too many toys are bolting AI on, lazily",
+        "sub": "Same companion, same voice, in every box.",
+        "v": "top",
+        "at": [
+          "too many toys applying",
+          -0.8
+        ],
+        "until": [
+          "such a lazy way",
+          1.2
+        ]
+      }
+    },
+    {
+      "id": "b28",
+      "start": 242.5,
+      "end": 256.9,
+      "visual": "broll+card",
+      "intent": "'a better way to design around AI' — his two words, revealed on them",
+      "broll": [
+        {
+          "clip": "overview-2",
+          "in": 0,
+          "dur": 4.6,
+          "at": [
+            "every toy that put an ai companion",
+            -0.4
+          ]
+        }
+      ],
+      "card": {
+        "type": "checklist",
+        "eyebrow": "THERE IS A BETTER WAY",
+        "title": "Design around AI, not over it",
+        "items": [
+          "More fun",
+          "More original"
+        ],
+        "reveal": [
+          "more fun",
+          "more original"
+        ],
+        "v": "bottom",
+        "at": [
+          "a better way to design around",
+          -0.6
+        ],
+        "until": [
+          "more original",
+          1.2
+        ]
+      }
+    },
+    {
+      "id": "b29a",
+      "start": 256.9,
+      "end": 270.3,
+      "visual": "broll",
+      "intent": "THE PAYOFF — the voice is hardware: the speaker going in, the station, the grille",
+      "broll": [
+        {
+          "clip": "dji-20260805100058-0025-d",
+          "in": 0,
+          "dur": 5,
+          "at": [
+            "speak to Miko",
+            -1.2
+          ],
+          "enter": "wipe"
+        },
+        {
+          "clip": "lap-loa",
+          "in": 24,
+          "dur": 4.6
+        },
+        {
+          "clip": "dji-20260805103145-0035-d",
+          "in": 24,
+          "dur": 5
+        }
+      ]
+    },
+    {
+      "id": "b29b",
+      "start": 262,
+      "end": 270.3,
+      "visual": "card",
+      "intent": "no-text: ring the speaker itself as he says the pet has its own voice",
+      "card": {
+        "type": "annotate",
+        "shape": "circle",
+        "box": [
+          890,
+          265,
+          240,
+          230
+        ],
+        "draw": 0.6,
+        "at": [
+          "will always speak",
+          -0.4
+        ],
+        "dur": 2.3
+      }
+    },
+    {
+      "id": "b30",
+      "start": 270.3,
+      "end": 282.8,
+      "visual": "card",
+      "intent": "sign-off",
+      "card": {
+        "type": "endcard",
+        "title": "Little Thing of Nowa",
+        "sub": "Episode two · by Daniel · The pet's voice grows with the pet",
+        "cta": "See you in the next one",
+        "at": [
+          "so that is for this episode",
+          -0.3
+        ],
+        "dur": 8.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "_readme": [
+    "Ep.01, vertical, cut to fit YouTube Shorts' 3:00 cap. Extends the vertical",
+    "plan, which extends the master edit — three deliverables, one edit.",
+    "",
+    "The full cut runs 3:19.5. One passage can go without touching the argument:",
+    "the BlackBerry digression, from 'so for example, the scroller, which was",
+    "inspired by the first BlackBerry I ever had' through 'side by side with just",
+    "that little scroll'. It is 32s, it is self-contained, and the sentence either",
+    "side of it survives — the join reads 'by interacting past interaction behavior",
+    "so I thought, I think as a human, we have five senses'. Every cut INSIDE it",
+    "breaks the grammar, which is why the whole passage goes or none of it does.",
+    "",
+    "That leaves 2:44.4 of A-roll — 15s of headroom under the cap — and, as a side",
+    "effect, no third-party photograph anywhere in the version most likely to be",
+    "widely shared. The public-domain BlackBerry image only appears in the two",
+    "long cuts.",
+    "",
+    "The cut lives in work/cuts.shorts.json as a `manual` cut (aroll-clean.mjs",
+    "--cuts work/cuts.shorts.json --suffix .shorts), so the master A-roll and its",
+    "clean transcript are untouched. Because every placement in the master plan is",
+    "anchored to a spoken phrase rather than a timecode, the 18 surviving beats",
+    "re-resolve against the shorter transcript on their own; only the three beats",
+    "whose anchor words no longer exist have to be dropped by hand."
+  ],
+  "extends": "edit-plan.9x16.json",
+  "aroll": "out/01_aroll_shorts.mp4",
+  "transcript": "work/transcript.clean.shorts.json",
+  "outDir": "build-9x16-shorts",
+  "beatOverrides": {
+    "b12": null,
+    "b13": null,
+    "b14": null
+  }
+}

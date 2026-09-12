@@ -1,0 +1,149 @@
+{
+  "_readme": [
+    "Ep.01, vertical. This is NOT a second edit — it extends edit-plan.json, so the",
+    "cut, the phrase anchors, the B-roll picks and the argument are the same file.",
+    "Only what is genuinely frame-dependent lives here.",
+    "",
+    "Full-bleed: the footage is cropped to the speaker and fills the frame, cards",
+    "overlay it — what a vertical feed expects. The cost is real and worth stating:",
+    "the A-roll was shot 1280x720, so a 9:16 crop is 405x720 of actual pixels",
+    "scaled 2.67x. The builder does that crop and scale itself with lanczos plus a",
+    "light unsharp instead of leaving the renderer to stretch a video element",
+    "bilinearly, which is the difference between acceptable and mushy. The 4K",
+    "B-roll is unaffected.",
+    "",
+    "arollFit: \"band\" is the alternative — the footage at 1:1 in a window with the",
+    "cards in the room underneath, which is sharper but gives up the full-frame",
+    "look. Built and documented in PIPELINE.md; not what this episode ships.",
+    "",
+    "The builder handles the rest on its own: side-by-side layouts stack",
+    "(compare:versus -> stack, timeline:track -> rows, endcard:split -> center),",
+    "panels go full-width and sit low in the frame, display type scales to the",
+    "narrower frame, captions run bigger, and the face guard is re-measured through",
+    "the crop so nothing lands on his eyes.",
+    "",
+    "beatOverrides drops b03b, the ring round the scroll wheel. In 16:9 that shot",
+    "shows the whole top edge and the ring picks the wheel out of it; the 9:16 crop",
+    "is so tight that the wheel already fills the frame, and a ring round the only",
+    "thing on screen reads as a mistake. b18's cells row still carries the no-text",
+    "beat, so the vertical cut keeps a graphic that works without words.",
+    "",
+    "beatOverrides also set fit:\"whole\" on the product macros (b02, b12, b19): a",
+    "9:16 crop of a 16:9 macro keeps 31.6% of the width and loses the object, so",
+    "those fit the frame's WIDTH with a blurred copy of the same frame above and",
+    "below. The textures and wides (trays, the line, loose buttons) crop fine.",
+    "",
+    "b14 is the one card that becomes a different TYPE in vertical. In 16:9 the",
+    "wheel/ball/pad story is a timeline:track — three stops on a rail, which reads",
+    "left to right across a wide frame. On a phone that same card is a list of",
+    "short lines. So vertical runs it as plate:slides instead: the three actual",
+    "photographs, each arriving on the phrase that calls for it. Same argument,",
+    "the form the frame can carry.",
+    "",
+    "b13 drops to a single photograph in vertical. In 16:9 it is a duo (the phone",
+    "and a trackball macro); here the trackball and the trackpad both appear in",
+    "",
+    "The BlackBerry story runs across b13 and b14 in vertical: b13 is the wheel-era",
+    "phone with the copy, b14 is a two-slide sequence picking up at the ball and",
+    "ending on the flat pad. Putting all three in the slideshow repeated b13's",
+    "photograph, which lint catches as a duplicate media node and which reads as a",
+    "stutter anyway."
+  ],
+  "extends": "edit-plan.json",
+  "composition": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "outDir": "build-9x16",
+  "captions": {
+    "enabled": true,
+    "maxWords": 3
+  },
+  "beatOverrides": {
+    "b03b": null,
+    "b02": {
+      "broll": [
+        {
+          "clip": "dji-20260805102337-0031-d",
+          "in": 0,
+          "dur": 3.4,
+          "at": [
+            "physical screen",
+            -0.6
+          ],
+          "fit": "whole"
+        }
+      ]
+    },
+    "b19": {
+      "broll": [
+        {
+          "clip": "dji-20260805102337-0031-d",
+          "in": 0,
+          "dur": 3.4,
+          "at": [
+            "your finger touching",
+            -0.3
+          ],
+          "fit": "whole"
+        }
+      ]
+    },
+    "b12": {
+      "broll": [
+        {
+          "clip": "dji-20260805103145-0035-d",
+          "in": 26.4,
+          "dur": 2.7,
+          "at": [
+            "for example the scroller",
+            -0.2
+          ],
+          "fit": "whole"
+        }
+      ]
+    },
+    "b14": {
+      "intent": "vertical: the controls as pictures, one per phrase. b13 has already established the wheel-era phone, so this picks up at the ball — the three-step story told across two cards rather than repeating the same photograph.",
+      "card": {
+        "type": "plate",
+        "layout": "slides",
+        "items": null,
+        "reveal": null,
+        "eyebrow": null,
+        "caption": "Then the ball. Then a flat pad.",
+        "media": [
+          {
+            "file": "candidates/trackball/04.jpg",
+            "at": [
+              "second version",
+              -0.1
+            ]
+          },
+          {
+            "file": "candidates/blackberry/15.jpg",
+            "at": [
+              "little ball in the middle",
+              1.4
+            ]
+          }
+        ],
+        "theme": "day",
+        "v": "bottom"
+      }
+    },
+    "b13": {
+      "intent": "vertical: one photograph of the phone. The ball and the pad are the slideshow's job at b14, so a duo here showed the same Bold 9700 twice.",
+      "card": {
+        "layout": "hero",
+        "media": [
+          {
+            "file": "candidates/blackberry-thumbwheel-trackwheel-side/06.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "arollFit": "full"
+}

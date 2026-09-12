@@ -1,0 +1,33 @@
+# Python side of the pipeline: word-level transcription (bin/transcribe.py).
+# Everything else in the toolchain is Node — see package.json.
+#
+#   py -3.12 -m venv .venv
+#   .venv/Scripts/python -m pip install -r requirements.txt
+#
+# This set runs ON CPU and needs no GPU. Measured on the real A-roll, CPU-only
+# int8 is faster than realtime at every model size, so a machine with no CUDA
+# card transcribes a 3.5-minute episode in about two and a half minutes:
+#
+#   model      60s of audio    realtime factor
+#   base             10s            0.17x
+#   small            24s            0.40x
+#   large-v3         40s            0.67x
+#
+# large-v3 is the one to use — still faster than realtime, and it found 190
+# words in that minute against base's 181. bin/transcribe.py defaults to
+# --device auto, which tries CUDA and falls back to CPU/int8 on its own, so
+# nothing needs configuring for a CPU-only machine.
+#
+# For a machine that DOES have an NVIDIA card, add the CUDA wheels afterwards:
+#   .venv/Scripts/python -m pip install -r requirements-gpu.txt
+# They are ~2.5 GB and useless without the hardware, which is why they are not
+# in here.
+
+faster-whisper==1.2.1
+ctranslate2==4.8.2
+av==18.1.0
+onnxruntime==1.29.0
+numpy==2.5.3
+tokenizers==0.23.2
+huggingface-hub==1.30.0
+tqdm==4.70.0

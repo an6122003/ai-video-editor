@@ -17,13 +17,29 @@ import { join } from "node:path";
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
-const FAMILIES = [
-  { css: "Space+Grotesk:wght@500;700", slug: "SpaceGrotesk" },
-  { css: "Be+Vietnam+Pro:wght@400;600;800", slug: "BeVietnamPro" },
-];
+// One face set per brand. Both Nowa faces cover Vietnamese too; Tiny5 does
+// not, but it is pet-world-only and never carries copy (BRAND-RULES).
+const BRANDS = {
+  anaha: [
+    { css: "Space+Grotesk:wght@500;700", slug: "SpaceGrotesk" },
+    { css: "Be+Vietnam+Pro:wght@400;600;800", slug: "BeVietnamPro" },
+  ],
+  nowa: [
+    { css: "Onest:wght@400;700;800", slug: "Onest" },
+    { css: "Noto+Sans:wght@400;600;700", slug: "NotoSans" },
+    { css: "Tiny5", slug: "Tiny5" },
+  ],
+};
+const brandIdx = process.argv.indexOf("--brand");
+const BRAND = brandIdx >= 0 ? process.argv[brandIdx + 1] : "anaha";
+const FAMILIES = BRANDS[BRAND];
+if (!FAMILIES) {
+  console.error(`unknown brand "${BRAND}" — one of: ${Object.keys(BRANDS).join(", ")}`);
+  process.exit(1);
+}
 const KEEP = new Set(["vietnamese", "latin", "latin-ext"]);
 
-const outDir = process.argv[2] ?? "fonts";
+const outDir = process.argv.slice(2).find((a, i, all) => !a.startsWith("--") && all[i - 1] !== "--brand") ?? "fonts";
 await mkdir(outDir, { recursive: true });
 
 let faces = "";
@@ -66,4 +82,4 @@ for (const fam of FAMILIES) {
 await writeFile("_fontfaces.css", faces);
 console.log(`${n} woff2 files -> ${outDir}/`);
 console.log("@font-face block -> _fontfaces.css");
-console.log("\nSpace Grotesk and Be Vietnam Pro are SIL Open Font License 1.1.");
+console.log(`\n${FAMILIES.map((f) => f.css.split(":")[0].replace(/\+/g, " ")).join(", ")}: SIL Open Font License 1.1.`);

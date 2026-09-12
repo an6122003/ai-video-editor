@@ -1,0 +1,12 @@
+{
+  "name": "nowa-august-update",
+  "brand": "nowa",
+  "language": "en",
+  "source": {
+    "aroll": "H:/Coding Projects/source-video/Nowa August Update.mp4",
+    "broll": "H:/Coding Projects/source-video/DJI_001-20260906T142345Z-1-007/DJI_001"
+  },
+  "composition": { "width": 1920, "height": 1080, "fps": 30 },
+  "deliverables": ["youtube_16x9"],
+  "notes": "August 2026 manufacturing update: EVT in Shenzhen, 50 units, path to DVT/PVT and mid-October delivery."
+}

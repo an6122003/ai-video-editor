@@ -1,0 +1,28 @@
+{
+  "aroll": "out/01_aroll_clean.mp4",
+  "transcript": "work/transcript.clean.json",
+  "captions": { "enabled": true, "maxWords": 4 },
+  "beats": [
+    { "id": "s01", "start": 0.6, "end": 7.5, "visual": "card",
+      "card": { "type": "lower-third", "wordmark": true, "eyebrow": "AUGUST 2026 UPDATE", "title": "Manufacturing update", "sub": "EVT complete in Shenzhen", "theme": "day" } },
+    { "id": "s02", "start": 8, "end": 19, "visual": "broll",
+      "broll": [
+        { "clip": "dji-20260805095809-0023-d", "in": 22, "dur": 6, "treatment": "full" },
+        { "clip": "dji-20260805102055-0029-d", "in": 26, "dur": 5, "treatment": "inset" }
+      ] },
+    { "id": "s03", "start": 20, "end": 30, "visual": "card",
+      "card": { "type": "process", "eyebrow": "HARDWARE PHASES", "steps": ["EVT", "DVT", "PVT"], "labels": ["Engineering validation", "Design validation", "Production validation"], "active": 0, "theme": "night" } },
+    { "id": "s04", "start": 30, "end": 38, "visual": "card",
+      "card": { "type": "bignum", "eyebrow": "EVT BUILD", "value": 50, "label": "units built", "sub": "the first time every component came together", "theme": "day" } },
+    { "id": "s05", "start": 38, "end": 46, "visual": "card",
+      "card": { "type": "checklist", "eyebrow": "FACTORY TEST", "title": "Every unit, every part", "items": ["Wi-Fi", "Bluetooth", "Speaker", "Screen colour", "Buttons"], "reveal": [0.3, 0.9, 1.5, 2.1, 2.7], "theme": "night" } },
+    { "id": "s06", "start": 46, "end": 54, "visual": "card",
+      "card": { "type": "timeline", "eyebrow": "ROADMAP", "items": [ { "when": "Mid September", "what": "DVT — 200 units ship" }, { "when": "End September", "what": "PVT — production" }, { "when": "October", "what": "Official launch" } ], "active": 0, "theme": "day" } },
+    { "id": "s07", "start": 54, "end": 58, "visual": "broll",
+      "broll": [ { "clip": "dji-20260805105802-0040-d", "in": 5, "dur": 4, "fit": "pillar" } ] },
+    { "id": "s08", "start": 58, "end": 63, "visual": "card",
+      "card": { "type": "callout", "eyebrow": "WHY SO FEW", "text": "EVT exists to find the major issues", "sub": "Fortunately, there were none.", "theme": "night" } },
+    { "id": "s09", "start": 63, "end": 68, "visual": "card",
+      "card": { "type": "endcard", "title": "Thank you for your patience", "sub": "First units ship to pre-orders mid-October. Next update: DVT.", "cta": "See you in the next update", "at": 63, "dur": 5 } }
+  ]
+}

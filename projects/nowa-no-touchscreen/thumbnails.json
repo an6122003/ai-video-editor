@@ -1,0 +1,16 @@
+{
+  "frames": {
+    "hero": ["aroll", 14],
+    "point": ["aroll", 115],
+    "wheel": ["dji-20260805103145-0035-d", 17.4],
+    "buttons": ["dji-20260805103145-0035-d", 14.2]
+  },
+  "variants": [
+    { "id": "a", "layout": "face-card", "frame": "hero", "pos": "bottom-left", "maxWidth": 640,
+      "eyebrow": "LITTLE THING OF NOWA · EP. 01", "title": "Why we said no to a touchscreen", "sub": "One design decision, by Daniel" },
+    { "id": "b", "layout": "bignum", "frame": "wheel", "pos": "bottom-right", "maxWidth": 500,
+      "value": "0", "title": "touchscreens. On purpose." },
+    { "id": "c", "layout": "split", "frame": "point", "frame2": "buttons", "focus2": "50% 60%",
+      "title": "No touchscreen.", "sub": "A scroller and a button instead" }
+  ]
+}

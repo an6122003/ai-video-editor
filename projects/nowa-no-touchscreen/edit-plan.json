@@ -1,0 +1,171 @@
+{
+  "_readme": [
+    "Little Thing of Nowa, ep.01 — why the device has no touchscreen. SECOND PASS,",
+    "re-planned against the rules that did not exist when the first cut was made:",
+    "the layout library, the full-frame/panel balance cap, the static-hold limit and",
+    "the cutaway floor. The first pass was 5 of 9 cards as callout:panel.",
+    "",
+    "The argument: what it actually has (a screen, a scroller, a button) → the TikTok",
+    "kid pinch-zooming a paper album → they will learn touch anyway, and voice too →",
+    "so the physical interactions are the ones being lost → the BlackBerry scroller →",
+    "five senses, and touch only uses one → a button gives many kinds of feedback →",
+    "we could have made a glass slab, and it would have been boring.",
+    "",
+    "Balance: every card is a different presentation, full-frame is held under the 25%",
+    "cap, and nothing sits still for more than 8s without something landing on a word.",
+    "",
+    "Sourced stills (3), all credited on screen from media/sources.json:",
+    "  b05b  an open paper album, CC BY 4.0 — the object in the anecdote",
+    "  b13   a BlackBerry 7290, the correct trackwheel generation, found through",
+    "        Google Images; plus a CC BY 2.0 trackball macro beside it",
+    "The 7290 replaced a public-domain Bold 9700, which was the wrong generation",
+    "(trackpad, not a wheel) and forced a hedged caption. The licensed libraries",
+    "have nothing of the trackwheel era at usable resolution — checked Openverse",
+    "and Commons for 8700 / 7290 / 6230 before going wider."
+  ],
+  "aroll": "out/01_aroll_clean.mp4",
+  "transcript": "work/transcript.clean.json",
+  "captions": { "enabled": true, "maxWords": 4 },
+  "face": { "x0": 786, "y0": 130, "x1": 1131, "y1": 576 },
+  "beats": [
+    { "id": "b01", "start": 0.4, "end": 11.3, "visual": "card", "intent": "hook — series brand and the question",
+      "card": { "type": "lower-third", "layout": "bar", "wordmark": true, "eyebrow": "LITTLE THING OF NOWA · EP. 01",
+        "title": "Why Nowa has no touchscreen", "sub": "One design decision, by Daniel", "maxWidth": 940,
+        "at": ["one key design decision", -0.6], "dur": 6.5 } },
+
+    { "id": "b02", "start": 11.5, "end": 15.0, "visual": "broll", "intent": "'a physical screen, not a touchscreen' — the screen macro beside his demo",
+      "broll": [ { "clip": "dji-20260805102337-0031-d", "in": 0, "dur": 3.4, "at": ["physical screen", -0.6], "treatment": "inset", "side": "left" } ] },
+
+    { "id": "b03", "start": 15.3, "end": 23.3, "visual": "broll", "intent": "the two controls, literally — the wheel on the top edge, then the buttons",
+      "broll": [
+        { "clip": "dji-20260805103145-0035-d", "in": 16.5, "at": ["a scroller on the top", -0.5], "until": ["and a button", -0.6, "start"] },
+        { "clip": "dji-20260805103145-0035-d", "in": 10, "dur": 3.4, "at": ["and a button", -0.6] }
+      ] },
+
+    { "id": "b03b", "start": 19.0, "end": 23.3, "visual": "card", "intent": "no-text: ring the wheel while he names it",
+      "card": { "type": "annotate", "layout": "mark", "shape": "circle", "box": [640, 210, 640, 470], "draw": 0.55,
+        "at": ["a scroller on the top", 0.5], "dur": 2.6 } },
+
+    { "id": "b04", "start": 23.5, "end": 30.3, "visual": "broll", "intent": "a breath before the anecdote — glide over finished units",
+      "broll": [ { "clip": "dji-20260805102055-0029-d", "in": 6, "dur": 4.5, "at": ["quite funny", -0.6] } ] },
+
+    { "id": "b05", "start": 30.3, "end": 40.1, "visual": "card", "intent": "the anecdote — no footage exists, so type carries it, landing in two beats",
+      "card": { "type": "statement", "layout": "blocks", "eyebrow": "THE MOMENT IT STARTED",
+        "text": "A kid tried to pinch-zoom / a paper photo album", "theme": "night",
+        "reveal": ["scrolling through TikTok", "an actual photo album"],
+        "at": ["scrolling through TikTok", -0.6], "until": ["an actual photo album", -0.4, "start"] } },
+
+    { "id": "b05b", "start": 36.0, "end": 41.5, "visual": "card", "intent": "the object itself, landing on the words — an inset so he stays on screen for the punchline",
+      "card": { "type": "plate", "layout": "inset", "eyebrow": "WHAT HE WAS HOLDING",
+        "caption": "A paper album. No pinch, no zoom.",
+        "media": [ { "file": "candidates/photo-album/20.jpg" } ],
+        "theme": "day", "v": "bottom", "at": ["an actual photo album", -0.3], "dur": 4.8 } },
+
+    { "id": "b06", "start": 40.6, "end": 54.5, "visual": "card", "intent": "the dad's face — an aside, so a sticker",
+      "card": { "type": "callout", "layout": "sticker", "eyebrow": "THE DAD'S FACE",
+        "text": "Hilarious and sad at once", "v": "bottom",
+        "at": ["so hilarious and sad", -0.6], "dur": 5.2 } },
+
+    { "id": "b09b", "start": 61.0, "end": 66.0, "visual": "card", "intent": "picture beat: they learn touch anyway. A photograph, full-bleed, nothing on it.",
+      "card": { "type": "plate", "layout": "full",
+        "media": [ { "file": "candidates/child-toddler-using-tablet-touchscreen/11.jpg" } ],
+        "at": ["that is touchscreen", -0.3], "dur": 3.4 } },
+
+    { "id": "b10b", "start": 67.0, "end": 72.0, "visual": "card", "intent": "picture beat: and voice is next",
+      "card": { "type": "plate", "layout": "full",
+        "media": [ { "file": "candidates/smart-speaker-voice-assistant/06.jpg" } ],
+        "at": ["the rise of AI", 0.6], "dur": 3.4 } },
+
+    { "id": "b11", "start": 72.2, "end": 78.0, "visual": "card", "intent": "the thesis line, at poster scale",
+      "card": { "type": "statement", "layout": "oversize", "eyebrow": "THE PROBLEM",
+        "text": "The physical ones / are being lost", "theme": "night",
+        "reveal": ["A lot of the fun", "are lost"],
+        "at": ["A lot of the fun", -0.15], "until": ["are lost", 1.8] } },
+
+    { "id": "b12", "start": 78.0, "end": 89.0, "visual": "broll", "intent": "'for example, the scroller' — the wheel in context",
+      "broll": [ { "clip": "dji-20260805103145-0035-d", "in": 26.4, "dur": 2.7, "at": ["for example the scroller", -0.2] } ] },
+
+    { "id": "b13", "start": 89.0, "end": 102.1, "visual": "card", "intent": "where the scroller came from — a public-domain photograph, credited",
+      "card": { "type": "plate", "layout": "duo", "eyebrow": "WHERE THE SCROLLER CAME FROM",
+        "title": "The first BlackBerry / he ever owned",
+        "caption": "Controls you could work without looking.",
+        "media": [
+          { "file": "candidates/blackberry-thumbwheel-trackwheel-side/06.jpg" },
+          { "file": "candidates/trackball/04.jpg" }
+        ],
+        "theme": "day", "at": ["inspired by the first", -0.5], "dur": 7.5 } },
+
+    { "id": "b14", "start": 97.7, "end": 115.3, "visual": "card", "intent": "the controls he loved, each lighting as he reaches it — no footage of a BlackBerry exists, and the argument is the sequence",
+      "card": { "type": "timeline", "layout": "track", "eyebrow": "HOW THE CONTROL DISAPPEARED", "v": "bottom",
+        "items": [
+          { "when": "FIRST", "what": "A wheel on the side edge" },
+          { "when": "SECOND", "what": "A ball in the middle" },
+          { "when": "AND THEN", "what": "A flat pad. Then just glass." }
+        ],
+        "reveal": [["physical scroller", -0.1], ["second version", -0.1], ["little ball in the middle", 0.2]], "theme": "day",
+        "at": ["physical scroller", -0.6], "until": ["back and forth", -0.5, "start"] } },
+
+    { "id": "b16", "start": 119.5, "end": 131.6, "visual": "card", "intent": "five senses — the number is the whole point",
+      "card": { "type": "bignum", "layout": "hero", "eyebrow": "AS A HUMAN", "value": 5, "label": "senses",
+        "sub": "The more of them a thing touches, the more fun it is", "theme": "night",
+        "at": ["we have five senses", -0.6], "dur": 6.5 } },
+
+    { "id": "b18", "start": 131.7, "end": 142.1, "visual": "card", "intent": "no-text: of five senses, touch lights one",
+      "card": { "type": "cells", "layout": "row", "count": 5, "filled": 1, "label": "one of them",
+        "at": ["just one interaction", -0.4], "until": ["your finger touching", -0.5, "start"] } },
+
+    { "id": "b19", "start": 134.8, "end": 142.1, "visual": "broll", "intent": "the flat glass he is describing",
+      "broll": [ { "clip": "dji-20260805102337-0031-d", "in": 0, "dur": 3.4, "at": ["your finger touching", -0.3] } ] },
+
+    { "id": "b19b", "start": 135.0, "end": 139.0, "visual": "card", "intent": "picture beat: a finger on glass, on the words that describe it",
+      "card": { "type": "plate", "layout": "full",
+        "media": [ { "file": "candidates/hand-finger-touching-smartphone-screen/07.jpg" } ],
+        "at": ["your finger touching", -0.2], "dur": 3.4 } },
+
+    { "id": "b21", "start": 142.3, "end": 154.0, "visual": "card", "intent": "the contrast, as two plates, arriving one at a time",
+      "card": { "type": "compare", "layout": "versus", "win": 1, "theme": "day",
+        "left": { "head": "A SCREEN", "big": "One channel", "items": ["Eyes, then a finger on glass"] },
+        "right": { "head": "A BUTTON", "big": "Many", "items": ["Travel, resistance, a click"] },
+        "reveal": ["your brain convert", "with physical button"],
+        "at": ["your feedback is simply", -0.4], "until": ["will happen to be", 1.0] } },
+
+    { "id": "b22", "start": 154.1, "end": 164.7, "visual": "broll", "intent": "the physical side — loose silicone buttons, then a finger on one",
+      "broll": [
+        { "clip": "5", "in": 48, "dur": 5.0, "at": ["And the physical button", -0.4] },
+        { "clip": "dji-20260805094547-0016-d", "in": 5, "dur": 4.4 }
+      ] },
+
+    { "id": "b23", "start": 158.0, "end": 164.7, "visual": "card", "intent": "his own line, in a panel so the footage still reads",
+      "card": { "type": "callout", "layout": "bar", "eyebrow": "HIS POSITION",
+        "text": "A big fan of physical buttons", "sub": "Especially now everything is touch.",
+        "at": ["big fan of physical button", -0.5], "dur": 5.0 } },
+
+    { "id": "b23b", "start": 166.0, "end": 170.5, "visual": "card", "intent": "picture beat: the glass slab he could have built",
+      "card": { "type": "plate", "layout": "full",
+        "media": [ { "file": "candidates/flat-glass-slab-smartphone-black-screen/11.jpg" } ],
+        "at": ["big giant screen", -0.5], "dur": 3.4 } },
+
+    { "id": "b24", "start": 165.6, "end": 181.0, "visual": "card", "intent": "the road not taken, in his own words",
+      "card": { "type": "checklist", "layout": "rows", "eyebrow": "WHAT KIDS SHOULD GET", "v": "bottom",
+        "title": "A choice of how to interact",
+        "items": ["More than one way in", "Something with travel and give"],
+        "reveal": ["have the options to choose", "of interaction with a physical"],
+        "theme": "day", "at": ["have the options to choose", -0.6], "until": ["physical device", 1.2] } },
+
+    { "id": "b24b", "start": 172.0, "end": 181.0, "visual": "broll", "intent": "'more variety of interaction' — the finished units",
+      "broll": [ { "clip": "dji-20260805104541-0038-d", "in": 0, "dur": 5.0, "at": ["more variety", -0.6] } ] },
+
+    { "id": "b25", "start": 181.0, "end": 194.6, "visual": "broll", "intent": "'the way toy should be' — close on the batch",
+      "broll": [ { "clip": "1", "in": 5, "dur": 4.4, "at": ["the way toy should be", -0.6] } ] },
+
+    { "id": "b25b", "start": 185.5, "end": 189.0, "visual": "card", "intent": "picture beat: the way a toy should be — a handheld with buttons you can feel",
+      "card": { "type": "plate", "layout": "full",
+        "media": [ { "file": "candidates/vintage-handheld-electronic-toy-1990s/02.jpg" } ],
+        "at": ["the way toy should be", -0.3], "dur": 3.2 } },
+
+    { "id": "b26", "start": 188.0, "end": 194.6, "visual": "card", "intent": "sign-off over the goodbye and the tail",
+      "card": { "type": "endcard", "layout": "split", "title": "Little Thing of Nowa",
+        "sub": "Episode one · by Daniel · Next: why the pet doesn't speak human",
+        "cta": "See you in the next one", "at": ["thank you and look forward", -0.4], "dur": 7.5 } }
+  ]
+}

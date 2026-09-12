@@ -1,0 +1,16 @@
+{
+  "frames": {
+    "hero": ["aroll", 3.0],
+    "tama": ["aroll", 33.0],
+    "device": ["dji-20260805103145-0035-d", 14.2],
+    "trays": ["dji-20260805102055-0029-d", 28]
+  },
+  "variants": [
+    { "id": "a", "layout": "face-card", "frame": "hero", "pos": "bottom-left", "maxWidth": 660,
+      "eyebrow": "LITTLE THING OF NOWA · EP. 03", "title": "Why it's a virtual pet game", "sub": "The Tamagotchi lesson, 100 million units later" },
+    { "id": "b", "layout": "bignum", "frame": "trays", "pos": "top-left", "maxWidth": 540,
+      "value": "100M", "title": "units. One slow, annoying game." },
+    { "id": "c", "layout": "split", "frame": "hero", "focus": "55% 30%", "frame2": "device", "focus2": "50% 55%",
+      "title": "Caring is the game.", "sub": "Not dopamine" }
+  ]
+}

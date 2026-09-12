@@ -1,0 +1,14 @@
+# Normalise line endings so a collaborator on macOS or Linux does not see every
+# file in the repo as modified. Text is stored LF and checked out native.
+* text=auto
+
+# The cue sounds are binary; never touch their bytes.
+*.wav binary
+*.mp3 binary
+*.mp4 binary
+*.mov binary
+
+# Generated JSON that is large and diffs badly — collapse it in reviews.
+projects/*/broll/index.json    linguist-generated=true
+projects/*/broll/described/*   linguist-generated=true
+projects/*/media/sources.json  linguist-generated=true
