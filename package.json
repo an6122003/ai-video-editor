@@ -8,6 +8,7 @@
     "node": ">=20"
   },
   "scripts": {
+    "setup": "node bin/setup.mjs",
     "build": "node bin/build-video.mjs",
     "build:overlay": "node bin/build-video.mjs --overlay",
     "build:captions": "node bin/build-video.mjs --captions-only",
