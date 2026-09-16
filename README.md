@@ -44,6 +44,17 @@ about two and a half minutes on a laptop. `bin/transcribe.py --device auto` trie
 CUDA and falls back on its own. The ~2.5 GB of CUDA wheels live separately in
 `requirements-gpu.txt` because they are inert without the hardware.
 
+Start a project from your recording — this is where the video goes, and it
+checks your toolchain before it creates anything:
+
+```bash
+node bin/new-project.mjs "path/to/your-recording.mp4" --name my-episode
+```
+
+It probes the file, picks the composition, scaffolds `projects/my-episode/` and
+prints the exact commands to run next. **If you have an agent, just ask it to
+edit your video** — `CLAUDE.md` tells it to do all of this for you.
+
 Then, from a project directory:
 
 Set `PY` once so the commands below are the same on either platform:

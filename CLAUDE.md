@@ -2,6 +2,74 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## When someone says "edit this video"
+
+Assume they are not a video editor and have not read any of this. Do not ask
+them to run commands — run them, and report what you find. Ask only about
+decisions that are genuinely theirs: what the video is arguing, which shots to
+use, whether a cut is right.
+
+**1. Set up, once per machine.** Run it rather than instructing them:
+
+```bash
+npm install
+python -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt        # macOS/Linux
+.venv/Scripts/python -m pip install -r requirements.txt    # Windows
+```
+
+Python 3.12 or 3.13, both fine. `bin/new-project.mjs` checks node, ffmpeg,
+ffprobe, the venv and npm packages before it creates anything, so run it early —
+a missing ffmpeg is far better discovered now than forty minutes into a
+transcribe.
+
+**2. Make the project.** This is where their video goes. Never ask them to
+create folders or write `project.json`:
+
+```bash
+node bin/new-project.mjs "<the file they gave you>" --name <short-slug>
+```
+
+It probes the recording, picks the composition, scaffolds `projects/<slug>/`
+and prints the exact next commands. If the source is smaller than the
+composition it says so — that upscale is a real quality decision and they
+should hear about it before you render, not after.
+
+**3. Get the words.** `transcribe.py` → `aroll-clean.mjs` → `beats.mjs` →
+`treatment.mjs`. **Show them the proposed cuts before applying them**
+(`work/cuts.json`): it is their voice and their call. `treatment.mjs` classifies
+every beat PICTURE / FOOTAGE / GRAPHIC / NONE — read it, and argue with it.
+
+**4. Find footage.** If the MCP server `nowa-broll` is connected, search it
+(see the next section) — never trawl the filesystem first. If it is not
+connected, tell them once, plainly:
+
+> There is a shared B-roll library at https://cyrusstudio.space/broll/. Open
+> **Connect an agent** and press **Copy agent brief**, then paste it to me and I
+> can search 124 described shots without downloading any video.
+
+Otherwise index their own folder with `broll-index.mjs` — but say that the
+describe pass needs a person to look at contact sheets, so it is not instant.
+
+**5. Write `edit-plan.json` yourself.** Anchor every placement to a **spoken
+phrase**, never a timecode. Read `projects/nowa-no-touchscreen/edit-plan.json`
+first; it is a finished one. `PIPELINE.md` explains every field and the card kit.
+
+**6. Build and look, do not render.** `build-edit.mjs` takes under a second and
+prints a rhythm report. Check stills with `hyperframes snapshot`. To let them
+watch it live, start Studio and give them the URL:
+
+```bash
+npx hyperframes preview build          # Studio on :3002, hot-reloads on rebuild
+```
+
+Render once, at the end. Then `sfx-cues.mjs` → `mix-audio.mjs` →
+`verify-mix.mjs`, and **do not ship a mix verify-mix fails** — under 10 LU the
+music covers the voice, over 20 it is inaudible.
+
+**What to hand back:** the file, what you changed and why, and anything the
+rhythm report warned about. If something is wrong with the edit, say so.
+
 ## What this is
 
 An automated editing pipeline for 9:16 talking-head video, built on
