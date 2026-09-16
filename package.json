@@ -9,6 +9,7 @@
   },
   "scripts": {
     "setup": "node bin/setup.mjs",
+    "setup:check": "node bin/setup.mjs --check",
     "build": "node bin/build-video.mjs",
     "build:overlay": "node bin/build-video.mjs --overlay",
     "build:captions": "node bin/build-video.mjs --captions-only",

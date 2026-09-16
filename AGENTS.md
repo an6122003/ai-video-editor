@@ -19,7 +19,7 @@ npm run setup
 
 That is the whole of it. It finds a usable Python, builds the venv, installs the
 transcription dependencies and then imports them to prove they work. Safe to
-re-run, and `npm run setup --check` reports without changing anything.
+re-run, and `npm run setup:check` reports without changing anything.
 
 If it stops, it is because **ffmpeg** or **Python 3.10+** is missing, and it
 prints the install command for that platform. Nothing is created until both are
