@@ -23,18 +23,20 @@ cd ai-video-editor
 npm install
 ```
 
-Then a Python 3.12 venv. The two platforms differ only in where the venv puts
-its interpreter, so pick your line:
+Then a Python venv — **3.12 or 3.13**, whichever you already have. `python -m venv`
+is the same command everywhere; only the path to the interpreter it creates
+differs:
 
 ```bash
-# macOS / Linux
-python3.12 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
+python -m venv .venv
 
-# Windows (PowerShell or Git Bash)
-py -3.12 -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt
+.venv/bin/python -m pip install -r requirements.txt        # macOS / Linux
+.venv/Scripts/python -m pip install -r requirements.txt    # Windows
 ```
 
-`requirements.txt` is CPU-only and installs in under a minute.
+`requirements.txt` is CPU-only and installs in well under a minute. Verified on
+a clean 3.13 venv: every dependency has a wheel, and `bin/transcribe.py`
+transcribed a 12-second clip in **1 second on CPU** with word-level timings.
 
 **No GPU required.** Measured on real footage, CPU int8 beats realtime at every
 model size — `large-v3` runs at 0.67×, so a 3½-minute episode transcribes in
@@ -193,7 +195,7 @@ different frame rather than being re-cut by hand.
 ## Requirements
 
 - **Node 20+** and **ffmpeg 6+** on PATH
-- **Python 3.12** for `bin/transcribe.py`
+- **Python 3.12 or 3.13** for `bin/transcribe.py` (both tested)
 - **HyperFrames 0.7.109** — pinned; `latest` is 0.8.x and untested
 - `rsync` if you will publish libraries (optional; the tools fall back to
   tar-over-ssh, which resumes per file but not mid-file)
