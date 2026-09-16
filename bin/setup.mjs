@@ -30,22 +30,23 @@ const ok = (m, d = "") => console.log(`  ✓ ${m}${d ? `  ${d}` : ""}`);
 const bad = (m, d = "") => console.log(`  ✗ ${m}${d ? `\n      ${d}` : ""}`);
 const step = (m) => console.log(`\n${m}`);
 
-// npm on Windows is npm.cmd, which cannot be spawned directly — that is the
-// only thing here needing special handling. Everything else is a real
-// executable, and routing args through a shell is both noisy (Node deprecates
-// it) and a quoting hazard on paths with spaces, which "C:\Program Files"
-// guarantees.
-const winCmd = (cmd) => (WIN && cmd === "npm" ? "npm.cmd" : cmd);
-
+// npm on Windows is a .cmd, and there is no good way to spawn it: directly
+// throws EINVAL on Node 20+, and passing an args ARRAY with shell:true earns a
+// deprecation warning. So npm runs as a single shell string — it takes no path
+// arguments here, so there is nothing to quote — while everything else is a
+// real executable spawned directly with its args, which is what keeps a path
+// like "C:\Program Files\..." safe.
 const sh = (cmd, args, opts = {}) => new Promise((res) => {
-  const p = spawn(winCmd(cmd), args, { cwd: REPO, stdio: "inherit", ...opts });
+  const p = cmd === "npm"
+    ? spawn([cmd, ...args].join(" "), { cwd: REPO, stdio: "inherit", shell: true, ...opts })
+    : spawn(cmd, args, { cwd: REPO, stdio: "inherit", ...opts });
   p.on("close", (code) => res(code === 0));
   p.on("error", () => res(false));
 });
 
 const version = async (cmd, args = ["--version"]) => {
   try {
-    const { stdout, stderr } = await run(winCmd(cmd), args);
+    const { stdout, stderr } = await run(cmd, args);
     return (stdout + stderr).split("\n")[0].trim();
   } catch { return null; }
 };

@@ -20,23 +20,13 @@ recording + B-roll  →  transcribe  →  clean  →  beats  →  treatment  →
 ```bash
 git clone https://github.com/an6122003/ai-video-editor.git
 cd ai-video-editor
-npm install
+npm run setup
 ```
 
-Then a Python venv — **3.12 or 3.13**, whichever you already have. `python -m venv`
-is the same command everywhere; only the path to the interpreter it creates
-differs:
-
-```bash
-python -m venv .venv
-
-.venv/bin/python -m pip install -r requirements.txt        # macOS / Linux
-.venv/Scripts/python -m pip install -r requirements.txt    # Windows
-```
-
-`requirements.txt` is CPU-only and installs in well under a minute. Verified on
-a clean 3.13 venv: every dependency has a wheel, and `bin/transcribe.py`
-transcribed a 12-second clip in **1 second on CPU** with word-level timings.
+`npm run setup` finds a usable Python (3.12 or 3.13), builds the venv, installs
+the dependencies and imports them to prove they work. Measured cold, from
+`git clone` to ready: **41 seconds**. It stops with the right install command if
+ffmpeg or Python is missing, and is safe to re-run.
 
 **No GPU required.** Measured on real footage, CPU int8 beats realtime at every
 model size — `large-v3` runs at 0.67×, so a 3½-minute episode transcribes in

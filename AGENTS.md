@@ -14,18 +14,16 @@ video is arguing, which shots to use, whether a cut is right.
 ## 0 · Set up (once per machine)
 
 ```bash
-npm install
-python -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt        # macOS / Linux
-.venv/Scripts/python -m pip install -r requirements.txt    # Windows
+npm run setup
 ```
 
-Python **3.12 or 3.13**, whichever is present — both tested. No GPU needed:
-CPU transcription runs faster than realtime (`large-v3` at 0.67×). The CUDA
-wheels in `requirements-gpu.txt` are optional and inert without the hardware.
+That is the whole of it. It finds a usable Python, builds the venv, installs the
+transcription dependencies and then imports them to prove they work. Safe to
+re-run, and `npm run setup --check` reports without changing anything.
 
-You also need **Node 20+** and **ffmpeg 6+** on PATH. The next step checks all
-of this and refuses to create anything if something is missing, so just run it.
+If it stops, it is because **ffmpeg** or **Python 3.10+** is missing, and it
+prints the install command for that platform. Nothing is created until both are
+there. No GPU is needed — CPU transcription runs faster than realtime.
 
 ## 1 · Make the project
 
