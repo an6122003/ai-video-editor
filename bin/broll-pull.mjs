@@ -61,8 +61,30 @@ if (!REMOTE) {
 }
 
 const mb = (b) => `${(b / 1e6).toFixed(1)} MB`;
-const get = async (url, init) => {
-  const r = await fetch(url, init);
+
+// A published library sits behind the studio's shared password, so every
+// request needs a credential. The gate accepts HTTP Basic with an empty
+// username, which is the same thing `curl -u :password` sends.
+//
+// Passed as --password, or BROLL_PASSWORD in the environment. Prefer the
+// environment: an argument is visible in `ps` to every other user on the
+// machine and lands in your shell history.
+const PASSWORD = flag("--password", null) ?? process.env.BROLL_PASSWORD ?? "";
+const AUTH = PASSWORD ? `Basic ${Buffer.from(`:${PASSWORD}`).toString("base64")}` : "";
+
+const get = async (url, init = {}) => {
+  const headers = { ...(init.headers ?? {}) };
+  if (AUTH) headers.Authorization = AUTH;
+  const r = await fetch(url, { ...init, headers });
+  if (r.status === 401) {
+    throw new Error(
+      AUTH
+        ? `401 Unauthorized — the password was not accepted by ${new URL(url).host}.`
+        : ["401 Unauthorized — this library needs the studio password.",
+           "    Pass it as BROLL_PASSWORD=... or --password <password>.",
+           "    Get it from whoever runs the studio; it is the same one the website asks for.",
+          ].join("\n"));
+  }
   if (!r.ok) throw new Error(`${r.status} ${r.statusText} — ${url}`);
   return r;
 };

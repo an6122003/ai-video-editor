@@ -91,7 +91,12 @@ spoken phrases, so nothing needs the media present until you render.
 
 Pull only the tier you need:
 
+The library is behind the studio password, so export it once — the same one the
+website asks for:
+
 ```bash
+export BROLL_PASSWORD='...'          # Windows PowerShell: $env:BROLL_PASSWORD='...'
+
 node bin/broll-pull.mjs --remote https://cyrusstudio.space/api/broll/media/nowa-factory
 node bin/broll-pull.mjs --proxies                            # +82 MB, watchable
 node bin/broll-pull.mjs --plan build/plan.resolved.json      # + only the clips that plan uses
