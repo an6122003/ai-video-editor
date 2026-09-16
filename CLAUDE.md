@@ -4,79 +4,41 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## When someone says "edit this video"
 
-Assume they are not a video editor and have not read any of this. Do not ask
-them to run commands — run them, and report what you find. Ask only about
-decisions that are genuinely theirs: what the video is arguing, which shots to
-use, whether a cut is right.
+**The runbook is `AGENTS.md`. Read it before doing anything.** It is the whole
+process in order — setup, scaffolding the project, transcribe, cuts, beats,
+treatment, footage over MCP, the plan, build, Studio, render, mix, verify, and
+the other deliverables — written for somebody who is not a video editor.
 
-**1. Set up, once per machine.** Run it rather than instructing them:
+It lives there rather than here so every agent reads the same thing, and so
+these two files cannot drift apart. What follows below is the deeper material:
+the architecture, the design doctrine the builder enforces, and the traps.
 
-```bash
-npm install
-python -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt        # macOS/Linux
-.venv/Scripts/python -m pip install -r requirements.txt    # Windows
-```
+Three things from it that are worth repeating because they are the ones most
+often got wrong:
 
-Python 3.12 or 3.13, both fine. `bin/new-project.mjs` checks node, ffmpeg,
-ffprobe, the venv and npm packages before it creates anything, so run it early —
-a missing ffmpeg is far better discovered now than forty minutes into a
-transcribe.
-
-**2. Make the project.** This is where their video goes. Never ask them to
-create folders or write `project.json`:
-
-```bash
-node bin/new-project.mjs "<the file they gave you>" --name <short-slug>
-```
-
-It probes the recording, picks the composition, scaffolds `projects/<slug>/`
-and prints the exact next commands. If the source is smaller than the
-composition it says so — that upscale is a real quality decision and they
-should hear about it before you render, not after.
-
-**3. Get the words.** `transcribe.py` → `aroll-clean.mjs` → `beats.mjs` →
-`treatment.mjs`. **Show them the proposed cuts before applying them**
-(`work/cuts.json`): it is their voice and their call. `treatment.mjs` classifies
-every beat PICTURE / FOOTAGE / GRAPHIC / NONE — read it, and argue with it.
-
-**4. Find footage.** If the MCP server `nowa-broll` is connected, search it
-(see the next section) — never trawl the filesystem first. If it is not
-connected, tell them once, plainly:
-
-> There is a shared B-roll library at https://cyrusstudio.space/broll/. Open
-> **Connect an agent** and press **Copy agent brief**, then paste it to me and I
-> can search 124 described shots without downloading any video.
-
-Otherwise index their own folder with `broll-index.mjs` — but say that the
-describe pass needs a person to look at contact sheets, so it is not instant.
-
-**5. Write `edit-plan.json` yourself.** Anchor every placement to a **spoken
-phrase**, never a timecode. Read `projects/nowa-no-touchscreen/edit-plan.json`
-first; it is a finished one. `PIPELINE.md` explains every field and the card kit.
-
-**6. Build and look, do not render.** `build-edit.mjs` takes under a second and
-prints a rhythm report. Check stills with `hyperframes snapshot`. To let them
-watch it live, start Studio and give them the URL:
-
-```bash
-npx hyperframes preview build          # Studio on :3002, hot-reloads on rebuild
-```
-
-Render once, at the end. Then `sfx-cues.mjs` → `mix-audio.mjs` →
-`verify-mix.mjs`, and **do not ship a mix verify-mix fails** — under 10 LU the
-music covers the voice, over 20 it is inaudible.
-
-**What to hand back:** the file, what you changed and why, and anything the
-rhythm report warned about. If something is wrong with the edit, say so.
+- **Show the proposed cuts before applying them** (`work/cuts.json`). It is
+  their voice and their call.
+- **Search the MCP library before the filesystem.** 180 KB of descriptions over
+  12.4 GB of video; almost every footage question is answerable without moving
+  any of it.
+- **Do not ship a mix `verify-mix.mjs` fails**, and never render to check a
+  change — rebuild takes under a second and prints a rhythm report.
 
 ## What this is
 
-An automated editing pipeline for 9:16 talking-head video, built on
-[HyperFrames](https://hyperframes.heygen.com) (HTML → video). `bin/build-video.mjs`
-compiles per-project **data files** into a single self-contained
-`build/index.html` composition (inline CSS + a GSAP timeline); HyperFrames
-previews, lints, and renders that HTML.
+An automated editing pipeline for talking-head video, built on
+[HyperFrames](https://hyperframes.heygen.com) (HTML → video). It compiles a
+per-project plan into a single self-contained `build/index.html` composition
+(inline CSS + a GSAP timeline); HyperFrames previews, lints and renders that HTML.
+
+**Two builders live here, and new work uses the first:**
+
+- **`bin/build-edit.mjs`** — the current one. Reads `edit-plan.json`, where every
+  placement is anchored to a **spoken phrase**, and emits 16:9, 9:16 and a
+  capped short from one plan. Everything in `AGENTS.md` refers to this.
+- **`bin/build-video.mjs`** — the original, still used by the older projects. Reads
+  per-project **data files** (`video.config.mjs`, `cards.data.mjs`, `logos.json`)
+  rather than a plan. The "Architecture" section below describes this one.
 
 The core premise: every edit decision is derivable from the transcript, so it is
 data, not a gesture. **Never render to check a change** — edit a data file,
