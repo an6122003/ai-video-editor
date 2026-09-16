@@ -35,7 +35,9 @@ projects/<name>/
 
 ## Run it
 
-All commands from the project directory. `PY=../../.venv/Scripts/python.exe`.
+All commands from the project directory. Set `PY` first — the only thing that
+differs between platforms is where the venv keeps its interpreter:
+`PY=../../.venv/bin/python` on macOS/Linux, `PY=../../.venv/Scripts/python` on Windows.
 
 ```bash
 node ../../bin/fetch-fonts.mjs fonts --brand nowa                  # once per project

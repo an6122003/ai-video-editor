@@ -18,10 +18,23 @@ recording + B-roll  →  transcribe  →  clean  →  beats  →  treatment  →
 ## Quick start
 
 ```bash
+git clone https://github.com/an6122003/ai-video-editor.git
+cd ai-video-editor
 npm install
-py -3.12 -m venv .venv
-.venv/Scripts/python -m pip install -r requirements.txt    # CPU-only, no CUDA
 ```
+
+Then a Python 3.12 venv. The two platforms differ only in where the venv puts
+its interpreter, so pick your line:
+
+```bash
+# macOS / Linux
+python3.12 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
+
+# Windows (PowerShell or Git Bash)
+py -3.12 -m venv .venv && .venv/Scripts/python -m pip install -r requirements.txt
+```
+
+`requirements.txt` is CPU-only and installs in under a minute.
 
 **No GPU required.** Measured on real footage, CPU int8 beats realtime at every
 model size — `large-v3` runs at 0.67×, so a 3½-minute episode transcribes in
@@ -30,6 +43,13 @@ CUDA and falls back on its own. The ~2.5 GB of CUDA wheels live separately in
 `requirements-gpu.txt` because they are inert without the hardware.
 
 Then, from a project directory:
+
+Set `PY` once so the commands below are the same on either platform:
+
+```bash
+PY=../../.venv/bin/python          # macOS / Linux
+PY=../../.venv/Scripts/python      # Windows
+```
 
 ```bash
 $PY ../../bin/transcribe.py <source.mp4> --out work --language en
