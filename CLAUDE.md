@@ -177,7 +177,7 @@ interchangeable output.
 catalogue (≈3 MB, no video) and `broll/index.json` becomes locally searchable.
 Do that rather than asking someone to send you footage.
 
-**Your job is the recall, not the taste.** Reading 124 descriptions and
+**Your job is the recall, not the taste.** Reading every description and
 remembering what is in them is what you are good at. Deciding what the edit
 should feel like is not — propose, and let the human choose.
 
@@ -271,7 +271,7 @@ with it but HyperFrames and `fetch-fonts.mjs`. It runs per project from
 | verify mix | `bin/verify-mix.mjs --video out/02_edit.mp4 --music <mp3>` | prints the voice/bed separation; exit 1 if it fails |
 | vertical | `bin/build-edit.mjs --plan edit-plan.9x16.json` | `build-9x16/` at 1080x1920 from the SAME master plan |
 | a shorter cut | `bin/aroll-clean.mjs --apply --cuts work/cuts.shorts.json --suffix .shorts --out out/01_aroll_shorts.mp4` | a variant A-roll + transcript, master untouched |
-| shorts | `bin/shorts.mjs` (propose) → show them → `--apply --pick 1,4` | `work/shorts.json`, `edit-plan.short-NN.json`, windowed A-roll + transcript |
+| shorts | `bin/shorts.mjs` (propose) → `--approve` each transcript → `--apply` | `work/shorts.json`, `edit-plan.short-NN.json`, windowed A-roll + transcript |
 | thumbnails | `bin/thumbnails.mjs` (reads `thumbnails.json`) | `thumbs/out/*.png` |
 
 Things about it that are not obvious from the code:

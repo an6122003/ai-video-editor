@@ -4,6 +4,11 @@ The operating runbook for this repository. Whatever agent you are, read this
 before doing anything. `CLAUDE.md` carries the deeper doctrine — design rules,
 traps, the card kit — and points here for the process.
 
+In Claude Code the skill at `.claude/skills/edit-video/` loads on its own when
+somebody asks for a video to be edited. It covers the *conversation* — which
+steps stop and ask, and what to show — and defers to this file for the
+commands. The two are meant to be read together.
+
 **Assume the person asking is not a video editor and has not read any of this.**
 Run the commands yourself and report what you find. Do not hand them a list of
 things to type. Ask only about decisions that are genuinely theirs: what the
@@ -199,14 +204,25 @@ is already on screen, and proposes self-contained moments in the 20–60s band:
 
 ```bash
 node ../../bin/shorts.mjs                      # propose -> work/shorts.json
-node ../../bin/shorts.mjs --apply --pick 1,4   # build the ones they chose
+node ../../bin/shorts.mjs --approve            # read each transcript, keep or skip
+node ../../bin/shorts.mjs --apply              # build only what was approved
 node ../../bin/build-edit.mjs --plan edit-plan.short-01.json
 ```
 
-**Show them the list and let them choose.** The tool reads words, pace and
-coverage; it cannot hear delivery or know which line lands with their audience.
-It prints the opening line of each candidate and why it scored — that text is
-what they should be judging, not the number.
+**Approve them one at a time, on the transcript.** The tool prints each
+candidate's FULL text — put that in front of them and ask whether it should be
+posted, one by one. "These five look fine" is not a decision anyone made, and a
+rejected candidate costs nothing while a bad post costs them.
+
+`--apply` refuses to run with nothing approved and nothing `--pick`ed. That is
+deliberate: mass-producing clips nobody has read is what this step prevents.
+Approvals persist in `work/shorts.json`, matched on the window rather than the
+number, so re-running after an edit never moves an approval to a different moment.
+
+The tool reads words, pace and coverage; it cannot hear delivery or know which
+line lands with their audience. Report what it flagged honestly —
+`OPENS MID-THOUGHT` means the candidate starts on a bare pronoun and needs a
+different first line or in-point.
 
 It refuses rather than pads: `--want` is a ceiling, so an edit with two good
 moments proposes two, and one that is a single continuous argument proposes

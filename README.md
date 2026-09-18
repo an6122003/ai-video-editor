@@ -158,7 +158,7 @@ base64 would be a third larger and unresumable.
    phrase anchors, not timecodes.
 5. **Pull only what the plan needs**, build, render, mix, verify.
 
-The agent is doing the part it is good at — reading 124 descriptions and
+The agent is doing the part it is good at — reading every description and
 remembering what is in them — and none of the part it is bad at, which is
 deciding what the edit should feel like.
 
@@ -202,13 +202,15 @@ Composition belongs to the deliverable, so the same beats re-resolve into a
 different frame rather than being re-cut by hand.
 
 ```bash
-node bin/shorts.mjs                      # propose the moments worth posting
-node bin/shorts.mjs --apply --pick 1,4   # cut them
+node bin/shorts.mjs            # propose, printing each candidate's full transcript
+node bin/shorts.mjs --approve  # read them one at a time, keep or skip
+node bin/shorts.mjs --apply    # cut only what you approved
 ```
 
 `bin/shorts.mjs` scores every 20–60s window for a hook, a finished ending,
 pace against the speaker's own median, and how much is already on screen. It
-proposes; you choose. It cannot hear delivery, so it prints the opening line of
+proposes; you approve each one on its transcript before anything is cut, and
+`--apply` refuses to run with nothing approved. It cannot hear delivery, so it prints the opening line of
 each candidate and expects you to read it — and it returns nothing at all
 rather than padding a list when the video is one continuous argument.
 

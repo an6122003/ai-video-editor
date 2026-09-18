@@ -24,6 +24,8 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
+import { createInterface } from "node:readline/promises";
+import { stdin, stdout } from "node:process";
 
 const run = promisify(execFile);
 const args = process.argv.slice(2);
@@ -197,6 +199,20 @@ if (!picked.length) {
 picked.sort((x, y) => x.start - y.start);
 picked.forEach((p, i) => { p.n = i + 1; p.slug = `short-${String(i + 1).padStart(2, "0")}`; });
 
+// Carry approvals forward across runs, matched on the window rather than the
+// number: re-running after an edit can reorder the list, and an approval that
+// silently moved to a different moment would be worse than losing it.
+if (existsSync("work/shorts.json")) {
+  try {
+    const prev = JSON.parse(await readFile("work/shorts.json", "utf8"));
+    for (const p of picked) {
+      const was = (prev.shorts ?? []).find((q) =>
+        Math.abs(q.start - p.start) < 0.05 && Math.abs(q.end - p.end) < 0.05);
+      if (was && was.approved !== undefined) p.approved = was.approved;
+    }
+  } catch { /* a corrupt file just means starting the approvals again */ }
+}
+
 await mkdir("work", { recursive: true });
 await writeFile("work/shorts.json", JSON.stringify({
   generatedAt: new Date().toISOString(),
@@ -205,23 +221,97 @@ await writeFile("work/shorts.json", JSON.stringify({
   shorts: picked,
 }, null, 2));
 
-console.log(`\n${cands.length} windows considered · ${picked.length} proposed · base plan ${BASE_PLAN}\n`);
-for (const p of picked) {
-  console.log(`${String(p.n).padStart(2)}. ${mmss(p.start)}–${mmss(p.end)}  ${String(p.dur).padStart(5)}s  score ${p.score.toFixed(1)}`);
-  console.log(`    "${p.open}${p.text.length > p.open.length ? "…" : ""}"`);
+// The transcript IS the thing being approved, so it gets printed in full and
+// wrapped to read like prose. A one-line preview is enough to rank candidates
+// and nowhere near enough to decide whether to post one.
+const wrap = (s, w = 74, pad = "    ") => {
+  const out = []; let line = "";
+  for (const word of s.split(/\s+/)) {
+    if ((line + " " + word).trim().length > w) { out.push(pad + line.trim()); line = word; }
+    else line += " " + word;
+  }
+  if (line.trim()) out.push(pad + line.trim());
+  return out.join("\n");
+};
+
+const showCandidate = (p) => {
+  console.log(`${String(p.n).padStart(2)}. ${mmss(p.start)}–${mmss(p.end)}  ${String(p.dur).padStart(5)}s  score ${p.score.toFixed(1)}` +
+    (p.approved === true ? "  [approved]" : p.approved === false ? "  [rejected]" : ""));
   if (p.why.length) console.log(`    ${p.why.join(" · ")}`);
   console.log("");
-}
-console.log("These are a shortlist, not a verdict — it reads words and pacing, it cannot hear");
-console.log("delivery. Read them, then build the ones you actually want:\n");
-console.log(`  node ../../bin/shorts.mjs --apply --pick ${picked.map((p) => p.n).join(",")}\n`);
+  console.log(wrap(p.text));
+  console.log("");
+};
 
-if (!APPLY) process.exit(0);
+console.log(`\n${cands.length} windows considered · ${picked.length} proposed · base plan ${BASE_PLAN}\n`);
+for (const p of picked) showCandidate(p);
+
+// ── approval ──────────────────────────────────────────────────────────────
+// Nothing gets built until somebody has read the words. Each candidate is
+// approved one at a time, because "these look fine" across six of them is not
+// a decision anyone actually made.
+if (has("--approve")) {
+  const rl = createInterface({ input: stdin, output: stdout });
+  try {
+    console.log("Read each one and say whether it should be posted.\n");
+    for (const p of picked) {
+      console.log(`── ${p.n}. ${mmss(p.start)}–${mmss(p.end)} · ${p.dur}s ─────────────────────────────`);
+      console.log(wrap(p.text));
+      // Racing the close event matters: when stdin is a pipe rather than a
+      // terminal it ends after the last line, and an unraced rl.question()
+      // then never settles — the process hangs on a warning instead of
+      // stopping. Whatever has not been answered stays unapproved, which is
+      // the safe direction.
+      const a = await Promise.race([
+        rl.question(`\n   post this one? [y/N/q] `),
+        new Promise((res) => rl.once("close", () => res(null))),
+      ]);
+      if (a === null) { console.log("\n   (input ended — stopping here)\n"); break; }
+      const ans = a.trim().toLowerCase();
+      if (ans === "q") break;
+      p.approved = ans === "y" || ans === "yes";
+      console.log(p.approved ? "   kept\n" : "   skipped\n");
+    }
+  } finally { rl.close(); }
+  await writeFile("work/shorts.json", JSON.stringify({
+    generatedAt: new Date().toISOString(), basePlan: BASE_PLAN, min: MIN, max: MAX,
+    note: "approved flags were set by hand; --apply builds only those.",
+    shorts: picked,
+  }, null, 2));
+  const yes = picked.filter((p) => p.approved);
+  console.log(`${yes.length} approved${yes.length ? `: ${yes.map((p) => p.n).join(", ")}` : ""}.\n`);
+  if (!yes.length) { console.log("Nothing to build.\n"); process.exit(0); }
+  if (!APPLY) { console.log(`Build them:\n\n  node ../../bin/shorts.mjs --apply\n`); process.exit(0); }
+}
+
+if (!APPLY) {
+  console.log("These are a shortlist, not a verdict — it reads words and pacing, it cannot hear");
+  console.log("delivery. Read the transcripts above, then either approve them one at a time:\n");
+  console.log(`  node ../../bin/shorts.mjs --approve\n`);
+  console.log("or build the ones you already know you want:\n");
+  console.log(`  node ../../bin/shorts.mjs --apply --pick ${picked.map((p) => p.n).join(",")}\n`);
+  process.exit(0);
+}
 
 // ── build ─────────────────────────────────────────────────────────────────
-const wanted = PICK ? new Set(PICK.split(",").map((x) => Number(x.trim()))) : null;
-const todo = picked.filter((p) => !wanted || wanted.has(p.n));
-if (!todo.length) { console.error(`--pick ${PICK} matched none of 1..${picked.length}`); process.exit(1); }
+// --apply never means "build all of them". Either you named them, or you read
+// them and approved them; mass-producing six shorts nobody has read is the
+// thing this step exists to prevent.
+let todo;
+if (PICK) {
+  const wanted = new Set(PICK.split(",").map((x) => Number(x.trim())));
+  todo = picked.filter((p) => wanted.has(p.n));
+  if (!todo.length) { console.error(`--pick ${PICK} matched none of 1..${picked.length}`); process.exit(1); }
+} else {
+  todo = picked.filter((p) => p.approved === true);
+  if (!todo.length) {
+    console.error("\nNothing is approved and nothing was picked, so there is nothing to build.");
+    console.error("Read the transcripts above, then either:\n");
+    console.error("  node ../../bin/shorts.mjs --approve        go through them one at a time");
+    console.error(`  node ../../bin/shorts.mjs --apply --pick 1,3   if you already know\n`);
+    process.exit(1);
+  }
+}
 
 const SRC = plan.aroll;
 if (!existsSync(SRC)) { console.error(`\n${SRC} is missing — render the clean A-roll first.`); process.exit(1); }

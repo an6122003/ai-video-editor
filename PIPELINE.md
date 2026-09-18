@@ -635,6 +635,13 @@ much of the window already has B-roll or a card. `--want` is a ceiling, not a
 quota — nothing is proposed below `--floor` (default 0), so a continuous
 argument correctly yields none.
 
+Every candidate's FULL transcript is printed, because that is the thing being
+approved — a one-line preview ranks a candidate and nowhere near decides it.
+`--approve` walks them one at a time and records the answers in
+`work/shorts.json`, matched on the window rather than the number so re-running
+after an edit never moves an approval onto a different moment. `--apply`
+refuses to build with nothing approved and nothing picked.
+
 It cannot hear delivery. Treat the ranking as a shortlist that saves you
 scrubbing a timeline, and judge the candidates by the text it prints.
 
