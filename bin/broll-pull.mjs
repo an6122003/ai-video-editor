@@ -171,7 +171,14 @@ if (jobs.length) process.stdout.write("\n");
 const localIndex = {
   generatedAt: new Date().toISOString(),
   source: `${lib.base} (${lib.library} ${lib.version})`,
-  remote: { base: lib.base, library: lib.library, version: lib.version, proxyWidth: lib.proxyWidth },
+  // Provenance, so a pulled copy still knows what it is. Title and category
+  // come along because a machine holding two pulled libraries otherwise has
+  // only the folder name to tell them apart.
+  remote: {
+    base: lib.base, library: lib.library, version: lib.version, proxyWidth: lib.proxyWidth,
+    ...(lib.title ? { title: lib.title } : {}),
+    ...(lib.category ? { category: lib.category } : {}),
+  },
   totals: lib.totals,
   clips: lib.clips.map((c) => {
     const orig = c.original && existsSync(join(ROOT, "original", c.original.name)) ? join(ROOT, "original", c.original.name) : null;
