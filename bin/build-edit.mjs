@@ -294,51 +294,61 @@ const revealOwns = (c) => {
   return null;
 };
 
-// ── the rhythm rules (apply to every edit, not per project) ───────────────
+// ── the rhythm rules ──────────────────────────────────────────────────────
+// The floors and ceilings below are the house rules. A project may set a
+// STYLE (bin/style.mjs writes project.style) because a product discussion and
+// a casual monologue are not the same kind of video and should not be held to
+// one cadence. Precedence, loosest to tightest:
+//
+//   these defaults  ->  project.style.rhythm  ->  plan.rhythm  ->  per-beat
+//
+// so a style sets the temperature, a plan overrides any single number, and one
+// beat can still do whatever that beat needs.
+const RHYTHM = { ...(project.style?.rhythm ?? {}), ...(plan.rhythm ?? {}) };
 // A cutaway shorter than this reads as a flinch, not a cut: the eye needs
 // ~0.4s to leave the speaker, ~0.4s to come back, and something to look at in
 // between. Insets are gentler — the speaker never leaves — so they can be
 // shorter. Enforced below by extending into available room, and dropping the
 // shot outright if the room isn't there: no cutaway beats a flashed one.
-const HOLD = { full: plan.rhythm?.minFull ?? 3.2, inset: plan.rhythm?.minInset ?? 2.2, wall: 3.2 };
+const HOLD = { full: RHYTHM.minFull ?? 3.2, inset: RHYTHM.minInset ?? 2.2, wall: 3.2 };
 // A stretch of unbroken talking head longer than this needs something.
-const MAX_BARE = plan.rhythm?.maxBare ?? 20;
+const MAX_BARE = RHYTHM.maxBare ?? 20;
 // Share of runtime with neither B-roll nor a card on screen.
-const MAX_UNAUGMENTED = plan.rhythm?.maxUnaugmented ?? 0.5;
+const MAX_UNAUGMENTED = RHYTHM.maxUnaugmented ?? 0.5;
 // No single card type may dominate, and three of a kind in a row is a rut.
 const MAX_TYPE_SHARE = 0.34, MAX_TYPE_RUN = 2;
 // A full-frame card takes the speaker off screen. Past a quarter of the runtime
 // the video stops being a person talking and becomes a slideshow with narration.
-const MAX_FULL_SHARE = plan.rhythm?.maxFullFrame ?? 0.25;
+const MAX_FULL_SHARE = RHYTHM.maxFullFrame ?? 0.25;
 // Two takeovers back to back means the speaker vanishes for half a minute.
 const MAX_FULL_RUN = 1;
 // A card with nothing timed to the words is a still frame. Past this it needs
 // progressive reveals or a shorter hold, whatever motion the surface has.
-const MAX_STATIC_HOLD = plan.rhythm?.maxStaticHold ?? 8;
+const MAX_STATIC_HOLD = RHYTHM.maxStaticHold ?? 8;
 // "It appears too soon and just stands still there." Two rules, because those
 // are two different faults. A placement anchored to a phrase may lead it by no
 // more than MAX_LEAD — a card that arrives two seconds early is on screen
 // saying nothing. And once it is up, something has to keep landing on the
 // words: the first reveal within MAX_FIRST_REVEAL, and no gap between reveals
 // (or after the last one) longer than MAX_REVEAL_GAP.
-const MAX_LEAD = plan.rhythm?.maxLead ?? 0.6;
-const MAX_FIRST_REVEAL = plan.rhythm?.maxFirstReveal ?? 2.0;
+const MAX_LEAD = RHYTHM.maxLead ?? 0.6;
+const MAX_FIRST_REVEAL = RHYTHM.maxFirstReveal ?? 2.0;
 // 6.5s, and the number is a judgement rather than a measurement: run it at 5s
 // and it fires on stretches where the speaker genuinely spends six seconds on
 // one idea, which is not a fault. Past about six and a half a static graphic
 // starts reading as forgotten. The card is never actually motionless — the
 // ground drifts and the content rises for its whole life — so this rule is
 // about INFORMATION arriving, not movement.
-const MAX_REVEAL_GAP = plan.rhythm?.maxRevealGap ?? 6.5;
+const MAX_REVEAL_GAP = RHYTHM.maxRevealGap ?? 6.5;
 // A plan that reaches for the same handful of presentations is the "every card
 // is a box with text" failure wearing a different hat. Beyond a handful of
 // cards, expect the plan to have gone shopping in the library.
 // Scaled to the edit: a nine-card video needs fewer distinct looks than a
 // twenty-card one, but neither should lean on three.
-const minDistinct = (n) => plan.rhythm?.minDistinctLayouts ?? Math.min(12, Math.max(5, Math.ceil(n * 0.55)));
+const minDistinct = (n) => RHYTHM.minDistinctLayouts ?? Math.min(12, Math.max(5, Math.ceil(n * 0.55)));
 // Ideas the video NAMES but has no footage of are what `plate` scenes and
 // bin/image-search.mjs exist for; a long edit with none is worth a nudge.
-const SOURCED_HINT_AFTER = plan.rhythm?.sourcedHintAfter ?? 240;
+const SOURCED_HINT_AFTER = RHYTHM.sourcedHintAfter ?? 240;
 
 // Stepped corner polygon at any notch size — the §0 primitive generalised.
 const step = (n) => {
@@ -2473,6 +2483,32 @@ console.log(`talking head alone: ${bareSec.toFixed(0)}s = ${(100 * bareSec / ARO
 for (const [a, b] of bare) if (b - a > MAX_BARE) warn.push(`RHYTHM: ${(b - a).toFixed(0)}s of unbroken talking head at ${mmss(a)}–${mmss(b)} (limit ${MAX_BARE}s) — needs a cutaway or a card`);
 if (bareSec / AROLL_DUR > MAX_UNAUGMENTED) warn.push(`RHYTHM: ${(100 * bareSec / AROLL_DUR).toFixed(0)}% of the runtime is bare talking head (limit ${(100 * MAX_UNAUGMENTED).toFixed(0)}%)`);
 for (const [ty, n] of Object.entries(types)) if (cards.length >= 4 && n / cards.length > MAX_TYPE_SHARE) warn.push(`VARIETY: ${n} of ${cards.length} cards are "${ty}" (${(100 * n / cards.length).toFixed(0)}%, limit ${(100 * MAX_TYPE_SHARE).toFixed(0)}%) — vary the presentation`);
+
+// ── cadence, when a style asked for one ──────────────────────────────────
+// A style is only worth setting if something checks it. These two numbers are
+// what the person was actually asked for — how often to cut away and how long
+// to hold — measured off the built edit and reported against what they said.
+// Tolerance is deliberately wide (40%): the answer is an intent, not a metre,
+// and a plan that hits it to the second would be a plan that ignored the words.
+if (project.style) {
+  const wantEvery = project.style.brollEverySec, wantHold = project.style.brollHoldSec;
+  const gotHold = brolls.length ? brollSec / brolls.length : 0;
+  // Cutaways per minute is the honest way to express "every N seconds": it does
+  // not pretend the gaps are evenly spaced, which they never are and should not be.
+  const gotEvery = brolls.length ? AROLL_DUR / brolls.length : Infinity;
+  console.log(`style "${project.style.label ?? project.style.name}": asked for a cutaway every ~${wantEvery}s holding ~${wantHold}s` +
+    (brolls.length ? ` — got one every ${gotEvery.toFixed(0)}s holding ${gotHold.toFixed(1)}s` : " — got none"));
+  const off = (got, want) => Math.abs(got - want) / want;
+  if (!brolls.length)
+    warn.push(`STYLE: the style asks for a cutaway every ~${wantEvery}s and the edit has none`);
+  else {
+    if (off(gotEvery, wantEvery) > 0.4)
+      warn.push(`STYLE: cutaways land every ${gotEvery.toFixed(0)}s; "${project.style.label}" asks for every ~${wantEvery}s` +
+        (gotEvery > wantEvery ? " — the edit is thinner than the style you chose" : " — busier than the style you chose"));
+    if (off(gotHold, wantHold) > 0.4)
+      warn.push(`STYLE: cutaways average ${gotHold.toFixed(1)}s; "${project.style.label}" asks for ~${wantHold}s each`);
+  }
+}
 // ── balance: full frame vs the speaker ───────────────────────────────────
 {
   // The full-frame cap is about TEXT taking the screen away from the speaker:
@@ -2481,7 +2517,7 @@ for (const [ty, n] of Object.entries(types)) if (cards.length >= 4 && n / cards.
   // that — it is a cutaway that happens to be a still, and it counts with the
   // B-roll instead. Without this distinction, adding the pictures the script
   // actually calls for trips a rule written about walls of type.
-  const isPictureCut = (c) => isFull(c) && c.media?.length && c.dur <= (plan.rhythm?.stillCutaway ?? 5);
+  const isPictureCut = (c) => isFull(c) && c.media?.length && c.dur <= (RHYTHM.stillCutaway ?? 5);
   const fullSpans = cards.filter((c) => isFull(c) && !isPictureCut(c)).map((c) => [c.at, c.at + c.dur]);
   const fullSec = fullSpans.reduce((n2, [a, b]) => n2 + (b - a), 0);
   const stillSec = cards.filter(isPictureCut).reduce((n2, c) => n2 + c.dur, 0);
@@ -2575,8 +2611,11 @@ NO-TEXT graphics (drawn over the footage)
   cells {count,filled,label,eyebrow}                 pixel cells lighting up
 MOTION  enter/exit: rise | plant | fade | wipe | dither   (defaults per type)
 B-ROLL  {clip,in,at,dur|until,fit:cover|pillar,treatment:full|inset,side,enter:"wipe",from}
-RHYTHM  plan.rhythm { minFull:3.2, minInset:2.2, maxBare:20, maxUnaugmented:0.5 }
-        Shots below the floor are extended into available room, or dropped.
+RHYTHM  defaults <- project.style.rhythm <- plan.rhythm <- per-beat fields
+        { minFull:3.2, minInset:2.2, maxBare:20, maxUnaugmented:0.5, ... }
+        bin/style.mjs sets project.style; the report then measures the cut
+        against that cadence. Shots below the floor are extended into
+        available room, or dropped.
         The build reports coverage, shot lengths, card-type mix and the longest
         bare stretch, and warns when a rule is broken.
 */

@@ -42,6 +42,28 @@ is the master. It probes the recording, picks the composition, scaffolds
 means the speaker is being enlarged, and that is a quality decision they should
 hear before a render rather than after.
 
+**Then ask them what kind of video this is.** Three questions, and the answers
+are theirs — a product discussion and a casual monologue are not the same edit
+and should not be held to one cadence:
+
+1. what kind of video is it — yapping, product discussion, explainer, interview
+2. how many seconds of talking between cutaways
+3. how long each cutaway should hold
+
+```bash
+node ../../bin/style.mjs                  # show the presets, with what each one means
+node ../../bin/style.mjs --style yapping --broll-every 8 --broll-hold 3.4
+```
+
+Show them the presets and let them pick; only set it yourself if they say they
+do not care. It writes `style` into `project.json`, and `build-edit.mjs` folds
+it in under `plan.rhythm` — so the rhythm report then measures the cut against
+**their** cadence and warns when the edit drifts off it. It is not a comment.
+
+A hold under 3.2s drops the cutaway floor to match, and says so. That floor
+exists because 1–2s cutaways were watched on ep.01 and called "weird and
+abrupt" — if they ask for shorter, give it to them, then make them look at it.
+
 Everything below runs **from inside `projects/<slug>/`**. Set `PY` once:
 
 ```bash
@@ -169,6 +191,32 @@ node ../../bin/mix-audio.mjs --video out/03_vertical.mp4 --music <bed.mp3> --sfx
 
 A vertical plan `extends` the master and overrides individual beats. Do not
 re-cut by hand.
+
+## 9 · Shorts, from the same edit
+
+One long video is several posts. This reads the transcript, the pacing and what
+is already on screen, and proposes self-contained moments in the 20–60s band:
+
+```bash
+node ../../bin/shorts.mjs                      # propose -> work/shorts.json
+node ../../bin/shorts.mjs --apply --pick 1,4   # build the ones they chose
+node ../../bin/build-edit.mjs --plan edit-plan.short-01.json
+```
+
+**Show them the list and let them choose.** The tool reads words, pace and
+coverage; it cannot hear delivery or know which line lands with their audience.
+It prints the opening line of each candidate and why it scored — that text is
+what they should be judging, not the number.
+
+It refuses rather than pads: `--want` is a ceiling, so an edit with two good
+moments proposes two, and one that is a single continuous argument proposes
+none and says so. That is a real answer about the video, not a failure.
+
+Each accepted moment becomes a plan that `extends` the vertical one with the
+out-of-window beats dropped and the rest rebased — the crop, captions and card
+layouts are the ones already decided, and the phrase anchors inside the window
+re-resolve against the shortened transcript on their own. Re-running
+**overwrites** those plans, so rename one before editing it by hand.
 
 ---
 

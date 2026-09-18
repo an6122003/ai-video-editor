@@ -186,18 +186,43 @@ Enforced at build time, not left to taste. Full table in `PIPELINE.md`.
 
 ---
 
-## One edit, three deliverables
+## One edit, many deliverables
 
 `edit-plan.json` is the master. Others `extends` it and override beats:
 
 ```
 edit-plan.json                 16:9
 └── edit-plan.9x16.json        9:16, full-bleed speaker, caption above the head
-    └── edit-plan.9x16.shorts.json   under the 3:00 cap
+    ├── edit-plan.9x16.shorts.json   under the 3:00 cap
+    ├── edit-plan.short-01.json      a 20–60s moment, cut for cross-posting
+    └── edit-plan.short-02.json      …
 ```
 
 Composition belongs to the deliverable, so the same beats re-resolve into a
 different frame rather than being re-cut by hand.
+
+```bash
+node bin/shorts.mjs                      # propose the moments worth posting
+node bin/shorts.mjs --apply --pick 1,4   # cut them
+```
+
+`bin/shorts.mjs` scores every 20–60s window for a hook, a finished ending,
+pace against the speaker's own median, and how much is already on screen. It
+proposes; you choose. It cannot hear delivery, so it prints the opening line of
+each candidate and expects you to read it — and it returns nothing at all
+rather than padding a list when the video is one continuous argument.
+
+## What kind of video is this
+
+```bash
+node bin/style.mjs --style product-discussion --broll-every 18 --broll-hold 5
+```
+
+A style answers three questions — what kind of video, how often to cut away,
+how long each cutaway holds — and lands in `project.json`. The builder folds it
+into the rhythm rules, so the report measures the cut against *that* cadence
+and says when the edit has drifted off it. Presets: `yapping`,
+`product-discussion`, `explainer`, `interview`.
 
 ---
 

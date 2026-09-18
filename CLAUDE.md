@@ -13,11 +13,15 @@ It lives there rather than here so every agent reads the same thing, and so
 these two files cannot drift apart. What follows below is the deeper material:
 the architecture, the design doctrine the builder enforces, and the traps.
 
-Three things from it that are worth repeating because they are the ones most
+Four things from it that are worth repeating because they are the ones most
 often got wrong:
 
 - **Show the proposed cuts before applying them** (`work/cuts.json`). It is
   their voice and their call.
+- **Ask what kind of video this is** before writing a plan (`bin/style.mjs`):
+  the style, how often to cut away, how long each cutaway holds. Same for which
+  shorts to post (`bin/shorts.mjs`) — both tools propose, the person decides.
+  Neither can hear delivery or knows their audience.
 - **Search the MCP library before the filesystem.** A few hundred KB of
   descriptions over 14 GB of video, filed into categories; almost every footage
   question is answerable without moving any of it. Search all categories first.
@@ -259,6 +263,7 @@ with it but HyperFrames and `fetch-fonts.mjs`. It runs per project from
 | transcribe | `.venv/Scripts/python bin/transcribe.py <src> --out work` (faster-whisper, CUDA) | `work/transcript*.json`, `.srt` |
 | clean A-roll | `bin/aroll-clean.mjs` (propose) → review `work/cuts.json` → `--apply` | `out/01_aroll_clean.mp4`, `work/transcript.clean.json`, `work/keep.json` |
 | beats | `bin/beats.mjs` | `work/beats.json` |
+| style | `bin/style.mjs --style <preset>` — ASK them, it is their call | `project.style` in `project.json`; folded into the rhythm rules |
 | B-roll library | `bin/broll-index.mjs <folder> --out broll` → read sheets → `broll/described/*.json` → re-run | `broll/index.json`, `broll/sheets/` |
 | compose | `bin/build-edit.mjs` (reads `edit-plan.json`) | `build/index.html`, `build/broll/*.mp4`, `build/plan.resolved.json` |
 | sound | `bin/sfx-cues.mjs`, `bin/mix-audio.mjs` | `sfx-cues.json`, `out/final.mp4` |
@@ -266,6 +271,7 @@ with it but HyperFrames and `fetch-fonts.mjs`. It runs per project from
 | verify mix | `bin/verify-mix.mjs --video out/02_edit.mp4 --music <mp3>` | prints the voice/bed separation; exit 1 if it fails |
 | vertical | `bin/build-edit.mjs --plan edit-plan.9x16.json` | `build-9x16/` at 1080x1920 from the SAME master plan |
 | a shorter cut | `bin/aroll-clean.mjs --apply --cuts work/cuts.shorts.json --suffix .shorts --out out/01_aroll_shorts.mp4` | a variant A-roll + transcript, master untouched |
+| shorts | `bin/shorts.mjs` (propose) → show them → `--apply --pick 1,4` | `work/shorts.json`, `edit-plan.short-NN.json`, windowed A-roll + transcript |
 | thumbnails | `bin/thumbnails.mjs` (reads `thumbnails.json`) | `thumbs/out/*.png` |
 
 Things about it that are not obvious from the code:

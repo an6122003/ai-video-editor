@@ -1,0 +1,60 @@
+{
+  "_readme": [
+    "nowa-no-touchscreen — short 1, 0:00–0:23 of the long cut (22.9s).",
+    "",
+    "Proposed by bin/shorts.mjs because it 64% already has B-roll or a card.",
+    "",
+    "This is a WINDOW on the long edit, not a second edit. It extends the",
+    "vertical plan, so the crop, captions and card layouts are the ones already",
+    "decided for 9:16. beatOverrides drops every beat outside the window and",
+    "rebases the ones inside; their spoken anchors re-resolve against the",
+    "shortened transcript on their own.",
+    "",
+    "Re-running bin/shorts.mjs OVERWRITES this file. Anything you want to keep",
+    "-- a different in point, an extra card, a changed hook -- rename the plan",
+    "first and edit the copy.",
+    "",
+    "Opening line: \"Well, today we're going to talk about one key design decision that was quite\""
+  ],
+  "extends": "edit-plan.9x16.json",
+  "aroll": "out/01_aroll_short-01.mp4",
+  "transcript": "work/transcript.clean.short-01.json",
+  "outDir": "build-short-01",
+  "beatOverrides": {
+    "b01": {
+      "start": 0.01,
+      "end": 10.91
+    },
+    "b02": {
+      "start": 11.11,
+      "end": 14.61
+    },
+    "b03": {
+      "start": 14.91,
+      "end": 22.91
+    },
+    "b04": null,
+    "b05": null,
+    "b05b": null,
+    "b06": null,
+    "b09b": null,
+    "b10b": null,
+    "b11": null,
+    "b12": null,
+    "b13": null,
+    "b14": null,
+    "b16": null,
+    "b18": null,
+    "b19": null,
+    "b19b": null,
+    "b21": null,
+    "b22": null,
+    "b23": null,
+    "b23b": null,
+    "b24": null,
+    "b24b": null,
+    "b25": null,
+    "b25b": null,
+    "b26": null
+  }
+}

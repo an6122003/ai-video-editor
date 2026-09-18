@@ -584,11 +584,65 @@ measures **11.9 LU** — audible on a phone, still clearly under the voice.
 verified at. It is not a guess to be carried over blindly: a louder track, or a
 quieter voice, moves the result, so re-run the verifier per episode.
 
+## Style: what kind of video is this
+
+A product discussion and a casual monologue are not the same edit. `bin/style.mjs`
+asks three questions — what kind of video, seconds of talking between cutaways,
+seconds each cutaway holds — and writes the answers to `project.json` as
+`style`, including a `rhythm` block.
+
+The builder merges rhythm knobs loosest-to-tightest:
+
+```
+built-in defaults  ->  project.style.rhythm  ->  plan.rhythm  ->  per-beat fields
+```
+
+so a style sets the temperature, a plan can still override any single number,
+and one beat can still do whatever that beat needs. The rhythm report then
+measures cutaways-per-minute and mean hold against what was asked for and warns
+past a 40% drift — wide on purpose, because the answer is an intent, not a
+metre, and an edit that hit it exactly would be one that ignored the words.
+
+| preset | cutaway every | holds | for |
+|---|---|---|---|
+| `yapping` | ~10s | 3.4s | casual monologue; the eye needs something new often |
+| `product-discussion` | ~18s | 5.0s | the object has to be on screen long enough to read |
+| `explainer` | ~15s | 3.6s | graphics lead, footage illustrates |
+| `interview` | ~30s | 4.0s | let the person breathe |
+
+`minFull` stays at 3.2s in every preset. Asking for a shorter hold drops the
+floor to match and prints why it was there: 1–2s cutaways were watched on ep.01
+and called "weird and abrupt".
+
+## Shorts, from the same edit
+
+`bin/shorts.mjs` proposes self-contained 20–60s moments and cuts each into its
+own deliverable. A short is a WINDOW on the long edit, not a second edit:
+
+- the A-roll is cut to the window (re-encoded, so it starts on the frame asked
+  for, not the previous keyframe)
+- the transcript is sliced and rebased to zero
+- the plan `extends` the vertical one, dropping out-of-window beats with `null`
+  and rebasing the rest; the phrase anchors inside re-resolve on their own
+
+Dropping is not optional: an anchor whose phrase is not in the transcript falls
+back to time 0, which would pile every stray card onto the first frame.
+
+Scoring reads the opening line (question, negation, contradiction, number,
+direct address), whether it opens mid-thought on a bare pronoun, whether it
+ends on a finished sentence, pace against the speaker's own median, and how
+much of the window already has B-roll or a card. `--want` is a ceiling, not a
+quota — nothing is proposed below `--floor` (default 0), so a continuous
+argument correctly yields none.
+
+It cannot hear delivery. Treat the ranking as a shortlist that saves you
+scrubbing a timeline, and judge the candidates by the text it prints.
+
 ## Vertical, from the same edit
 
-One plan, three deliverables. `edit-plan.json` is the master; the vertical cut
-and the Shorts cut EXTEND it rather than copying it, because three copies of 22
-beats drift apart within one revision.
+One plan, many deliverables. `edit-plan.json` is the master; the vertical cut,
+the Shorts cut and every short EXTEND it rather than copying it, because
+several copies of 22 beats drift apart within one revision.
 
 ```bash
 node ../../bin/build-edit.mjs                                  # 1920x1080 -> build/
