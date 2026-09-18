@@ -30,6 +30,16 @@ If it stops, it is because **ffmpeg** or **Python 3.10+** is missing, and it
 prints the install command for that platform. Nothing is created until both are
 there. No GPU is needed — CPU transcription runs faster than realtime.
 
+**Never hardcode a hardware decoder.** Every ffmpeg call goes through
+`bin/lib/hwaccel.mjs`, which asks ffmpeg what it has and proves it on half a
+second of the real file: VideoToolbox on macOS, CUDA on Windows and Linux,
+software when neither answers. There is no Metal hwaccel in ffmpeg — Metal is a
+compute and graphics API, and video on Apple silicon runs on a separate media
+engine that ffmpeg reaches through VideoToolbox. Writing `-hwaccel cuda` into a
+command is how this repo used to die on a Mac with `Device creation failed: -12`
+before decoding a frame. Platform checks are not enough either: a decoder can be
+listed and still fail to allocate, which is the failure that started this.
+
 ## 1 · Make the project
 
 This is where their video goes. **Never ask them to create folders or write

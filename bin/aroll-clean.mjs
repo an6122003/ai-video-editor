@@ -30,6 +30,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { spawn } from "node:child_process";
+import { hwaccelArgs } from "./lib/hwaccel.mjs";
 
 const args = process.argv.slice(2);
 const flag = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
@@ -54,6 +55,11 @@ const RETAKE_SIM = Number(flag("--retake-sim", 0.6));
 const SUFFIX = flag("--suffix", "");
 
 const q = (t) => Math.max(0, Math.round(t * FPS) / FPS);
+// q rounds to the NEAREST frame, so a boundary that merely equals a word's
+// start can still round forward over it. These hold a boundary to the frame
+// strictly below / above a time, for clamping a cut off its neighbours.
+const qDown = (t) => Math.max(0, Math.floor(t * FPS) / FPS);
+const qUp = (t) => Math.max(0, Math.ceil(t * FPS) / FPS);
 const norm = (w) => w.toLowerCase().replace(/[^\p{L}\p{N}']/gu, "");
 
 const words = JSON.parse(await readFile("work/transcript.json", "utf8"));
@@ -97,6 +103,25 @@ if (!has("--apply")) {
         let s = w.start - PAD, e = w.end + PAD;
         if (gapBefore < Infinity && gapBefore > KEEP_PAUSE) s = prev.end + KEEP_PAUSE / 2;
         if (gapAfter < Infinity && gapAfter > KEEP_PAUSE) e = next.start - KEEP_PAUSE / 2;
+        // A filler spoken straight into the next word has no silence to
+        // swallow, so PAD reaches past that word's START — and the start is the
+        // only thing the transcript remap keys on, so the neighbour would be
+        // dropped along with the "um". Observed on "your dog right um you talk
+        // to your dog", which lost the "you" as well: a word the speaker meant
+        // to say, against the rule at the top of this file.
+        //
+        // Both boundaries clamp to the neighbouring word's near EDGE, not its
+        // start. The two sides fail differently and only one of them drops a
+        // word: ahead of the filler, `next.start` inside the cut loses the
+        // whole word; behind it, `prev.start` can never be inside the cut
+        // unless the previous word is shorter than one frame, so clamping
+        // there was unreachable and left PAD free to shave the tail off `prev`.
+        // A 10ms clip is inaudible, but the rule at the top of this file says
+        // the words on either side are never touched, and this is what makes
+        // that true rather than nearly true.
+        if (next) e = Math.min(e, qDown(next.start));
+        if (prev) s = Math.max(s, qUp(prev.end));
+        if (e - s < 1 / FPS) continue;   // nothing left once clamped — not worth a cut
         cuts.push({ start: s, end: e, reason: "filler", text: w.text, at: w.start });
         continue;
       }
@@ -289,9 +314,12 @@ const graph = [
 await writeFile("work/aroll-clean.filter", graph);
 
 const nvenc = has("--nvenc");
+// Probed against the real source file, so a listed-but-unusable device
+// falls back to software instead of taking the render down with it.
+const HW = await hwaccelArgs(SRC, { disabled: has("--no-hwaccel") });
 const ff = [
   "-y", "-hide_banner", "-loglevel", "warning", "-stats",
-  ...(has("--no-hwaccel") ? [] : ["-hwaccel", "cuda"]),
+  ...HW,
   "-i", SRC,
   "-filter_complex_script", "work/aroll-clean.filter",
   "-map", "[vout]", "-map", "[aout]",
@@ -302,7 +330,7 @@ const ff = [
   OUT,
 ];
 console.log(`${keep.length} kept ranges · ${active.length} cuts · ${total.toFixed(1)}s -> ${outDur.toFixed(1)}s (-${(total - outDur).toFixed(1)}s)`);
-console.log(`rendering ${OUT} (${nvenc ? "nvenc" : "libx264"}) ...`);
+console.log(`rendering ${OUT} (${nvenc ? "nvenc" : "libx264"}${HW.length ? `, ${HW[1]} decode` : ""}) ...`);
 const code = await runInherit("ffmpeg", ff);
 if (code !== 0) { console.error(`ffmpeg exited ${code}`); process.exit(code); }
 console.log(`wrote ${OUT} + ${KEEP_OUT} + ${TRANSCRIPT_OUT} (${cleanWords.length} words)`);

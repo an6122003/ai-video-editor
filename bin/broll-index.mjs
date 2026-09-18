@@ -28,6 +28,7 @@ import { existsSync } from "node:fs";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { join, extname, basename, resolve } from "node:path";
+import { detectHwaccel } from "./lib/hwaccel.mjs";
 
 const run = promisify(execFile);
 
@@ -83,17 +84,10 @@ async function probe(file) {
   return { width: s.width, height: s.height, fps: +(n / d).toFixed(3), duration: +(+j.format.duration).toFixed(3) };
 }
 
+// This file had the right idea first — list, then prove on a real frame —
+// but only ever accepted cuda. bin/lib/hwaccel.mjs is that probe, widened to
+// whatever the platform actually offers.
 let HWACCEL = null;
-async function detectHwaccel(sample) {
-  try {
-    const { stdout } = await run("ffmpeg", ["-hide_banner", "-hwaccels"]);
-    if (!/cuda/.test(stdout)) return null;
-    await run("ffmpeg", ["-v", "error", "-hwaccel", "cuda", "-t", "0.5", "-i", sample, "-f", "null", "-"]);
-    return "cuda";
-  } catch {
-    return null;
-  }
-}
 
 // Sheet render: decode once, keep a frame every TILE_SEC, stamp the source
 // time, tile 4x4. drawtext runs after fps so %{pts} is the kept frame's time,

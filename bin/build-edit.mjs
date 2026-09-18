@@ -29,8 +29,12 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { hwaccelArgs } from "./lib/hwaccel.mjs";
 
 const run = promisify(execFile);
+// Listed-on-trust rather than probed: both cutting loops already retry in
+// software, so a device that lists and then fails costs one attempt, not the build.
+const HW = await hwaccelArgs(null);
 const args = process.argv.slice(2);
 const flag = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
 const has = (n) => args.includes(n);
@@ -761,12 +765,12 @@ for (const e of brolls) {
   const fit = e.fit === "pillar" ? blurFill(`scale=-2:${e.ch}`)
     : e.fit === "whole" ? blurFill(`scale=${e.cw}:-2`)
     : `scale=${e.cw}:${e.ch}:force_original_aspect_ratio=increase,crop=${e.cw}:${e.ch},fps=${FPS},format=yuv420p`;
-  const argv = ["-y", "-v", "error", "-hwaccel", "cuda", "-ss", ss.toFixed(3), "-i", e.clip.path, "-t", (e.dur + 2 * HANDLE).toFixed(3),
+  const argv = ["-y", "-v", "error", ...HW, "-ss", ss.toFixed(3), "-i", e.clip.path, "-t", (e.dur + 2 * HANDLE).toFixed(3),
     "-filter_complex", fit, "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-g", String(FPS), "-keyint_min", String(FPS), "-pix_fmt", "yuv420p", "-movflags", "+faststart", dst];
   process.stdout.write(`  cutting ${e.beat} <- ${e.clip.id} @${e.in}s ${e.dur.toFixed(1)}s ... `);
   const t0 = Date.now();
   try { await run("ffmpeg", argv, { maxBuffer: 16 * 1024 * 1024 }); }
-  catch (err) { // no CUDA on this box, or an odd container: software decode
+  catch (err) { // the device was listed but cannot decode this one: software
     await run("ffmpeg", argv.filter((a, i) => !(a === "-hwaccel" || argv[i - 1] === "-hwaccel")), { maxBuffer: 16 * 1024 * 1024 });
   }
   console.log(`${((Date.now() - t0) / 1000).toFixed(1)}s`);
@@ -781,7 +785,7 @@ for (const sc of sceneClips) {
   if (existsSync(dst) && !has("--force")) { cached++; continue; }
   const ss = Math.max(0, sc.in - HANDLE);
   sc.handle = sc.in - ss;
-  const argv = ["-y", "-v", "error", "-hwaccel", "cuda", "-ss", ss.toFixed(3), "-i", sc.clip.path,
+  const argv = ["-y", "-v", "error", ...HW, "-ss", ss.toFixed(3), "-i", sc.clip.path,
     "-t", (sc.dur + 2 * HANDLE).toFixed(3),
     "-vf", `scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,fps=${FPS},format=yuv420p`,
     "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-g", String(FPS), "-keyint_min", String(FPS),

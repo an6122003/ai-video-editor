@@ -246,6 +246,17 @@ in `references/SKILL.md`, `MEDIA-SOURCING.md`, `PLATFORM-FURNITURE.md`.
 - `backdrop-filter` cannot work on the alpha path (nothing behind to sample, and
   it times out `Page.captureScreenshot`) — `glass` falls back to a denser flat fill
   when `OVERLAY` is set.
+- **Hardware decode is probed, never assumed** — `bin/lib/hwaccel.mjs`, used by
+  `aroll-clean`, `build-edit`, `broll-index` and `broll-review`. It reads
+  `ffmpeg -hwaccels` and then *proves* the winner on 0.5s of the real file,
+  because a device can be listed and still fail to allocate. macOS gets
+  **VideoToolbox**; there is no Metal hwaccel in ffmpeg and asking for one is
+  the wrong shape of question — Metal is compute and graphics, while video
+  decode runs on a separate media engine that VideoToolbox drives. Windows and
+  Linux get CUDA first. Everything falls back to software, which always works.
+  This was four hardcoded `-hwaccel cuda` call sites; on a Mac `aroll-clean`
+  died outright (`Device creation failed: -12`, exit 244) and the other three
+  silently burned a failed ffmpeg attempt per clip before their retry.
 - `face-zone.mjs` needs macOS (system Vision framework via `bin/face-detect.swift`).
   Everything else is cross-platform; without it, set the face zone by hand.
 - `example/storyboard.json` is not read by anything in this pipeline — it is a

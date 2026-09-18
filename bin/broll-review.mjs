@@ -22,8 +22,10 @@ import { existsSync } from "node:fs";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { join } from "node:path";
+import { hwaccelArgs } from "./lib/hwaccel.mjs";
 
 const run = promisify(execFile);
+const HW = await hwaccelArgs(null);
 const args = process.argv.slice(2);
 const flag = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
 const FORCE = args.includes("--force");
@@ -45,7 +47,7 @@ for (const c of clips) {
     if (existsSync(dst) && !FORCE) { cached++; continue; }
     const t = Math.min(c.duration - 0.2, seg.start + (seg.end - seg.start) / 3);
     try {
-      await run("ffmpeg", ["-v", "error", "-y", "-hwaccel", "cuda", "-ss", String(t.toFixed(2)), "-i", c.path,
+      await run("ffmpeg", ["-v", "error", "-y", ...HW, "-ss", String(t.toFixed(2)), "-i", c.path,
         "-frames:v", "1", "-vf", "scale=480:-2", "-q:v", "4", dst]);
       made++;
     } catch {

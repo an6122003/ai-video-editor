@@ -123,6 +123,13 @@ A quiet problem you saw and did not mention is worse than one you missed.
 - **Verify from the encoded file, never the composition.** Every real bug here
   was invisible until someone checked the actual output.
 - **Do not ship a mix `verify-mix.mjs` fails.**
+- **Never pass `-hwaccel` yourself, and never "fix" a decode failure by adding
+  one.** `bin/lib/hwaccel.mjs` probes it — VideoToolbox on macOS, CUDA
+  elsewhere, software when neither proves out. If you are about to write
+  `-hwaccel cuda` into an ffmpeg command, you are re-introducing the bug that
+  killed `aroll-clean.mjs` on every Mac. There is no Metal hwaccel; VideoToolbox
+  is the macOS counterpart. Report which decoder a step chose — the tools print
+  it — rather than assuming the machine matches the one this repo grew up on.
 - **Anchor placements to spoken phrases, never timecodes** — that is what lets
   one plan produce 16:9, 9:16 and every short without re-cutting.
 - **Re-running `bin/shorts.mjs --apply` overwrites `edit-plan.short-NN.json`.**
