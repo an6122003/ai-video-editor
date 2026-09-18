@@ -1,0 +1,384 @@
+1
+00:00:00,280 --> 00:00:05,520
+Welcome to Mission Walkthrough. So this is NOAA Parana. This is where you can set up a bunch
+
+2
+00:00:05,520 --> 00:00:10,500
+of different missions that the kids that will link directly to the device. And from the device,
+
+3
+00:00:10,660 --> 00:00:19,300
+it will become part of what the pet asked the kids to do. And we will go through the mission page.
+
+4
+00:00:19,680 --> 00:00:24,500
+So this is the mission page. As you can see here on the top is different date and the list of
+
+5
+00:00:24,500 --> 00:00:30,460
+mission that appear on different date. So as you scroll down, there are going to be two
+
+6
+00:00:30,460 --> 00:00:34,820
+kind of missions. One is set at a time. So this is typically the kind of missions that
+
+7
+00:00:34,820 --> 00:00:41,160
+go for your routine of the day. So it's work almost like an alarm clock, right? So you
+
+8
+00:00:41,160 --> 00:00:45,420
+have brushed every tooth, that would be like one of the missions in the morning. Homework
+
+9
+00:00:45,420 --> 00:00:49,400
+first, that would be before any play or screen time, you have to do it. So you can set up
+
+10
+00:00:49,400 --> 00:00:53,900
+right after school, they will have to do homework before they do, they can get to do
+
+11
+00:00:53,900 --> 00:00:58,640
+anything charge duty something similar as well you can actually set it up all
+
+12
+00:00:58,640 --> 00:01:03,320
+into the missions list and this is one of the duty that the kids will have to do
+
+13
+00:01:03,320 --> 00:01:08,000
+for example bedtime brush so these are set at the time so let's go into set at
+
+14
+00:01:08,000 --> 00:01:15,020
+the time how do we do that I click on add missions and from admission I can
+
+15
+00:01:15,020 --> 00:01:20,920
+click on all from all I see routine so it filter out and routine let's say my
+
+16
+00:01:20,920 --> 00:01:24,620
+kids is still in kindergarten so these are all the list of the templates that
+
+17
+00:01:24,620 --> 00:01:26,940
+that we give for kindergarten kids.
+
+18
+00:01:27,600 --> 00:01:29,160
+So there's magic words, there's wave goodbye,
+
+19
+00:01:29,380 --> 00:01:31,540
+there's kind hello, thank you missions, story time.
+
+20
+00:01:31,640 --> 00:01:33,100
+So a lot of these are our template.
+
+21
+00:01:33,400 --> 00:01:35,260
+Well, you can actually create your own as well.
+
+22
+00:01:35,560 --> 00:01:36,900
+But before we go into that,
+
+23
+00:01:37,080 --> 00:01:38,240
+I can click on one of the missions
+
+24
+00:01:38,240 --> 00:01:39,560
+so you can see through the details.
+
+25
+00:01:40,240 --> 00:01:41,640
+Morning toothbrush is good morning,
+
+26
+00:01:41,860 --> 00:01:43,300
+it's toothbrush time, grab your toothbrush
+
+27
+00:01:43,300 --> 00:01:44,500
+and brush your grown up.
+
+28
+00:01:45,220 --> 00:01:47,140
+The top teeth with your grown up.
+
+29
+00:01:47,340 --> 00:01:48,580
+The top teeth and the bottom teeth,
+
+30
+00:01:48,740 --> 00:01:49,960
+press the button when you're all done.
+
+31
+00:01:50,320 --> 00:01:51,300
+So this is one of the missions
+
+32
+00:01:51,300 --> 00:01:53,820
+in which is almost like an alarm clock for the kids
+
+33
+00:01:53,820 --> 00:01:58,000
+When they see it, they say oh, it's time to do it and when they do it
+
+34
+00:01:58,000 --> 00:02:03,420
+They know that they will be rewarded a certain amount of gems. So you see the difficulty here. I set as
+
+35
+00:02:05,580 --> 00:02:06,460
+400 gems
+
+36
+00:02:07,260 --> 00:02:13,280
+Schedules today. I can click on it. I can set the schedule. I can set the time for example specific time
+
+37
+00:02:13,280 --> 00:02:15,340
+This one is brushing teeth
+
+38
+00:02:15,340 --> 00:02:21,280
+So it may should be it 30 a.m. Or 7 30 a.m. Click enter
+
+39
+00:02:21,760 --> 00:02:24,740
+Is it repeatable? Is it repeat every day? Is it repeat weekly?
+
+40
+00:02:25,260 --> 00:02:25,700
+Or is it monthly?
+
+41
+00:02:26,380 --> 00:02:31,590
+Monthly, all of this can be set over here by save schedule and go out
+
+42
+00:02:32,450 --> 00:02:36,440
+It will appear on the list of missions brush every tooth
+
+43
+00:02:36,440 --> 00:02:40,520
+So that's one of the missions that you can see here. The second part is anytime
+
+44
+00:02:40,520 --> 00:02:45,380
+So anytime are essentially missions that appear or in the list in which the kids know
+
+45
+00:02:45,380 --> 00:02:48,920
+They should do because it's part of the game and if they do it
+
+46
+00:02:48,920 --> 00:02:51,060
+they will be able to add more XP to the pet,
+
+47
+00:02:51,240 --> 00:02:53,480
+and so the pet can then evolve and grow,
+
+48
+00:02:53,840 --> 00:02:55,960
+become healthy, and evolve into cool forms.
+
+49
+00:02:56,420 --> 00:02:59,240
+So that's the encouragement for the kids
+
+50
+00:02:59,240 --> 00:03:00,180
+to do these kind of missions.
+
+51
+00:03:00,520 --> 00:03:02,700
+So under these missions, as you can see here,
+
+52
+00:03:02,760 --> 00:03:03,900
+if you click on one of the missions,
+
+53
+00:03:05,100 --> 00:03:06,340
+it's called How Does She Feel?
+
+54
+00:03:06,620 --> 00:03:08,020
+But what is that mission entitled?
+
+55
+00:03:08,940 --> 00:03:11,860
+Again, if you click on all, you'll see different pillar.
+
+56
+00:03:12,640 --> 00:03:16,540
+So we have emotional competence,
+
+57
+00:03:18,440 --> 00:03:22,620
+EQ missions and also executive functions, EF missions.
+
+58
+00:03:23,020 --> 00:03:24,680
+So let's go through EQ mission first.
+
+59
+00:03:25,320 --> 00:03:26,420
+So when EQ mission, again,
+
+60
+00:03:26,660 --> 00:03:29,900
+there are different type of missions of EQ missions
+
+61
+00:03:29,900 --> 00:03:31,300
+depending on the age range.
+
+62
+00:03:31,720 --> 00:03:34,460
+Right now we have preschool, we have kindergarten,
+
+63
+00:03:35,360 --> 00:03:36,340
+and then we have elementary.
+
+64
+00:03:37,120 --> 00:03:39,550
+So each of this will actually have
+
+65
+00:03:39,550 --> 00:03:41,270
+the upgraded level based on their age.
+
+66
+00:03:41,550 --> 00:03:43,250
+So let's say if I go kindergarten,
+
+67
+00:03:43,770 --> 00:03:45,830
+these are all the list of the template that we have.
+
+68
+00:03:45,830 --> 00:03:51,350
+These are all the missions in which we have worked with our border advisor to ensure that the mission list is correct and
+
+69
+00:03:51,830 --> 00:03:56,630
+Fit with the age appropriate. So you click on push by you'll see that
+
+70
+00:03:56,630 --> 00:04:02,070
+This is a content description and how does it work out the completion type you click on this
+
+71
+00:04:02,070 --> 00:04:08,130
+The how your child mark mission has finished either he can press the button or he can response
+
+72
+00:04:08,130 --> 00:04:11,850
+Using the record voice and review by parents
+
+73
+00:04:11,850 --> 00:04:16,630
+So you can actually use, you know, you are the one who will review it or you can have the system of NOAA
+
+74
+00:04:16,630 --> 00:04:20,070
+Automatically reviews and analyze the mission description to confirm
+
+75
+00:04:20,930 --> 00:04:26,130
+So is it a quick win if it's quick win? It's only 200 gems or is it a
+
+76
+00:04:26,670 --> 00:04:29,630
+You know mid-sized mission or is it a big mission?
+
+77
+00:04:29,770 --> 00:04:32,270
+So if it's a big mission you can give up to 600 gems
+
+78
+00:04:32,270 --> 00:04:40,210
+You can schedule it again, and then you can click add so here is it will appear over here as one of the missions
+
+79
+00:04:40,210 --> 00:04:47,070
+so you can do the same thing with EF so EF as you can see here the mission will
+
+80
+00:04:47,070 --> 00:04:50,950
+be a little more fun let's play the opposite word game speed level the rule
+
+81
+00:04:50,950 --> 00:04:55,290
+simple but the words come fast when I say up you say down and when I say down
+
+82
+00:04:55,290 --> 00:04:59,330
+you say up ready and then the first word is the second word is so this will
+
+83
+00:04:59,330 --> 00:05:11,750
+appear let's say if I already add oh I already have another EF mission here so
+
+84
+00:05:11,750 --> 00:05:18,770
+we can review at the apps as you can see here there's a trash duty missions that
+
+85
+00:05:18,770 --> 00:05:24,490
+we have to do over here so it's time so I can basically when when is the right
+
+86
+00:05:24,490 --> 00:05:30,420
+time it will pop up like a alarm clock so a clay start and the mission will be
+
+87
+00:05:30,420 --> 00:05:49,790
+played. So the kids will then go and do it and once he's done he can come back
+
+88
+00:05:49,790 --> 00:05:56,010
+and say, I've done it. And of course, well, this is one of the missions that required the review
+
+89
+00:05:56,010 --> 00:06:00,890
+of the parents. So the parents will be the one who actually approve whether or not the mission
+
+90
+00:06:00,890 --> 00:06:06,590
+is done in the app. That only through that, then the pet will get the gems that he need. So right
+
+91
+00:06:06,590 --> 00:06:12,490
+now he doesn't really have anything yet. But let's say with other missions, let's do missions where
+
+92
+00:06:14,150 --> 00:06:33,080
+new toy of a friend which is probably an eq mission I feel a little sad and
+
+93
+00:06:33,080 --> 00:06:56,080
+maybe a little envy maybe do you think I can try to play with you so that's one
+
+94
+00:06:56,080 --> 00:07:03,560
+of the missions of eq that we've done as you can see once it's done we'll click on it you know some
+
+95
+00:07:03,560 --> 00:07:13,840
+of this as missions is done and it will be updated so that's how the missions work between the apps
+
+96
+00:07:13,840 --> 00:07:15,840
+and also the device so
+

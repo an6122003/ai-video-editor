@@ -172,7 +172,7 @@ if (existsSync(join(REPO, ".mcp.json"))) {
   ok("configured", "an agent opened here can search the library over MCP");
 } else {
   console.log("  Not configured. This is optional, and it is the single biggest time-saver:");
-  console.log("  an agent can search 124 described shots without downloading any video.");
+  console.log("  an agent can search every described shot without downloading any video.");
   console.log("");
   console.log("    1. open  https://cyrusstudio.space/broll/");
   console.log("    2. Connect an agent  ->  Copy agent brief");

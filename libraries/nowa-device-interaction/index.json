@@ -1,0 +1,3786 @@
+{
+  "generatedAt": "2026-09-18T09:16:21.765Z",
+  "source": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio",
+  "tileSec": 4,
+  "sheet": {
+    "cols": 4,
+    "rows": 4,
+    "tileWidth": 480
+  },
+  "totals": {
+    "clips": 11,
+    "seconds": 1536.9,
+    "sheets": 29
+  },
+  "clips": [
+    {
+      "id": "gray-videos-clean-v2",
+      "file": "Gray-videos-clean-v2.mp4",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Gray-videos-clean-v2.mp4",
+      "shotAt": "2026-09-09T15:47:10",
+      "width": 1080,
+      "height": 1080,
+      "fps": 30,
+      "duration": 15.925,
+      "sheets": [
+        {
+          "file": "sheets/gray-videos-clean-v2-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            }
+          ],
+          "covers": [
+            0,
+            15.93
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "action": "studio turntable shot of the Nowa device on grey seamless, starting on the back: the full speaker grille and the red carry loop on top",
+          "subject": [
+            "nowa device",
+            "speaker grille",
+            "carry loop",
+            "turntable"
+          ],
+          "shot": "detail",
+          "motion": "pan",
+          "quality": 5,
+          "usable": true,
+          "sequence": "product-turntable",
+          "note": "1080x1080 square, clean grey background, no hands - the only true studio product footage in this library. Crops to any aspect ratio.",
+          "tags": [
+            "product",
+            "hero",
+            "studio",
+            "speaker",
+            "grille",
+            "back",
+            "turntable"
+          ]
+        },
+        {
+          "start": 4,
+          "end": 11,
+          "action": "the turntable brings the front around: colour screen showing the pet's pixel bedroom, and the three-button row - orange back, red microphone, blue play",
+          "subject": [
+            "nowa device",
+            "screen",
+            "three buttons",
+            "microphone button"
+          ],
+          "shot": "detail",
+          "motion": "pan",
+          "quality": 5,
+          "usable": true,
+          "sequence": "product-turntable",
+          "note": "best single shot in the library for 'this is the product' - buttons are legible and the screen is lit",
+          "tags": [
+            "product",
+            "hero",
+            "studio",
+            "screen",
+            "buttons",
+            "microphone",
+            "front",
+            "turntable"
+          ]
+        },
+        {
+          "start": 11,
+          "end": 15.9,
+          "action": "rotation continues to the side profile, showing the USB-C port and the depth of the case",
+          "subject": [
+            "nowa device",
+            "usb-c port",
+            "side profile"
+          ],
+          "shot": "detail",
+          "motion": "pan",
+          "quality": 5,
+          "usable": true,
+          "sequence": "product-turntable",
+          "note": "use for a charging or hardware-spec line",
+          "tags": [
+            "product",
+            "studio",
+            "usb-c",
+            "port",
+            "side",
+            "charging",
+            "turntable"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "nori",
+      "file": "nori.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\nori.mov",
+      "shotAt": "2026-09-10T12:41:06",
+      "width": 348,
+      "height": 290,
+      "fps": 600,
+      "duration": 27.542,
+      "sheets": [
+        {
+          "file": "sheets/nori-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            }
+          ],
+          "covers": [
+            0,
+            27.54
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "action": "screen capture of an asset preview tool cycling pet animation GIFs - the blue pet in an underwater bedroom, filenames readable: doing-exercise, dizzy, speaking-neutral, comforting",
+          "subject": [
+            "pet animation",
+            "pixel art",
+            "asset preview",
+            "underwater room"
+          ],
+          "shot": "detail",
+          "motion": "static",
+          "quality": 2,
+          "usable": false,
+          "sequence": "pet-animation-reference",
+          "note": "348x290 - far below delivery resolution. Reference for what animations exist, NOT cuttable footage. Filenames and a mouse cursor are visible on screen.",
+          "tags": [
+            "reference",
+            "animation",
+            "pixel-art",
+            "assets",
+            "pet",
+            "underwater",
+            "low-res"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 27.5,
+          "action": "move-right.gif preview - the blue pet walks right across the underwater bedroom",
+          "subject": [
+            "pet animation",
+            "walk cycle",
+            "underwater room"
+          ],
+          "shot": "detail",
+          "motion": "static",
+          "quality": 2,
+          "usable": false,
+          "sequence": "pet-animation-reference",
+          "note": "same caveat: tiny source, tool chrome in frame",
+          "tags": [
+            "reference",
+            "animation",
+            "walk",
+            "pet",
+            "underwater",
+            "low-res"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "outside-device",
+      "file": "Outside device.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Outside device.mov",
+      "shotAt": "2026-09-11T15:53:16",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 53.596,
+      "sheets": [
+        {
+          "file": "sheets/outside-device-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            }
+          ],
+          "covers": [
+            0,
+            53.6
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "action": "hands turn the white Nowa device over on a dark wood table - front with the screen dark, then the top edge with the red slider, then the rear",
+          "subject": [
+            "hands",
+            "nowa device",
+            "red slider",
+            "top edge"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "hardware-tour",
+          "note": "warm wood, soft key light, hands only - no faces anywhere in this clip",
+          "tags": [
+            "hardware",
+            "hands",
+            "device",
+            "rotate",
+            "wood",
+            "desk",
+            "tour"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "action": "the back of the device held square to camera: the full dot-matrix speaker grille, then rolled to the side profile showing the button rail",
+          "subject": [
+            "speaker grille",
+            "back shell",
+            "side profile",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "hardware-tour",
+          "note": "the clearest read of the speaker grille in the library - good for an audio or 'it talks back' line",
+          "tags": [
+            "hardware",
+            "speaker",
+            "grille",
+            "back",
+            "side",
+            "hands",
+            "audio"
+          ]
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "action": "back to the front, then a thumb finds the red power slider on the side and pushes it",
+          "subject": [
+            "hands",
+            "power slider",
+            "thumb",
+            "front face"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "hardware-tour",
+          "note": "the physical power-on beat - pairs with the boot screen that follows",
+          "tags": [
+            "hardware",
+            "power",
+            "slider",
+            "button",
+            "hands",
+            "switch-on"
+          ]
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "action": "the device boots: the nowa wordmark on a red splash screen",
+          "subject": [
+            "boot screen",
+            "nowa logo",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "hardware-tour",
+          "note": "brand moment - the only shot of the boot splash in the library. Short, so cut it tight.",
+          "tags": [
+            "boot",
+            "logo",
+            "brand",
+            "splash",
+            "screen",
+            "startup"
+          ]
+        },
+        {
+          "start": 32,
+          "end": 53.6,
+          "action": "the pet game comes up on screen - the pink dino in a green fenced garden - and the hands tilt the device through several angles",
+          "subject": [
+            "screen",
+            "pet",
+            "garden",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "hardware-tour",
+          "note": "hardware and software in one frame; the tilt gives natural motion for a slow cut",
+          "tags": [
+            "screen",
+            "pet",
+            "garden",
+            "hands",
+            "gameplay",
+            "device"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "scroll-room-command-pet-play-shake-device",
+      "file": "Scroll room, command pet play, shake device.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Scroll room, command pet play, shake device.mov",
+      "shotAt": "2026-09-11T15:56:06",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 115.928,
+      "sheets": [
+        {
+          "file": "sheets/scroll-room-command-pet-play-shake-device-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            },
+            {
+              "n": 15,
+              "t": 56
+            },
+            {
+              "n": 16,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            64
+          ]
+        },
+        {
+          "file": "sheets/scroll-room-command-pet-play-shake-device-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 64
+            },
+            {
+              "n": 2,
+              "t": 68
+            },
+            {
+              "n": 3,
+              "t": 72
+            },
+            {
+              "n": 4,
+              "t": 76
+            },
+            {
+              "n": 5,
+              "t": 80
+            },
+            {
+              "n": 6,
+              "t": 84
+            },
+            {
+              "n": 7,
+              "t": 88
+            },
+            {
+              "n": 8,
+              "t": 92
+            },
+            {
+              "n": 9,
+              "t": 96
+            },
+            {
+              "n": 10,
+              "t": 100
+            },
+            {
+              "n": 11,
+              "t": 104
+            },
+            {
+              "n": 12,
+              "t": 108
+            },
+            {
+              "n": 13,
+              "t": 112
+            }
+          ],
+          "covers": [
+            64,
+            115.93
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "action": "scrolling between the pet's rooms - a wooden bedroom, a white-tiled room, then back - the screen slides from one to the next",
+          "subject": [
+            "screen",
+            "rooms",
+            "navigation",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "room-navigation",
+          "note": "shows the world is more than one screen",
+          "tags": [
+            "rooms",
+            "navigation",
+            "scroll",
+            "screen",
+            "ui",
+            "world"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "action": "the device is moved and shaken in the hand while the yard is on screen - the frame blurs with the motion",
+          "subject": [
+            "hands",
+            "device",
+            "shake",
+            "yard"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 2,
+          "usable": false,
+          "sequence": "shake-gesture",
+          "note": "genuinely blurred - only usable if you WANT the shake to read as a gesture, and even then it is soft",
+          "tags": [
+            "shake",
+            "gesture",
+            "motion",
+            "blur",
+            "hands"
+          ]
+        },
+        {
+          "start": 20,
+          "end": 46,
+          "action": "the pet stands in the green fenced yard while a child voice asks it to move rooms",
+          "subject": [
+            "screen",
+            "pet",
+            "yard",
+            "voice command"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "voice-commands",
+          "note": "spoken: 'hey Taro, can you go to the reading room please' and 'can you go to the yard please'",
+          "tags": [
+            "voice",
+            "command",
+            "pet",
+            "yard",
+            "garden",
+            "speech"
+          ]
+        },
+        {
+          "start": 46,
+          "end": 62,
+          "action": "the room changes to the wooden indoor room, the pet standing among the furniture",
+          "subject": [
+            "screen",
+            "pet",
+            "bedroom",
+            "rooms"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "voice-commands",
+          "note": "the payoff of the room command - the pet actually moved",
+          "tags": [
+            "rooms",
+            "bedroom",
+            "pet",
+            "navigation",
+            "screen"
+          ]
+        },
+        {
+          "start": 62,
+          "end": 96,
+          "action": "back in the yard, a thumb holds the red microphone button and the pet performs on command",
+          "subject": [
+            "mic button",
+            "thumb",
+            "pet",
+            "yard"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "voice-commands",
+          "note": "spoken: 'can you do a little dance', 'can you do a little jump' - good for a push-to-talk beat",
+          "tags": [
+            "voice",
+            "command",
+            "microphone",
+            "button",
+            "dance",
+            "jump",
+            "pet"
+          ]
+        },
+        {
+          "start": 96,
+          "end": 115.9,
+          "action": "another spoken command and the pet rolls around in the yard",
+          "subject": [
+            "pet",
+            "yard",
+            "voice command"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "voice-commands",
+          "note": "spoken: 'hi Taro, can you roll around please'",
+          "tags": [
+            "voice",
+            "command",
+            "pet",
+            "roll",
+            "play",
+            "yard"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "careloop-eat-shines-love",
+      "file": "Careloop - Eat, shines, love.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Careloop - Eat, shines, love.mov",
+      "shotAt": "2026-09-11T15:59:00",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 117.563,
+      "sheets": [
+        {
+          "file": "sheets/careloop-eat-shines-love-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            },
+            {
+              "n": 15,
+              "t": 56
+            },
+            {
+              "n": 16,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            64
+          ]
+        },
+        {
+          "file": "sheets/careloop-eat-shines-love-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 64
+            },
+            {
+              "n": 2,
+              "t": 68
+            },
+            {
+              "n": 3,
+              "t": 72
+            },
+            {
+              "n": 4,
+              "t": 76
+            },
+            {
+              "n": 5,
+              "t": 80
+            },
+            {
+              "n": 6,
+              "t": 84
+            },
+            {
+              "n": 7,
+              "t": 88
+            },
+            {
+              "n": 8,
+              "t": 92
+            },
+            {
+              "n": 9,
+              "t": 96
+            },
+            {
+              "n": 10,
+              "t": 100
+            },
+            {
+              "n": 11,
+              "t": 104
+            },
+            {
+              "n": 12,
+              "t": 108
+            },
+            {
+              "n": 13,
+              "t": 112
+            },
+            {
+              "n": 14,
+              "t": 116
+            }
+          ],
+          "covers": [
+            64,
+            117.56
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "action": "the pink dino stands idle in the green fenced garden, waiting",
+          "subject": [
+            "pet",
+            "garden",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "care-loop",
+          "note": "clean neutral opener for the care sequence",
+          "tags": [
+            "pet",
+            "garden",
+            "idle",
+            "screen"
+          ]
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "action": "the care menu opens along the bottom of the screen - three icons: a burger for food, a heart for affection, a star for grooming",
+          "subject": [
+            "care menu",
+            "icons",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "care-loop",
+          "note": "the whole care model in one frame: feed, love, groom",
+          "tags": [
+            "care",
+            "menu",
+            "icons",
+            "ui",
+            "food",
+            "affection",
+            "grooming"
+          ]
+        },
+        {
+          "start": 8,
+          "end": 20,
+          "action": "the food list scrolls - Beef steak, Pizza, Grilled salmon, Burger, Salad, then Candy, Broccoli and Apple, each with a gem price",
+          "subject": [
+            "food list",
+            "menu",
+            "gem prices",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "care-loop",
+          "note": "prices are legible (Beef steak 150, Pizza 120, Candy 40, Broccoli 30) - the economy is readable here, which matters for a 'gems buy things' line",
+          "tags": [
+            "food",
+            "menu",
+            "list",
+            "gems",
+            "prices",
+            "feeding",
+            "ui"
+          ]
+        },
+        {
+          "start": 20,
+          "end": 32,
+          "action": "the pet eats in the garden - the food animation plays and the pet reacts",
+          "subject": [
+            "pet",
+            "eating",
+            "garden",
+            "reaction"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "care-loop",
+          "note": "the reward beat after choosing food",
+          "tags": [
+            "feeding",
+            "pet",
+            "eating",
+            "reaction",
+            "garden"
+          ]
+        },
+        {
+          "start": 32,
+          "end": 48,
+          "action": "back to the care menu, then the pet reacting with hearts above its head",
+          "subject": [
+            "care menu",
+            "pet",
+            "hearts",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "care-loop",
+          "tags": [
+            "care",
+            "menu",
+            "pet",
+            "hearts",
+            "affection"
+          ]
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "action": "the affection list - Massage, Forehead kiss, Head rub, Hand hold, Tickle",
+          "subject": [
+            "affection list",
+            "menu",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "care-loop",
+          "note": "unusually specific list of affection actions - strong for an emotional-care point",
+          "tags": [
+            "affection",
+            "menu",
+            "list",
+            "massage",
+            "kiss",
+            "ui"
+          ]
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "action": "the grooming list - Spray perfume, Face powder, Grooming, Hair trim, Brush teeth",
+          "subject": [
+            "grooming list",
+            "menu",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "care-loop",
+          "note": "pairs with the food list for a 'three kinds of care' montage",
+          "tags": [
+            "grooming",
+            "menu",
+            "list",
+            "hygiene",
+            "teeth",
+            "ui"
+          ]
+        },
+        {
+          "start": 64,
+          "end": 100,
+          "action": "the pet in the garden receiving care - item animations and heart reactions play out",
+          "subject": [
+            "pet",
+            "garden",
+            "care",
+            "hearts"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "care-loop",
+          "tags": [
+            "care",
+            "pet",
+            "garden",
+            "hearts",
+            "reaction"
+          ]
+        },
+        {
+          "start": 100,
+          "end": 117.6,
+          "action": "the care menu opens once more and the pet settles back to idle in the garden",
+          "subject": [
+            "care menu",
+            "pet",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 3,
+          "usable": true,
+          "sequence": "care-loop",
+          "note": "tail of the take - fine for a closing beat, nothing new happens",
+          "tags": [
+            "care",
+            "menu",
+            "pet",
+            "garden",
+            "idle"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "talking-with-pet",
+      "file": "Talking with pet.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Talking with pet.mov",
+      "shotAt": "2026-09-11T16:00:52",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 94.734,
+      "sheets": [
+        {
+          "file": "sheets/talking-with-pet-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            },
+            {
+              "n": 15,
+              "t": 56
+            },
+            {
+              "n": 16,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            64
+          ]
+        },
+        {
+          "file": "sheets/talking-with-pet-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 64
+            },
+            {
+              "n": 2,
+              "t": 68
+            },
+            {
+              "n": 3,
+              "t": 72
+            },
+            {
+              "n": 4,
+              "t": 76
+            },
+            {
+              "n": 5,
+              "t": 80
+            },
+            {
+              "n": 6,
+              "t": 84
+            },
+            {
+              "n": 7,
+              "t": 88
+            },
+            {
+              "n": 8,
+              "t": 92
+            }
+          ],
+          "covers": [
+            64,
+            94.73
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "action": "hands hold the device in close-up while a child talks to the pet - the pink dino answers in the garden with a speech bubble over its head",
+          "subject": [
+            "hands",
+            "pet",
+            "speech bubble",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "open-conversation",
+          "note": "spoken: 'Hi Taro. How's your day? I'm about to head out for lunch with my mother. What should I have for lunch?' - the clearest 'it actually converses' shot in the library",
+          "tags": [
+            "voice",
+            "conversation",
+            "pet",
+            "speech-bubble",
+            "garden",
+            "hands",
+            "ai"
+          ]
+        },
+        {
+          "start": 20,
+          "end": 44,
+          "action": "the conversation continues, thumb resting on the red microphone button between turns",
+          "subject": [
+            "mic button",
+            "pet",
+            "speech bubble",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "open-conversation",
+          "note": "spoken: 'An apple? I like apple too. What fruit do you like? I'm going to go out to play sport.' - the pet asks a question BACK, which is the point",
+          "tags": [
+            "voice",
+            "conversation",
+            "microphone",
+            "button",
+            "pet",
+            "question"
+          ]
+        },
+        {
+          "start": 44,
+          "end": 60,
+          "action": "the child tells the pet they feel sad about a bad grade, and the pet responds",
+          "subject": [
+            "pet",
+            "speech bubble",
+            "garden",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "open-conversation",
+          "note": "spoken: 'I feel a little sad today because I didn't have very good grade at school.' - the emotional-support beat; use this one for any wellbeing claim",
+          "tags": [
+            "emotion",
+            "wellbeing",
+            "sad",
+            "school",
+            "conversation",
+            "pet",
+            "support"
+          ]
+        },
+        {
+          "start": 60,
+          "end": 76,
+          "action": "the exchange closes out, pet idle in the garden",
+          "subject": [
+            "pet",
+            "garden",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "open-conversation",
+          "note": "spoken: 'Thank you Taro. I hope you have a good day.'",
+          "tags": [
+            "conversation",
+            "pet",
+            "goodbye",
+            "garden"
+          ]
+        },
+        {
+          "start": 76,
+          "end": 94.7,
+          "action": "the device is set down on the wood table and sits alone, screen low in frame, red button catching the light",
+          "subject": [
+            "nowa device",
+            "table",
+            "red button"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "quality": 5,
+          "usable": true,
+          "sequence": "resting-device",
+          "note": "locked-off, no hands - the natural end card. The same resting shot appears at the tail of Arcade, Mission and Podcast activation, so you have four takes of it.",
+          "tags": [
+            "device",
+            "table",
+            "resting",
+            "product",
+            "end-card",
+            "static"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "podcast-activation-voice-and-buttons",
+      "file": "Podcast activation - voice and buttons.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Podcast activation - voice and buttons.mov",
+      "shotAt": "2026-09-11T16:04:54",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 203.013,
+      "sheets": [
+        {
+          "file": "sheets/podcast-activation-voice-and-buttons-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            },
+            {
+              "n": 15,
+              "t": 56
+            },
+            {
+              "n": 16,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            64
+          ]
+        },
+        {
+          "file": "sheets/podcast-activation-voice-and-buttons-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 64
+            },
+            {
+              "n": 2,
+              "t": 68
+            },
+            {
+              "n": 3,
+              "t": 72
+            },
+            {
+              "n": 4,
+              "t": 76
+            },
+            {
+              "n": 5,
+              "t": 80
+            },
+            {
+              "n": 6,
+              "t": 84
+            },
+            {
+              "n": 7,
+              "t": 88
+            },
+            {
+              "n": 8,
+              "t": 92
+            },
+            {
+              "n": 9,
+              "t": 96
+            },
+            {
+              "n": 10,
+              "t": 100
+            },
+            {
+              "n": 11,
+              "t": 104
+            },
+            {
+              "n": 12,
+              "t": 108
+            },
+            {
+              "n": 13,
+              "t": 112
+            },
+            {
+              "n": 14,
+              "t": 116
+            },
+            {
+              "n": 15,
+              "t": 120
+            },
+            {
+              "n": 16,
+              "t": 124
+            }
+          ],
+          "covers": [
+            64,
+            128
+          ]
+        },
+        {
+          "file": "sheets/podcast-activation-voice-and-buttons-03.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 128
+            },
+            {
+              "n": 2,
+              "t": 132
+            },
+            {
+              "n": 3,
+              "t": 136
+            },
+            {
+              "n": 4,
+              "t": 140
+            },
+            {
+              "n": 5,
+              "t": 144
+            },
+            {
+              "n": 6,
+              "t": 148
+            },
+            {
+              "n": 7,
+              "t": 152
+            },
+            {
+              "n": 8,
+              "t": 156
+            },
+            {
+              "n": 9,
+              "t": 160
+            },
+            {
+              "n": 10,
+              "t": 164
+            },
+            {
+              "n": 11,
+              "t": 168
+            },
+            {
+              "n": 12,
+              "t": 172
+            },
+            {
+              "n": 13,
+              "t": 176
+            },
+            {
+              "n": 14,
+              "t": 180
+            },
+            {
+              "n": 15,
+              "t": 184
+            },
+            {
+              "n": 16,
+              "t": 188
+            }
+          ],
+          "covers": [
+            128,
+            192
+          ]
+        },
+        {
+          "file": "sheets/podcast-activation-voice-and-buttons-04.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 192
+            },
+            {
+              "n": 2,
+              "t": 196
+            },
+            {
+              "n": 3,
+              "t": 200
+            }
+          ],
+          "covers": [
+            192,
+            203.01
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "action": "thumb holds the red microphone button and asks for a song - the pet waits in the garden",
+          "subject": [
+            "mic button",
+            "pet",
+            "garden",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "voice-media",
+          "note": "spoken: 'Hi Taro. Can you play me some song?'",
+          "tags": [
+            "voice",
+            "microphone",
+            "button",
+            "music",
+            "song",
+            "request"
+          ]
+        },
+        {
+          "start": 18,
+          "end": 36,
+          "action": "a bedtime story is requested and starts playing, pet idle on screen",
+          "subject": [
+            "pet",
+            "garden",
+            "voice command"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "voice-media",
+          "note": "spoken request: 'can you play me a story for me to go to sleep?' then the device reads The Three Little Pigs",
+          "tags": [
+            "voice",
+            "story",
+            "bedtime",
+            "request",
+            "pet"
+          ]
+        },
+        {
+          "start": 36,
+          "end": 60,
+          "action": "a fun fact is requested and the device answers with plant facts",
+          "subject": [
+            "pet",
+            "garden",
+            "voice command"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "voice-media",
+          "note": "spoken: 'I'm very curious. Can you tell me a new fun fact?' - answer is about trees talking underground",
+          "tags": [
+            "voice",
+            "facts",
+            "learning",
+            "request",
+            "pet"
+          ]
+        },
+        {
+          "start": 60,
+          "end": 88,
+          "action": "a podcast is requested by voice and begins - the pet stays in the garden while it plays",
+          "subject": [
+            "pet",
+            "garden",
+            "podcast"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "voice-media",
+          "note": "plays 'Nature's Wonders with Lily' - kids' podcast, named host",
+          "tags": [
+            "voice",
+            "podcast",
+            "audio",
+            "listening",
+            "pet"
+          ]
+        },
+        {
+          "start": 88,
+          "end": 104,
+          "action": "the song list is opened with the buttons instead of the voice - nursery song titles fill the screen",
+          "subject": [
+            "song list",
+            "menu",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "button-media",
+          "note": "titles legible: Magic Shoes, Rainy Day Parade, Robot in My Room, My Little Garden, Silly Monkey Day. This is the 'you can also just press a button' half of the clip.",
+          "tags": [
+            "songs",
+            "list",
+            "menu",
+            "titles",
+            "ui",
+            "buttons"
+          ]
+        },
+        {
+          "start": 104,
+          "end": 128,
+          "action": "back to the garden, then the story list - classic fairy tales listed on screen",
+          "subject": [
+            "story list",
+            "menu",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "button-media",
+          "note": "titles legible: Town Musicians of Bremen, The Three Little Pigs, The Wizard's Garden of Wonder, Rapunzel, The Ugly Duckling",
+          "tags": [
+            "stories",
+            "list",
+            "menu",
+            "fairy-tales",
+            "ui"
+          ]
+        },
+        {
+          "start": 128,
+          "end": 160,
+          "action": "the podcast and fact list - episode titles scroll past",
+          "subject": [
+            "podcast list",
+            "menu",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "button-media",
+          "note": "titles legible: The Forest Whispers, Under the Ice in Antarctica, Whale Mail, Time Travel to Ancient Egypt, The Volcano That Could Sing",
+          "tags": [
+            "podcast",
+            "list",
+            "menu",
+            "titles",
+            "learning",
+            "ui"
+          ]
+        },
+        {
+          "start": 160,
+          "end": 188,
+          "action": "a dinosaur podcast plays while the pet idles in the garden",
+          "subject": [
+            "pet",
+            "garden",
+            "podcast"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "button-media",
+          "note": "plays 'Dino Dan's Delightful Dinosaur Discovery' with a time-travelling T-Rex guest",
+          "tags": [
+            "podcast",
+            "dinosaur",
+            "audio",
+            "pet",
+            "listening"
+          ]
+        },
+        {
+          "start": 188,
+          "end": 203,
+          "action": "the device is lowered and set down on the wood table, left sitting in frame",
+          "subject": [
+            "nowa device",
+            "table"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "quality": 5,
+          "usable": true,
+          "sequence": "resting-device",
+          "note": "the longest of the four resting-device takes",
+          "tags": [
+            "device",
+            "table",
+            "resting",
+            "product",
+            "end-card",
+            "static"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "arcade",
+      "file": "Arcade.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Arcade.mov",
+      "shotAt": "2026-09-11T16:06:38",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 90.763,
+      "sheets": [
+        {
+          "file": "sheets/arcade-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            },
+            {
+              "n": 15,
+              "t": 56
+            },
+            {
+              "n": 16,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            64
+          ]
+        },
+        {
+          "file": "sheets/arcade-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 64
+            },
+            {
+              "n": 2,
+              "t": 68
+            },
+            {
+              "n": 3,
+              "t": 72
+            },
+            {
+              "n": 4,
+              "t": 76
+            },
+            {
+              "n": 5,
+              "t": 80
+            },
+            {
+              "n": 6,
+              "t": 84
+            },
+            {
+              "n": 7,
+              "t": 88
+            }
+          ],
+          "covers": [
+            64,
+            90.76
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "action": "the pet idles in the garden before the games are opened",
+          "subject": [
+            "pet",
+            "garden",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "arcade",
+          "tags": [
+            "pet",
+            "garden",
+            "idle",
+            "screen"
+          ]
+        },
+        {
+          "start": 4,
+          "end": 16,
+          "action": "the arcade menu opens - a row of game icons along the bottom of the screen, thumb stepping through them",
+          "subject": [
+            "arcade menu",
+            "game icons",
+            "screen",
+            "thumb"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "arcade",
+          "note": "the 'there are games on it' establishing frame",
+          "tags": [
+            "arcade",
+            "menu",
+            "games",
+            "icons",
+            "ui"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "action": "back out to the garden between games",
+          "subject": [
+            "pet",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 3,
+          "usable": true,
+          "sequence": "arcade",
+          "tags": [
+            "pet",
+            "garden",
+            "screen"
+          ]
+        },
+        {
+          "start": 20,
+          "end": 40,
+          "action": "a memory matching game is played - face-down cards flip to reveal fruit and gem symbols",
+          "subject": [
+            "memory game",
+            "cards",
+            "screen",
+            "gameplay"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "arcade",
+          "note": "clearest gameplay in the clip; cards are large enough to read at 720p",
+          "tags": [
+            "game",
+            "memory",
+            "cards",
+            "matching",
+            "gameplay",
+            "arcade"
+          ]
+        },
+        {
+          "start": 40,
+          "end": 60,
+          "action": "a grid puzzle game - a pink grid with coloured squares being moved around",
+          "subject": [
+            "puzzle game",
+            "grid",
+            "screen",
+            "gameplay"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "arcade",
+          "tags": [
+            "game",
+            "puzzle",
+            "grid",
+            "gameplay",
+            "arcade"
+          ]
+        },
+        {
+          "start": 60,
+          "end": 76,
+          "action": "back to the menu and into a third game - a line-and-target game with yellow markers",
+          "subject": [
+            "arcade menu",
+            "game",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "arcade",
+          "note": "shows the arcade is more than one game - good for a quick three-cut montage",
+          "tags": [
+            "arcade",
+            "menu",
+            "game",
+            "gameplay"
+          ]
+        },
+        {
+          "start": 76,
+          "end": 80,
+          "action": "out of the arcade and back to the pet in the garden",
+          "subject": [
+            "pet",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 3,
+          "usable": true,
+          "sequence": "arcade",
+          "tags": [
+            "pet",
+            "garden",
+            "screen"
+          ]
+        },
+        {
+          "start": 80,
+          "end": 90.8,
+          "action": "the device is set down on the wood table and left sitting in frame",
+          "subject": [
+            "nowa device",
+            "table"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "quality": 5,
+          "usable": true,
+          "sequence": "resting-device",
+          "tags": [
+            "device",
+            "table",
+            "resting",
+            "product",
+            "end-card",
+            "static"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "mission",
+      "file": "Mission.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Mission.mov",
+      "shotAt": "2026-09-11T16:10:02",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 194.244,
+      "sheets": [
+        {
+          "file": "sheets/mission-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            },
+            {
+              "n": 15,
+              "t": 56
+            },
+            {
+              "n": 16,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            64
+          ]
+        },
+        {
+          "file": "sheets/mission-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 64
+            },
+            {
+              "n": 2,
+              "t": 68
+            },
+            {
+              "n": 3,
+              "t": 72
+            },
+            {
+              "n": 4,
+              "t": 76
+            },
+            {
+              "n": 5,
+              "t": 80
+            },
+            {
+              "n": 6,
+              "t": 84
+            },
+            {
+              "n": 7,
+              "t": 88
+            },
+            {
+              "n": 8,
+              "t": 92
+            },
+            {
+              "n": 9,
+              "t": 96
+            },
+            {
+              "n": 10,
+              "t": 100
+            },
+            {
+              "n": 11,
+              "t": 104
+            },
+            {
+              "n": 12,
+              "t": 108
+            },
+            {
+              "n": 13,
+              "t": 112
+            },
+            {
+              "n": 14,
+              "t": 116
+            },
+            {
+              "n": 15,
+              "t": 120
+            },
+            {
+              "n": 16,
+              "t": 124
+            }
+          ],
+          "covers": [
+            64,
+            128
+          ]
+        },
+        {
+          "file": "sheets/mission-03.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 128
+            },
+            {
+              "n": 2,
+              "t": 132
+            },
+            {
+              "n": 3,
+              "t": 136
+            },
+            {
+              "n": 4,
+              "t": 140
+            },
+            {
+              "n": 5,
+              "t": 144
+            },
+            {
+              "n": 6,
+              "t": 148
+            },
+            {
+              "n": 7,
+              "t": 152
+            },
+            {
+              "n": 8,
+              "t": 156
+            },
+            {
+              "n": 9,
+              "t": 160
+            },
+            {
+              "n": 10,
+              "t": 164
+            },
+            {
+              "n": 11,
+              "t": 168
+            },
+            {
+              "n": 12,
+              "t": 172
+            },
+            {
+              "n": 13,
+              "t": 176
+            },
+            {
+              "n": 14,
+              "t": 180
+            },
+            {
+              "n": 15,
+              "t": 184
+            },
+            {
+              "n": 16,
+              "t": 188
+            }
+          ],
+          "covers": [
+            128,
+            192
+          ]
+        },
+        {
+          "file": "sheets/mission-04.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 192
+            }
+          ],
+          "covers": [
+            192,
+            194.24
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "action": "the pet in the garden, then the mission list opens - a scrollable list of named missions",
+          "subject": [
+            "mission list",
+            "menu",
+            "pet",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "missions-on-device",
+          "note": "titles legible: Room Reset Mission, Same Party Different Feelings, Three Ways to Fix It, Brushing teeth, Signal Switch Sprint, Separate Word Challenge, The Snack Swap, Pencil Case Taken, My Quiet Today, Memory Chain",
+          "tags": [
+            "missions",
+            "list",
+            "menu",
+            "ui",
+            "titles"
+          ]
+        },
+        {
+          "start": 18,
+          "end": 56,
+          "action": "the Room Reset mission runs - a title banner and progress bar sit above the pet while the device reads the challenge aloud",
+          "subject": [
+            "mission banner",
+            "progress bar",
+            "pet",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "missions-on-device",
+          "note": "spoken: 'time for a room reset, here's your challenge: pick five things in your room you can sort out' - and the child answers back with their five things",
+          "tags": [
+            "mission",
+            "room-reset",
+            "progress",
+            "banner",
+            "chores",
+            "voice",
+            "sel"
+          ]
+        },
+        {
+          "start": 56,
+          "end": 80,
+          "action": "the report-back step of the mission - the device asks how the room looks now and the child answers",
+          "subject": [
+            "mission banner",
+            "pet",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "missions-on-device",
+          "note": "spoken: 'compared to before you started, how does your room look now?' answered 'my room looks much cleaner' - the accountability half of a mission",
+          "tags": [
+            "mission",
+            "report",
+            "reflection",
+            "voice",
+            "accountability"
+          ]
+        },
+        {
+          "start": 80,
+          "end": 108,
+          "action": "back to the mission list, scrolling through the available missions",
+          "subject": [
+            "mission list",
+            "menu",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "missions-on-device",
+          "note": "second, slower read of the mission titles - easier to freeze on than the first",
+          "tags": [
+            "missions",
+            "list",
+            "menu",
+            "titles",
+            "sel"
+          ]
+        },
+        {
+          "start": 108,
+          "end": 136,
+          "action": "the Pencil Case Taken mission runs - the device tells a story about a classmate taking a pencil case and asks how the child would feel",
+          "subject": [
+            "mission banner",
+            "pet",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "missions-on-device",
+          "note": "spoken answer: 'I feel very frustrated and I will go and tell my teacher about it' - a real social-emotional-learning moment, not a chore",
+          "tags": [
+            "mission",
+            "pencil-case",
+            "story",
+            "emotions",
+            "sel",
+            "voice"
+          ]
+        },
+        {
+          "start": 136,
+          "end": 150,
+          "action": "a white loading screen, then the mission completes and a gem reward lands on screen",
+          "subject": [
+            "reward",
+            "gems",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "missions-on-device",
+          "note": "the reward beat; the white flash at 136 is a hard frame to cut across",
+          "tags": [
+            "reward",
+            "gems",
+            "completion",
+            "screen"
+          ]
+        },
+        {
+          "start": 150,
+          "end": 184,
+          "action": "the Same Party, Different Feelings mission runs - a birthday-party scenario about two children reacting differently",
+          "subject": [
+            "mission banner",
+            "pet",
+            "garden"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "missions-on-device",
+          "note": "spoken: 'a magician did a big trick, most kids cheered but Sam looked scared and Maya looked bored - pick one and tell me why'",
+          "tags": [
+            "mission",
+            "birthday",
+            "empathy",
+            "emotions",
+            "sel",
+            "voice"
+          ]
+        },
+        {
+          "start": 184,
+          "end": 194.2,
+          "action": "the device is set down on the wood table and left sitting in frame",
+          "subject": [
+            "nowa device",
+            "table"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "quality": 5,
+          "usable": true,
+          "sequence": "resting-device",
+          "tags": [
+            "device",
+            "table",
+            "resting",
+            "product",
+            "end-card",
+            "static"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "nori-talking-and-playing-songs-podcast-via-voice",
+      "file": "Nori talking and playing songs_ podcast via voice.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Nori talking and playing songs_ podcast via voice.mov",
+      "shotAt": "2026-09-16T19:27:36",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 184.58,
+      "sheets": [
+        {
+          "file": "sheets/nori-talking-and-playing-songs-podcast-via-voice-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            },
+            {
+              "n": 15,
+              "t": 56
+            },
+            {
+              "n": 16,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            64
+          ]
+        },
+        {
+          "file": "sheets/nori-talking-and-playing-songs-podcast-via-voice-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 64
+            },
+            {
+              "n": 2,
+              "t": 68
+            },
+            {
+              "n": 3,
+              "t": 72
+            },
+            {
+              "n": 4,
+              "t": 76
+            },
+            {
+              "n": 5,
+              "t": 80
+            },
+            {
+              "n": 6,
+              "t": 84
+            },
+            {
+              "n": 7,
+              "t": 88
+            },
+            {
+              "n": 8,
+              "t": 92
+            },
+            {
+              "n": 9,
+              "t": 96
+            },
+            {
+              "n": 10,
+              "t": 100
+            },
+            {
+              "n": 11,
+              "t": 104
+            },
+            {
+              "n": 12,
+              "t": 108
+            },
+            {
+              "n": 13,
+              "t": 112
+            },
+            {
+              "n": 14,
+              "t": 116
+            },
+            {
+              "n": 15,
+              "t": 120
+            },
+            {
+              "n": 16,
+              "t": 124
+            }
+          ],
+          "covers": [
+            64,
+            128
+          ]
+        },
+        {
+          "file": "sheets/nori-talking-and-playing-songs-podcast-via-voice-03.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 128
+            },
+            {
+              "n": 2,
+              "t": 132
+            },
+            {
+              "n": 3,
+              "t": 136
+            },
+            {
+              "n": 4,
+              "t": 140
+            },
+            {
+              "n": 5,
+              "t": 144
+            },
+            {
+              "n": 6,
+              "t": 148
+            },
+            {
+              "n": 7,
+              "t": 152
+            },
+            {
+              "n": 8,
+              "t": 156
+            },
+            {
+              "n": 9,
+              "t": 160
+            },
+            {
+              "n": 10,
+              "t": 164
+            },
+            {
+              "n": 11,
+              "t": 168
+            },
+            {
+              "n": 12,
+              "t": 172
+            },
+            {
+              "n": 13,
+              "t": 176
+            },
+            {
+              "n": 14,
+              "t": 180
+            },
+            {
+              "n": 15,
+              "t": 184
+            }
+          ],
+          "covers": [
+            128,
+            184.58
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "action": "a cream Nowa device with a teal button, held in both hands - the blue pet Nori stands in a snowy blue room and answers the child through speech bubbles",
+          "subject": [
+            "nowa device",
+            "blue pet",
+            "speech bubble",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "nori-conversation",
+          "note": "DIFFERENT colourway (cream body, teal play button) and a DIFFERENT pet (blue, named Nori) from every other clip in this library - do not intercut with the white/pink-dino footage as if it were the same device. Spoken: 'Hello Nori. Do you like some apple? How about some burger? I'm going to school now.'",
+          "tags": [
+            "voice",
+            "conversation",
+            "pet",
+            "nori",
+            "blue-pet",
+            "cream-device",
+            "speech-bubble"
+          ]
+        },
+        {
+          "start": 30,
+          "end": 56,
+          "action": "the child asks Nori to roll around and to jump, and the pet performs in the room",
+          "subject": [
+            "blue pet",
+            "voice command",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "nori-conversation",
+          "note": "spoken: 'Do you like school? Can you roll around? Can you do a little jump?'",
+          "tags": [
+            "voice",
+            "command",
+            "pet",
+            "jump",
+            "roll",
+            "play"
+          ]
+        },
+        {
+          "start": 56,
+          "end": 72,
+          "action": "the pet declines - a no-entry symbol appears on screen - and then the care menu opens",
+          "subject": [
+            "refusal",
+            "care menu",
+            "blue pet"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "nori-conversation",
+          "note": "spoken: 'you don't want a hug' - the pet saying no is unusual and worth keeping if the script touches on consent or personality",
+          "tags": [
+            "refusal",
+            "personality",
+            "care",
+            "menu",
+            "pet"
+          ]
+        },
+        {
+          "start": 72,
+          "end": 104,
+          "action": "care menu and item screens in the blue room - food, affection and grooming icons",
+          "subject": [
+            "care menu",
+            "icons",
+            "blue pet",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "nori-conversation",
+          "tags": [
+            "care",
+            "menu",
+            "items",
+            "pet",
+            "icons"
+          ]
+        },
+        {
+          "start": 104,
+          "end": 140,
+          "action": "a story is requested by voice and begins playing - the pet listens in the room",
+          "subject": [
+            "blue pet",
+            "story",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "nori-media",
+          "note": "spoken: 'How about can you turn on some story for me?' - a princess fairy tale starts",
+          "tags": [
+            "voice",
+            "story",
+            "fairy-tale",
+            "audio",
+            "pet"
+          ]
+        },
+        {
+          "start": 140,
+          "end": 178,
+          "action": "a podcast is requested and plays, with the song list briefly visible on screen",
+          "subject": [
+            "song list",
+            "podcast",
+            "blue pet",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "nori-media",
+          "note": "plays 'Nature's Wonders with Lily'; song titles visible: Magic Shoes, Rainy Day Parade, Robot in My Room, My Little Garden, Silly Monkey Day",
+          "tags": [
+            "voice",
+            "podcast",
+            "songs",
+            "list",
+            "audio"
+          ]
+        },
+        {
+          "start": 178,
+          "end": 184.6,
+          "action": "the pet settles idle in the blue room as the take ends",
+          "subject": [
+            "blue pet",
+            "screen"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 3,
+          "usable": true,
+          "sequence": "nori-media",
+          "tags": [
+            "pet",
+            "idle",
+            "room",
+            "screen"
+          ]
+        }
+      ],
+      "described": true
+    },
+    {
+      "id": "nowa-parent-missions-set-up-with-device",
+      "file": "Nowa parent Missions set up with device.mov",
+      "path": "H:\\Coding Projects\\source-video\\Transfer to Cyrus studio\\Nowa parent Missions set up with device.mov",
+      "shotAt": "2026-09-16T19:56:18",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "duration": 439.026,
+      "sheets": [
+        {
+          "file": "sheets/nowa-parent-missions-set-up-with-device-01.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 0
+            },
+            {
+              "n": 2,
+              "t": 4
+            },
+            {
+              "n": 3,
+              "t": 8
+            },
+            {
+              "n": 4,
+              "t": 12
+            },
+            {
+              "n": 5,
+              "t": 16
+            },
+            {
+              "n": 6,
+              "t": 20
+            },
+            {
+              "n": 7,
+              "t": 24
+            },
+            {
+              "n": 8,
+              "t": 28
+            },
+            {
+              "n": 9,
+              "t": 32
+            },
+            {
+              "n": 10,
+              "t": 36
+            },
+            {
+              "n": 11,
+              "t": 40
+            },
+            {
+              "n": 12,
+              "t": 44
+            },
+            {
+              "n": 13,
+              "t": 48
+            },
+            {
+              "n": 14,
+              "t": 52
+            },
+            {
+              "n": 15,
+              "t": 56
+            },
+            {
+              "n": 16,
+              "t": 60
+            }
+          ],
+          "covers": [
+            0,
+            64
+          ]
+        },
+        {
+          "file": "sheets/nowa-parent-missions-set-up-with-device-02.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 64
+            },
+            {
+              "n": 2,
+              "t": 68
+            },
+            {
+              "n": 3,
+              "t": 72
+            },
+            {
+              "n": 4,
+              "t": 76
+            },
+            {
+              "n": 5,
+              "t": 80
+            },
+            {
+              "n": 6,
+              "t": 84
+            },
+            {
+              "n": 7,
+              "t": 88
+            },
+            {
+              "n": 8,
+              "t": 92
+            },
+            {
+              "n": 9,
+              "t": 96
+            },
+            {
+              "n": 10,
+              "t": 100
+            },
+            {
+              "n": 11,
+              "t": 104
+            },
+            {
+              "n": 12,
+              "t": 108
+            },
+            {
+              "n": 13,
+              "t": 112
+            },
+            {
+              "n": 14,
+              "t": 116
+            },
+            {
+              "n": 15,
+              "t": 120
+            },
+            {
+              "n": 16,
+              "t": 124
+            }
+          ],
+          "covers": [
+            64,
+            128
+          ]
+        },
+        {
+          "file": "sheets/nowa-parent-missions-set-up-with-device-03.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 128
+            },
+            {
+              "n": 2,
+              "t": 132
+            },
+            {
+              "n": 3,
+              "t": 136
+            },
+            {
+              "n": 4,
+              "t": 140
+            },
+            {
+              "n": 5,
+              "t": 144
+            },
+            {
+              "n": 6,
+              "t": 148
+            },
+            {
+              "n": 7,
+              "t": 152
+            },
+            {
+              "n": 8,
+              "t": 156
+            },
+            {
+              "n": 9,
+              "t": 160
+            },
+            {
+              "n": 10,
+              "t": 164
+            },
+            {
+              "n": 11,
+              "t": 168
+            },
+            {
+              "n": 12,
+              "t": 172
+            },
+            {
+              "n": 13,
+              "t": 176
+            },
+            {
+              "n": 14,
+              "t": 180
+            },
+            {
+              "n": 15,
+              "t": 184
+            },
+            {
+              "n": 16,
+              "t": 188
+            }
+          ],
+          "covers": [
+            128,
+            192
+          ]
+        },
+        {
+          "file": "sheets/nowa-parent-missions-set-up-with-device-04.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 192
+            },
+            {
+              "n": 2,
+              "t": 196
+            },
+            {
+              "n": 3,
+              "t": 200
+            },
+            {
+              "n": 4,
+              "t": 204
+            },
+            {
+              "n": 5,
+              "t": 208
+            },
+            {
+              "n": 6,
+              "t": 212
+            },
+            {
+              "n": 7,
+              "t": 216
+            },
+            {
+              "n": 8,
+              "t": 220
+            },
+            {
+              "n": 9,
+              "t": 224
+            },
+            {
+              "n": 10,
+              "t": 228
+            },
+            {
+              "n": 11,
+              "t": 232
+            },
+            {
+              "n": 12,
+              "t": 236
+            },
+            {
+              "n": 13,
+              "t": 240
+            },
+            {
+              "n": 14,
+              "t": 244
+            },
+            {
+              "n": 15,
+              "t": 248
+            },
+            {
+              "n": 16,
+              "t": 252
+            }
+          ],
+          "covers": [
+            192,
+            256
+          ]
+        },
+        {
+          "file": "sheets/nowa-parent-missions-set-up-with-device-05.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 256
+            },
+            {
+              "n": 2,
+              "t": 260
+            },
+            {
+              "n": 3,
+              "t": 264
+            },
+            {
+              "n": 4,
+              "t": 268
+            },
+            {
+              "n": 5,
+              "t": 272
+            },
+            {
+              "n": 6,
+              "t": 276
+            },
+            {
+              "n": 7,
+              "t": 280
+            },
+            {
+              "n": 8,
+              "t": 284
+            },
+            {
+              "n": 9,
+              "t": 288
+            },
+            {
+              "n": 10,
+              "t": 292
+            },
+            {
+              "n": 11,
+              "t": 296
+            },
+            {
+              "n": 12,
+              "t": 300
+            },
+            {
+              "n": 13,
+              "t": 304
+            },
+            {
+              "n": 14,
+              "t": 308
+            },
+            {
+              "n": 15,
+              "t": 312
+            },
+            {
+              "n": 16,
+              "t": 316
+            }
+          ],
+          "covers": [
+            256,
+            320
+          ]
+        },
+        {
+          "file": "sheets/nowa-parent-missions-set-up-with-device-06.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 320
+            },
+            {
+              "n": 2,
+              "t": 324
+            },
+            {
+              "n": 3,
+              "t": 328
+            },
+            {
+              "n": 4,
+              "t": 332
+            },
+            {
+              "n": 5,
+              "t": 336
+            },
+            {
+              "n": 6,
+              "t": 340
+            },
+            {
+              "n": 7,
+              "t": 344
+            },
+            {
+              "n": 8,
+              "t": 348
+            },
+            {
+              "n": 9,
+              "t": 352
+            },
+            {
+              "n": 10,
+              "t": 356
+            },
+            {
+              "n": 11,
+              "t": 360
+            },
+            {
+              "n": 12,
+              "t": 364
+            },
+            {
+              "n": 13,
+              "t": 368
+            },
+            {
+              "n": 14,
+              "t": 372
+            },
+            {
+              "n": 15,
+              "t": 376
+            },
+            {
+              "n": 16,
+              "t": 380
+            }
+          ],
+          "covers": [
+            320,
+            384
+          ]
+        },
+        {
+          "file": "sheets/nowa-parent-missions-set-up-with-device-07.jpg",
+          "tiles": [
+            {
+              "n": 1,
+              "t": 384
+            },
+            {
+              "n": 2,
+              "t": 388
+            },
+            {
+              "n": 3,
+              "t": 392
+            },
+            {
+              "n": 4,
+              "t": 396
+            },
+            {
+              "n": 5,
+              "t": 400
+            },
+            {
+              "n": 6,
+              "t": 404
+            },
+            {
+              "n": 7,
+              "t": 408
+            },
+            {
+              "n": 8,
+              "t": 412
+            },
+            {
+              "n": 9,
+              "t": 416
+            },
+            {
+              "n": 10,
+              "t": 420
+            },
+            {
+              "n": 11,
+              "t": 424
+            },
+            {
+              "n": 12,
+              "t": 428
+            },
+            {
+              "n": 13,
+              "t": 432
+            },
+            {
+              "n": 14,
+              "t": 436
+            }
+          ],
+          "covers": [
+            384,
+            439.03
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "action": "hands hold an iPhone showing the Nowa Parent app on its Missions screen, with the Nowa device sitting on the wood desk just behind it",
+          "subject": [
+            "iphone",
+            "nowa parent app",
+            "missions screen",
+            "nowa device"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "phone and device in one frame is the whole product story in a single shot. Narrated throughout: 'this is where you can set up missions that link directly to the device'. Phone UI is pink/red Nowa branding.",
+          "tags": [
+            "parent-app",
+            "iphone",
+            "missions",
+            "app-ui",
+            "device",
+            "two-devices"
+          ]
+        },
+        {
+          "start": 20,
+          "end": 36,
+          "action": "the mission page itself - a date strip across the top and the missions listed under each day",
+          "subject": [
+            "missions screen",
+            "date strip",
+            "app ui"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "clean read of the calendar model",
+          "tags": [
+            "parent-app",
+            "missions",
+            "calendar",
+            "dates",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 36,
+          "end": 68,
+          "action": "scrolling the routine missions - Make Your Bed, Brush Every Tooth, Homework First, Trash Duty, Bedtime Brush",
+          "subject": [
+            "mission list",
+            "app ui",
+            "routine missions"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "narrated as the 'set at a time' kind - 'it works almost like an alarm clock'",
+          "tags": [
+            "parent-app",
+            "missions",
+            "routine",
+            "list",
+            "chores",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 68,
+          "end": 100,
+          "action": "Add mission opens and the templates are filtered to Routine, showing the kindergarten set",
+          "subject": [
+            "add mission",
+            "filters",
+            "templates",
+            "app ui"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "narrated template names: magic words, wave goodbye, kind hello, thank you missions, story time",
+          "tags": [
+            "parent-app",
+            "add-mission",
+            "templates",
+            "filters",
+            "kindergarten",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 100,
+          "end": 127,
+          "action": "a mission detail screen - the script the pet will say, plus difficulty and gem-reward sliders",
+          "subject": [
+            "mission details",
+            "sliders",
+            "gem reward",
+            "app ui"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "spoken script shown: 'good morning, it's toothbrush time, grab your toothbrush and brush with your grown-up... press the button when you're all done'. Reward set to 400 gems.",
+          "tags": [
+            "parent-app",
+            "mission-details",
+            "reward",
+            "gems",
+            "difficulty",
+            "script",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 127,
+          "end": 152,
+          "action": "the schedule sheet - a time picker set to the morning and repeat options None, Daily, Weekly, Monthly, then Save schedule",
+          "subject": [
+            "schedule",
+            "time picker",
+            "repeat options",
+            "app ui"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "the clearest scheduling sequence - use it for any 'parents stay in control' point",
+          "tags": [
+            "parent-app",
+            "schedule",
+            "time-picker",
+            "repeat",
+            "alarm",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 152,
+          "end": 190,
+          "action": "back to the mission list with the new mission added, then the anytime missions further down",
+          "subject": [
+            "mission list",
+            "app ui"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "narrated: anytime missions are 'part of the game' rather than scheduled",
+          "tags": [
+            "parent-app",
+            "missions",
+            "list",
+            "anytime",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 190,
+          "end": 256,
+          "action": "the Add mission filters - Pillar and Age (toddler, kindergarten, elementary, preteen, teen) - and the template list changing as they are set",
+          "subject": [
+            "filters",
+            "age picker",
+            "templates",
+            "app ui"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "shows the library is age-banded, which is a real differentiator",
+          "tags": [
+            "parent-app",
+            "filters",
+            "age",
+            "pillar",
+            "templates",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 256,
+          "end": 290,
+          "action": "mission details again, this time setting Completion type (Confirm or Response) and Review by (Parent or Nowa)",
+          "subject": [
+            "completion type",
+            "review by",
+            "app ui"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "'Review by Nowa' means the system checks the child's spoken answer - the strongest single frame for an AI claim",
+          "tags": [
+            "parent-app",
+            "completion",
+            "review",
+            "ai",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 290,
+          "end": 316,
+          "action": "the mission is saved and the app returns to the missions list",
+          "subject": [
+            "mission list",
+            "app ui"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 4,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "tags": [
+            "parent-app",
+            "save",
+            "missions",
+            "list",
+            "app-ui"
+          ]
+        },
+        {
+          "start": 316,
+          "end": 380,
+          "action": "the device is picked up and the mission that was just created appears on it - a Start / Later prompt over the blue pet in the snowy room, on the cream device",
+          "subject": [
+            "nowa device",
+            "blue pet",
+            "mission prompt",
+            "hands"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "THE payoff shot of this clip: set on the phone, appears on the device. Note the cream/teal device and blue pet, not the white one from the rest of the library.",
+          "tags": [
+            "device",
+            "mission",
+            "sync",
+            "prompt",
+            "blue-pet",
+            "cream-device",
+            "payoff"
+          ]
+        },
+        {
+          "start": 380,
+          "end": 428,
+          "action": "a mission runs on the device with the phone still in frame beneath it, and the microphone button is pressed to answer",
+          "subject": [
+            "nowa device",
+            "mission banner",
+            "mic button",
+            "iphone"
+          ],
+          "shot": "close-up",
+          "motion": "handheld",
+          "quality": 5,
+          "usable": true,
+          "sequence": "parent-app-walkthrough",
+          "note": "mission title on screen reads 'New toy of a Friend'; both devices visible together",
+          "tags": [
+            "device",
+            "mission",
+            "microphone",
+            "answer",
+            "iphone",
+            "two-devices"
+          ]
+        },
+        {
+          "start": 428,
+          "end": 439,
+          "action": "device and phone left side by side on the wood desk, both screens lit",
+          "subject": [
+            "nowa device",
+            "iphone",
+            "desk"
+          ],
+          "shot": "medium",
+          "motion": "static",
+          "quality": 5,
+          "usable": true,
+          "sequence": "resting-device",
+          "note": "the only resting shot with both products in frame - natural closing card for anything about the parent/child pair",
+          "tags": [
+            "device",
+            "iphone",
+            "desk",
+            "resting",
+            "product",
+            "end-card",
+            "static"
+          ]
+        }
+      ],
+      "described": true
+    }
+  ]
+}

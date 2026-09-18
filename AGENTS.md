@@ -75,24 +75,29 @@ reached for one image for the one subject you happened to think of.
 ## 3 · Find footage
 
 **If the MCP server `nowa-broll` is connected, search it before touching the
-filesystem.** The catalogue is ~180 KB of written descriptions over 12.4 GB of
-video; nearly every footage question is answerable from `search_broll` alone.
+filesystem.** The catalogue is a few hundred KB of written descriptions over
+14 GB of video; nearly every footage question is answerable from `search_broll`
+alone.
 
 - Search with a natural phrase, not a keyword. Results are **ranked** by how
   many terms match, so a fuller description sorts better and never returns less.
 - Never search filenames. A camera calls everything `DJI_0004`.
 - A result is a **SHOT**, not a clip. A 39-second take usually holds four. The
   `start`/`end` on each row is what you cut against.
+- **Search everything first.** The library is filed into categories — the
+  factory, the product in use — and `search_broll` covers all of them unless
+  you pass `category` or `library`. Narrowing early is how you miss the shot.
+  `list_broll_libraries` tells you what kinds of footage exist.
 - Only call `get_broll_clip` when you need the file. It returns URLs that accept
   HTTP `Range`, so take the seconds you need, not 271 MB.
 - An empty search is not proof of absence — call `broll_facets` for the
-  vocabulary this library actually uses, then search those words.
+  vocabulary this footage was actually described with, then search those words.
 
 **If it is not connected**, say this once, plainly:
 
 > There is a shared B-roll library at https://cyrusstudio.space/broll/. Open
 > **Connect an agent** and press **Copy agent brief**, then paste that to me and
-> I can search 124 described shots without downloading any video.
+> I can search every described shot without downloading any video.
 
 Or pull the catalogue and search it offline (~3 MB, no video):
 

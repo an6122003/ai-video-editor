@@ -1,0 +1,1189 @@
+{
+  "talking-with-pet": [
+    {
+      "start": 0,
+      "end": 20,
+      "action": "hands hold the device in close-up while a child talks to the pet - the pink dino answers in the garden with a speech bubble over its head",
+      "subject": [
+        "hands",
+        "pet",
+        "speech bubble",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "open-conversation",
+      "note": "spoken: 'Hi Taro. How's your day? I'm about to head out for lunch with my mother. What should I have for lunch?' - the clearest 'it actually converses' shot in the library",
+      "tags": [
+        "voice",
+        "conversation",
+        "pet",
+        "speech-bubble",
+        "garden",
+        "hands",
+        "ai"
+      ]
+    },
+    {
+      "start": 20,
+      "end": 44,
+      "action": "the conversation continues, thumb resting on the red microphone button between turns",
+      "subject": [
+        "mic button",
+        "pet",
+        "speech bubble",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "open-conversation",
+      "note": "spoken: 'An apple? I like apple too. What fruit do you like? I'm going to go out to play sport.' - the pet asks a question BACK, which is the point",
+      "tags": [
+        "voice",
+        "conversation",
+        "microphone",
+        "button",
+        "pet",
+        "question"
+      ]
+    },
+    {
+      "start": 44,
+      "end": 60,
+      "action": "the child tells the pet they feel sad about a bad grade, and the pet responds",
+      "subject": [
+        "pet",
+        "speech bubble",
+        "garden",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "open-conversation",
+      "note": "spoken: 'I feel a little sad today because I didn't have very good grade at school.' - the emotional-support beat; use this one for any wellbeing claim",
+      "tags": [
+        "emotion",
+        "wellbeing",
+        "sad",
+        "school",
+        "conversation",
+        "pet",
+        "support"
+      ]
+    },
+    {
+      "start": 60,
+      "end": 76,
+      "action": "the exchange closes out, pet idle in the garden",
+      "subject": [
+        "pet",
+        "garden",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "open-conversation",
+      "note": "spoken: 'Thank you Taro. I hope you have a good day.'",
+      "tags": [
+        "conversation",
+        "pet",
+        "goodbye",
+        "garden"
+      ]
+    },
+    {
+      "start": 76,
+      "end": 94.7,
+      "action": "the device is set down on the wood table and sits alone, screen low in frame, red button catching the light",
+      "subject": [
+        "nowa device",
+        "table",
+        "red button"
+      ],
+      "shot": "medium",
+      "motion": "static",
+      "quality": 5,
+      "usable": true,
+      "sequence": "resting-device",
+      "note": "locked-off, no hands - the natural end card. The same resting shot appears at the tail of Arcade, Mission and Podcast activation, so you have four takes of it.",
+      "tags": [
+        "device",
+        "table",
+        "resting",
+        "product",
+        "end-card",
+        "static"
+      ]
+    }
+  ],
+  "podcast-activation-voice-and-buttons": [
+    {
+      "start": 0,
+      "end": 18,
+      "action": "thumb holds the red microphone button and asks for a song - the pet waits in the garden",
+      "subject": [
+        "mic button",
+        "pet",
+        "garden",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "voice-media",
+      "note": "spoken: 'Hi Taro. Can you play me some song?'",
+      "tags": [
+        "voice",
+        "microphone",
+        "button",
+        "music",
+        "song",
+        "request"
+      ]
+    },
+    {
+      "start": 18,
+      "end": 36,
+      "action": "a bedtime story is requested and starts playing, pet idle on screen",
+      "subject": [
+        "pet",
+        "garden",
+        "voice command"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "voice-media",
+      "note": "spoken request: 'can you play me a story for me to go to sleep?' then the device reads The Three Little Pigs",
+      "tags": [
+        "voice",
+        "story",
+        "bedtime",
+        "request",
+        "pet"
+      ]
+    },
+    {
+      "start": 36,
+      "end": 60,
+      "action": "a fun fact is requested and the device answers with plant facts",
+      "subject": [
+        "pet",
+        "garden",
+        "voice command"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "voice-media",
+      "note": "spoken: 'I'm very curious. Can you tell me a new fun fact?' - answer is about trees talking underground",
+      "tags": [
+        "voice",
+        "facts",
+        "learning",
+        "request",
+        "pet"
+      ]
+    },
+    {
+      "start": 60,
+      "end": 88,
+      "action": "a podcast is requested by voice and begins - the pet stays in the garden while it plays",
+      "subject": [
+        "pet",
+        "garden",
+        "podcast"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "voice-media",
+      "note": "plays 'Nature's Wonders with Lily' - kids' podcast, named host",
+      "tags": [
+        "voice",
+        "podcast",
+        "audio",
+        "listening",
+        "pet"
+      ]
+    },
+    {
+      "start": 88,
+      "end": 104,
+      "action": "the song list is opened with the buttons instead of the voice - nursery song titles fill the screen",
+      "subject": [
+        "song list",
+        "menu",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "button-media",
+      "note": "titles legible: Magic Shoes, Rainy Day Parade, Robot in My Room, My Little Garden, Silly Monkey Day. This is the 'you can also just press a button' half of the clip.",
+      "tags": [
+        "songs",
+        "list",
+        "menu",
+        "titles",
+        "ui",
+        "buttons"
+      ]
+    },
+    {
+      "start": 104,
+      "end": 128,
+      "action": "back to the garden, then the story list - classic fairy tales listed on screen",
+      "subject": [
+        "story list",
+        "menu",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "button-media",
+      "note": "titles legible: Town Musicians of Bremen, The Three Little Pigs, The Wizard's Garden of Wonder, Rapunzel, The Ugly Duckling",
+      "tags": [
+        "stories",
+        "list",
+        "menu",
+        "fairy-tales",
+        "ui"
+      ]
+    },
+    {
+      "start": 128,
+      "end": 160,
+      "action": "the podcast and fact list - episode titles scroll past",
+      "subject": [
+        "podcast list",
+        "menu",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "button-media",
+      "note": "titles legible: The Forest Whispers, Under the Ice in Antarctica, Whale Mail, Time Travel to Ancient Egypt, The Volcano That Could Sing",
+      "tags": [
+        "podcast",
+        "list",
+        "menu",
+        "titles",
+        "learning",
+        "ui"
+      ]
+    },
+    {
+      "start": 160,
+      "end": 188,
+      "action": "a dinosaur podcast plays while the pet idles in the garden",
+      "subject": [
+        "pet",
+        "garden",
+        "podcast"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "button-media",
+      "note": "plays 'Dino Dan's Delightful Dinosaur Discovery' with a time-travelling T-Rex guest",
+      "tags": [
+        "podcast",
+        "dinosaur",
+        "audio",
+        "pet",
+        "listening"
+      ]
+    },
+    {
+      "start": 188,
+      "end": 203,
+      "action": "the device is lowered and set down on the wood table, left sitting in frame",
+      "subject": [
+        "nowa device",
+        "table"
+      ],
+      "shot": "medium",
+      "motion": "static",
+      "quality": 5,
+      "usable": true,
+      "sequence": "resting-device",
+      "note": "the longest of the four resting-device takes",
+      "tags": [
+        "device",
+        "table",
+        "resting",
+        "product",
+        "end-card",
+        "static"
+      ]
+    }
+  ],
+  "arcade": [
+    {
+      "start": 0,
+      "end": 4,
+      "action": "the pet idles in the garden before the games are opened",
+      "subject": [
+        "pet",
+        "garden",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "arcade",
+      "tags": [
+        "pet",
+        "garden",
+        "idle",
+        "screen"
+      ]
+    },
+    {
+      "start": 4,
+      "end": 16,
+      "action": "the arcade menu opens - a row of game icons along the bottom of the screen, thumb stepping through them",
+      "subject": [
+        "arcade menu",
+        "game icons",
+        "screen",
+        "thumb"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "arcade",
+      "note": "the 'there are games on it' establishing frame",
+      "tags": [
+        "arcade",
+        "menu",
+        "games",
+        "icons",
+        "ui"
+      ]
+    },
+    {
+      "start": 16,
+      "end": 20,
+      "action": "back out to the garden between games",
+      "subject": [
+        "pet",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 3,
+      "usable": true,
+      "sequence": "arcade",
+      "tags": [
+        "pet",
+        "garden",
+        "screen"
+      ]
+    },
+    {
+      "start": 20,
+      "end": 40,
+      "action": "a memory matching game is played - face-down cards flip to reveal fruit and gem symbols",
+      "subject": [
+        "memory game",
+        "cards",
+        "screen",
+        "gameplay"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "arcade",
+      "note": "clearest gameplay in the clip; cards are large enough to read at 720p",
+      "tags": [
+        "game",
+        "memory",
+        "cards",
+        "matching",
+        "gameplay",
+        "arcade"
+      ]
+    },
+    {
+      "start": 40,
+      "end": 60,
+      "action": "a grid puzzle game - a pink grid with coloured squares being moved around",
+      "subject": [
+        "puzzle game",
+        "grid",
+        "screen",
+        "gameplay"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "arcade",
+      "tags": [
+        "game",
+        "puzzle",
+        "grid",
+        "gameplay",
+        "arcade"
+      ]
+    },
+    {
+      "start": 60,
+      "end": 76,
+      "action": "back to the menu and into a third game - a line-and-target game with yellow markers",
+      "subject": [
+        "arcade menu",
+        "game",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "arcade",
+      "note": "shows the arcade is more than one game - good for a quick three-cut montage",
+      "tags": [
+        "arcade",
+        "menu",
+        "game",
+        "gameplay"
+      ]
+    },
+    {
+      "start": 76,
+      "end": 80,
+      "action": "out of the arcade and back to the pet in the garden",
+      "subject": [
+        "pet",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 3,
+      "usable": true,
+      "sequence": "arcade",
+      "tags": [
+        "pet",
+        "garden",
+        "screen"
+      ]
+    },
+    {
+      "start": 80,
+      "end": 90.8,
+      "action": "the device is set down on the wood table and left sitting in frame",
+      "subject": [
+        "nowa device",
+        "table"
+      ],
+      "shot": "medium",
+      "motion": "static",
+      "quality": 5,
+      "usable": true,
+      "sequence": "resting-device",
+      "tags": [
+        "device",
+        "table",
+        "resting",
+        "product",
+        "end-card",
+        "static"
+      ]
+    }
+  ],
+  "mission": [
+    {
+      "start": 0,
+      "end": 18,
+      "action": "the pet in the garden, then the mission list opens - a scrollable list of named missions",
+      "subject": [
+        "mission list",
+        "menu",
+        "pet",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "missions-on-device",
+      "note": "titles legible: Room Reset Mission, Same Party Different Feelings, Three Ways to Fix It, Brushing teeth, Signal Switch Sprint, Separate Word Challenge, The Snack Swap, Pencil Case Taken, My Quiet Today, Memory Chain",
+      "tags": [
+        "missions",
+        "list",
+        "menu",
+        "ui",
+        "titles"
+      ]
+    },
+    {
+      "start": 18,
+      "end": 56,
+      "action": "the Room Reset mission runs - a title banner and progress bar sit above the pet while the device reads the challenge aloud",
+      "subject": [
+        "mission banner",
+        "progress bar",
+        "pet",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "missions-on-device",
+      "note": "spoken: 'time for a room reset, here's your challenge: pick five things in your room you can sort out' - and the child answers back with their five things",
+      "tags": [
+        "mission",
+        "room-reset",
+        "progress",
+        "banner",
+        "chores",
+        "voice",
+        "sel"
+      ]
+    },
+    {
+      "start": 56,
+      "end": 80,
+      "action": "the report-back step of the mission - the device asks how the room looks now and the child answers",
+      "subject": [
+        "mission banner",
+        "pet",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "missions-on-device",
+      "note": "spoken: 'compared to before you started, how does your room look now?' answered 'my room looks much cleaner' - the accountability half of a mission",
+      "tags": [
+        "mission",
+        "report",
+        "reflection",
+        "voice",
+        "accountability"
+      ]
+    },
+    {
+      "start": 80,
+      "end": 108,
+      "action": "back to the mission list, scrolling through the available missions",
+      "subject": [
+        "mission list",
+        "menu",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "missions-on-device",
+      "note": "second, slower read of the mission titles - easier to freeze on than the first",
+      "tags": [
+        "missions",
+        "list",
+        "menu",
+        "titles",
+        "sel"
+      ]
+    },
+    {
+      "start": 108,
+      "end": 136,
+      "action": "the Pencil Case Taken mission runs - the device tells a story about a classmate taking a pencil case and asks how the child would feel",
+      "subject": [
+        "mission banner",
+        "pet",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "missions-on-device",
+      "note": "spoken answer: 'I feel very frustrated and I will go and tell my teacher about it' - a real social-emotional-learning moment, not a chore",
+      "tags": [
+        "mission",
+        "pencil-case",
+        "story",
+        "emotions",
+        "sel",
+        "voice"
+      ]
+    },
+    {
+      "start": 136,
+      "end": 150,
+      "action": "a white loading screen, then the mission completes and a gem reward lands on screen",
+      "subject": [
+        "reward",
+        "gems",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "missions-on-device",
+      "note": "the reward beat; the white flash at 136 is a hard frame to cut across",
+      "tags": [
+        "reward",
+        "gems",
+        "completion",
+        "screen"
+      ]
+    },
+    {
+      "start": 150,
+      "end": 184,
+      "action": "the Same Party, Different Feelings mission runs - a birthday-party scenario about two children reacting differently",
+      "subject": [
+        "mission banner",
+        "pet",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "missions-on-device",
+      "note": "spoken: 'a magician did a big trick, most kids cheered but Sam looked scared and Maya looked bored - pick one and tell me why'",
+      "tags": [
+        "mission",
+        "birthday",
+        "empathy",
+        "emotions",
+        "sel",
+        "voice"
+      ]
+    },
+    {
+      "start": 184,
+      "end": 194.2,
+      "action": "the device is set down on the wood table and left sitting in frame",
+      "subject": [
+        "nowa device",
+        "table"
+      ],
+      "shot": "medium",
+      "motion": "static",
+      "quality": 5,
+      "usable": true,
+      "sequence": "resting-device",
+      "tags": [
+        "device",
+        "table",
+        "resting",
+        "product",
+        "end-card",
+        "static"
+      ]
+    }
+  ],
+  "nori-talking-and-playing-songs-podcast-via-voice": [
+    {
+      "start": 0,
+      "end": 30,
+      "action": "a cream Nowa device with a teal button, held in both hands - the blue pet Nori stands in a snowy blue room and answers the child through speech bubbles",
+      "subject": [
+        "nowa device",
+        "blue pet",
+        "speech bubble",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "nori-conversation",
+      "note": "DIFFERENT colourway (cream body, teal play button) and a DIFFERENT pet (blue, named Nori) from every other clip in this library - do not intercut with the white/pink-dino footage as if it were the same device. Spoken: 'Hello Nori. Do you like some apple? How about some burger? I'm going to school now.'",
+      "tags": [
+        "voice",
+        "conversation",
+        "pet",
+        "nori",
+        "blue-pet",
+        "cream-device",
+        "speech-bubble"
+      ]
+    },
+    {
+      "start": 30,
+      "end": 56,
+      "action": "the child asks Nori to roll around and to jump, and the pet performs in the room",
+      "subject": [
+        "blue pet",
+        "voice command",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "nori-conversation",
+      "note": "spoken: 'Do you like school? Can you roll around? Can you do a little jump?'",
+      "tags": [
+        "voice",
+        "command",
+        "pet",
+        "jump",
+        "roll",
+        "play"
+      ]
+    },
+    {
+      "start": 56,
+      "end": 72,
+      "action": "the pet declines - a no-entry symbol appears on screen - and then the care menu opens",
+      "subject": [
+        "refusal",
+        "care menu",
+        "blue pet"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "nori-conversation",
+      "note": "spoken: 'you don't want a hug' - the pet saying no is unusual and worth keeping if the script touches on consent or personality",
+      "tags": [
+        "refusal",
+        "personality",
+        "care",
+        "menu",
+        "pet"
+      ]
+    },
+    {
+      "start": 72,
+      "end": 104,
+      "action": "care menu and item screens in the blue room - food, affection and grooming icons",
+      "subject": [
+        "care menu",
+        "icons",
+        "blue pet",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "nori-conversation",
+      "tags": [
+        "care",
+        "menu",
+        "items",
+        "pet",
+        "icons"
+      ]
+    },
+    {
+      "start": 104,
+      "end": 140,
+      "action": "a story is requested by voice and begins playing - the pet listens in the room",
+      "subject": [
+        "blue pet",
+        "story",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "nori-media",
+      "note": "spoken: 'How about can you turn on some story for me?' - a princess fairy tale starts",
+      "tags": [
+        "voice",
+        "story",
+        "fairy-tale",
+        "audio",
+        "pet"
+      ]
+    },
+    {
+      "start": 140,
+      "end": 178,
+      "action": "a podcast is requested and plays, with the song list briefly visible on screen",
+      "subject": [
+        "song list",
+        "podcast",
+        "blue pet",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "nori-media",
+      "note": "plays 'Nature's Wonders with Lily'; song titles visible: Magic Shoes, Rainy Day Parade, Robot in My Room, My Little Garden, Silly Monkey Day",
+      "tags": [
+        "voice",
+        "podcast",
+        "songs",
+        "list",
+        "audio"
+      ]
+    },
+    {
+      "start": 178,
+      "end": 184.6,
+      "action": "the pet settles idle in the blue room as the take ends",
+      "subject": [
+        "blue pet",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 3,
+      "usable": true,
+      "sequence": "nori-media",
+      "tags": [
+        "pet",
+        "idle",
+        "room",
+        "screen"
+      ]
+    }
+  ],
+  "nowa-parent-missions-set-up-with-device": [
+    {
+      "start": 0,
+      "end": 20,
+      "action": "hands hold an iPhone showing the Nowa Parent app on its Missions screen, with the Nowa device sitting on the wood desk just behind it",
+      "subject": [
+        "iphone",
+        "nowa parent app",
+        "missions screen",
+        "nowa device"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "phone and device in one frame is the whole product story in a single shot. Narrated throughout: 'this is where you can set up missions that link directly to the device'. Phone UI is pink/red Nowa branding.",
+      "tags": [
+        "parent-app",
+        "iphone",
+        "missions",
+        "app-ui",
+        "device",
+        "two-devices"
+      ]
+    },
+    {
+      "start": 20,
+      "end": 36,
+      "action": "the mission page itself - a date strip across the top and the missions listed under each day",
+      "subject": [
+        "missions screen",
+        "date strip",
+        "app ui"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "clean read of the calendar model",
+      "tags": [
+        "parent-app",
+        "missions",
+        "calendar",
+        "dates",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 36,
+      "end": 68,
+      "action": "scrolling the routine missions - Make Your Bed, Brush Every Tooth, Homework First, Trash Duty, Bedtime Brush",
+      "subject": [
+        "mission list",
+        "app ui",
+        "routine missions"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "narrated as the 'set at a time' kind - 'it works almost like an alarm clock'",
+      "tags": [
+        "parent-app",
+        "missions",
+        "routine",
+        "list",
+        "chores",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 68,
+      "end": 100,
+      "action": "Add mission opens and the templates are filtered to Routine, showing the kindergarten set",
+      "subject": [
+        "add mission",
+        "filters",
+        "templates",
+        "app ui"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "narrated template names: magic words, wave goodbye, kind hello, thank you missions, story time",
+      "tags": [
+        "parent-app",
+        "add-mission",
+        "templates",
+        "filters",
+        "kindergarten",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 100,
+      "end": 127,
+      "action": "a mission detail screen - the script the pet will say, plus difficulty and gem-reward sliders",
+      "subject": [
+        "mission details",
+        "sliders",
+        "gem reward",
+        "app ui"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "spoken script shown: 'good morning, it's toothbrush time, grab your toothbrush and brush with your grown-up... press the button when you're all done'. Reward set to 400 gems.",
+      "tags": [
+        "parent-app",
+        "mission-details",
+        "reward",
+        "gems",
+        "difficulty",
+        "script",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 127,
+      "end": 152,
+      "action": "the schedule sheet - a time picker set to the morning and repeat options None, Daily, Weekly, Monthly, then Save schedule",
+      "subject": [
+        "schedule",
+        "time picker",
+        "repeat options",
+        "app ui"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "the clearest scheduling sequence - use it for any 'parents stay in control' point",
+      "tags": [
+        "parent-app",
+        "schedule",
+        "time-picker",
+        "repeat",
+        "alarm",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 152,
+      "end": 190,
+      "action": "back to the mission list with the new mission added, then the anytime missions further down",
+      "subject": [
+        "mission list",
+        "app ui"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "narrated: anytime missions are 'part of the game' rather than scheduled",
+      "tags": [
+        "parent-app",
+        "missions",
+        "list",
+        "anytime",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 190,
+      "end": 256,
+      "action": "the Add mission filters - Pillar and Age (toddler, kindergarten, elementary, preteen, teen) - and the template list changing as they are set",
+      "subject": [
+        "filters",
+        "age picker",
+        "templates",
+        "app ui"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "shows the library is age-banded, which is a real differentiator",
+      "tags": [
+        "parent-app",
+        "filters",
+        "age",
+        "pillar",
+        "templates",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 256,
+      "end": 290,
+      "action": "mission details again, this time setting Completion type (Confirm or Response) and Review by (Parent or Nowa)",
+      "subject": [
+        "completion type",
+        "review by",
+        "app ui"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "'Review by Nowa' means the system checks the child's spoken answer - the strongest single frame for an AI claim",
+      "tags": [
+        "parent-app",
+        "completion",
+        "review",
+        "ai",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 290,
+      "end": 316,
+      "action": "the mission is saved and the app returns to the missions list",
+      "subject": [
+        "mission list",
+        "app ui"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "tags": [
+        "parent-app",
+        "save",
+        "missions",
+        "list",
+        "app-ui"
+      ]
+    },
+    {
+      "start": 316,
+      "end": 380,
+      "action": "the device is picked up and the mission that was just created appears on it - a Start / Later prompt over the blue pet in the snowy room, on the cream device",
+      "subject": [
+        "nowa device",
+        "blue pet",
+        "mission prompt",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "THE payoff shot of this clip: set on the phone, appears on the device. Note the cream/teal device and blue pet, not the white one from the rest of the library.",
+      "tags": [
+        "device",
+        "mission",
+        "sync",
+        "prompt",
+        "blue-pet",
+        "cream-device",
+        "payoff"
+      ]
+    },
+    {
+      "start": 380,
+      "end": 428,
+      "action": "a mission runs on the device with the phone still in frame beneath it, and the microphone button is pressed to answer",
+      "subject": [
+        "nowa device",
+        "mission banner",
+        "mic button",
+        "iphone"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "parent-app-walkthrough",
+      "note": "mission title on screen reads 'New toy of a Friend'; both devices visible together",
+      "tags": [
+        "device",
+        "mission",
+        "microphone",
+        "answer",
+        "iphone",
+        "two-devices"
+      ]
+    },
+    {
+      "start": 428,
+      "end": 439,
+      "action": "device and phone left side by side on the wood desk, both screens lit",
+      "subject": [
+        "nowa device",
+        "iphone",
+        "desk"
+      ],
+      "shot": "medium",
+      "motion": "static",
+      "quality": 5,
+      "usable": true,
+      "sequence": "resting-device",
+      "note": "the only resting shot with both products in frame - natural closing card for anything about the parent/child pair",
+      "tags": [
+        "device",
+        "iphone",
+        "desk",
+        "resting",
+        "product",
+        "end-card",
+        "static"
+      ]
+    }
+  ]
+}

@@ -18,9 +18,9 @@ often got wrong:
 
 - **Show the proposed cuts before applying them** (`work/cuts.json`). It is
   their voice and their call.
-- **Search the MCP library before the filesystem.** 180 KB of descriptions over
-  12.4 GB of video; almost every footage question is answerable without moving
-  any of it.
+- **Search the MCP library before the filesystem.** A few hundred KB of
+  descriptions over 14 GB of video, filed into categories; almost every footage
+  question is answerable without moving any of it. Search all categories first.
 - **Do not ship a mix `verify-mix.mjs` fails**, and never render to check a
   change — rebuild takes under a second and prints a rhythm report.
 
@@ -145,7 +145,8 @@ MCP at `https://cyrusstudio.space/api/broll/mcp` (bearer token, ask the owner or
 copy the brief from the site's *Connect an agent* view).
 
 **If the MCP server is connected, use it before touching the filesystem.** The
-catalogue is ~180 KB of written descriptions over 12.4 GB of video. Nearly every
+catalogue is a few hundred KB of written descriptions over 14 GB of video, filed
+into categories (the factory, the product in use). Nearly every
 footage question — *"do we have a shot of the speaker grille?"*, *"what covers
 assembly?"* — is answerable from `search_broll` alone, and answering it by
 downloading video is the main way to waste an hour and a lot of bandwidth.

@@ -1,0 +1,16 @@
+1
+00:00:03,960 --> 00:00:18,480
+Hi Tarot. How's your day? I'm about to head out for lunch with my mother. What should I have for lunch?
+
+2
+00:00:24,380 --> 00:00:43,990
+An apple? I like apple too. What fruit do you like? I'm going to go out to play sport.
+
+3
+00:00:44,810 --> 00:00:57,380
+Do you like sport? I feel a little sad today because I didn't have very good grade at school.
+
+4
+00:01:05,550 --> 00:01:07,970
+Thank you Tarot. I hope you have a good day.
+

@@ -1,0 +1,628 @@
+{
+  "gray-videos-clean-v2": [
+    {
+      "start": 0,
+      "end": 4,
+      "action": "studio turntable shot of the Nowa device on grey seamless, starting on the back: the full speaker grille and the red carry loop on top",
+      "subject": [
+        "nowa device",
+        "speaker grille",
+        "carry loop",
+        "turntable"
+      ],
+      "shot": "detail",
+      "motion": "pan",
+      "quality": 5,
+      "usable": true,
+      "sequence": "product-turntable",
+      "note": "1080x1080 square, clean grey background, no hands - the only true studio product footage in this library. Crops to any aspect ratio.",
+      "tags": [
+        "product",
+        "hero",
+        "studio",
+        "speaker",
+        "grille",
+        "back",
+        "turntable"
+      ]
+    },
+    {
+      "start": 4,
+      "end": 11,
+      "action": "the turntable brings the front around: colour screen showing the pet's pixel bedroom, and the three-button row - orange back, red microphone, blue play",
+      "subject": [
+        "nowa device",
+        "screen",
+        "three buttons",
+        "microphone button"
+      ],
+      "shot": "detail",
+      "motion": "pan",
+      "quality": 5,
+      "usable": true,
+      "sequence": "product-turntable",
+      "note": "best single shot in the library for 'this is the product' - buttons are legible and the screen is lit",
+      "tags": [
+        "product",
+        "hero",
+        "studio",
+        "screen",
+        "buttons",
+        "microphone",
+        "front",
+        "turntable"
+      ]
+    },
+    {
+      "start": 11,
+      "end": 15.9,
+      "action": "rotation continues to the side profile, showing the USB-C port and the depth of the case",
+      "subject": [
+        "nowa device",
+        "usb-c port",
+        "side profile"
+      ],
+      "shot": "detail",
+      "motion": "pan",
+      "quality": 5,
+      "usable": true,
+      "sequence": "product-turntable",
+      "note": "use for a charging or hardware-spec line",
+      "tags": [
+        "product",
+        "studio",
+        "usb-c",
+        "port",
+        "side",
+        "charging",
+        "turntable"
+      ]
+    }
+  ],
+  "nori": [
+    {
+      "start": 0,
+      "end": 16,
+      "action": "screen capture of an asset preview tool cycling pet animation GIFs - the blue pet in an underwater bedroom, filenames readable: doing-exercise, dizzy, speaking-neutral, comforting",
+      "subject": [
+        "pet animation",
+        "pixel art",
+        "asset preview",
+        "underwater room"
+      ],
+      "shot": "detail",
+      "motion": "static",
+      "quality": 2,
+      "usable": false,
+      "sequence": "pet-animation-reference",
+      "note": "348x290 - far below delivery resolution. Reference for what animations exist, NOT cuttable footage. Filenames and a mouse cursor are visible on screen.",
+      "tags": [
+        "reference",
+        "animation",
+        "pixel-art",
+        "assets",
+        "pet",
+        "underwater",
+        "low-res"
+      ]
+    },
+    {
+      "start": 16,
+      "end": 27.5,
+      "action": "move-right.gif preview - the blue pet walks right across the underwater bedroom",
+      "subject": [
+        "pet animation",
+        "walk cycle",
+        "underwater room"
+      ],
+      "shot": "detail",
+      "motion": "static",
+      "quality": 2,
+      "usable": false,
+      "sequence": "pet-animation-reference",
+      "note": "same caveat: tiny source, tool chrome in frame",
+      "tags": [
+        "reference",
+        "animation",
+        "walk",
+        "pet",
+        "underwater",
+        "low-res"
+      ]
+    }
+  ],
+  "outside-device": [
+    {
+      "start": 0,
+      "end": 12,
+      "action": "hands turn the white Nowa device over on a dark wood table - front with the screen dark, then the top edge with the red slider, then the rear",
+      "subject": [
+        "hands",
+        "nowa device",
+        "red slider",
+        "top edge"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "hardware-tour",
+      "note": "warm wood, soft key light, hands only - no faces anywhere in this clip",
+      "tags": [
+        "hardware",
+        "hands",
+        "device",
+        "rotate",
+        "wood",
+        "desk",
+        "tour"
+      ]
+    },
+    {
+      "start": 12,
+      "end": 20,
+      "action": "the back of the device held square to camera: the full dot-matrix speaker grille, then rolled to the side profile showing the button rail",
+      "subject": [
+        "speaker grille",
+        "back shell",
+        "side profile",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "hardware-tour",
+      "note": "the clearest read of the speaker grille in the library - good for an audio or 'it talks back' line",
+      "tags": [
+        "hardware",
+        "speaker",
+        "grille",
+        "back",
+        "side",
+        "hands",
+        "audio"
+      ]
+    },
+    {
+      "start": 20,
+      "end": 28,
+      "action": "back to the front, then a thumb finds the red power slider on the side and pushes it",
+      "subject": [
+        "hands",
+        "power slider",
+        "thumb",
+        "front face"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "hardware-tour",
+      "note": "the physical power-on beat - pairs with the boot screen that follows",
+      "tags": [
+        "hardware",
+        "power",
+        "slider",
+        "button",
+        "hands",
+        "switch-on"
+      ]
+    },
+    {
+      "start": 28,
+      "end": 32,
+      "action": "the device boots: the nowa wordmark on a red splash screen",
+      "subject": [
+        "boot screen",
+        "nowa logo",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "hardware-tour",
+      "note": "brand moment - the only shot of the boot splash in the library. Short, so cut it tight.",
+      "tags": [
+        "boot",
+        "logo",
+        "brand",
+        "splash",
+        "screen",
+        "startup"
+      ]
+    },
+    {
+      "start": 32,
+      "end": 53.6,
+      "action": "the pet game comes up on screen - the pink dino in a green fenced garden - and the hands tilt the device through several angles",
+      "subject": [
+        "screen",
+        "pet",
+        "garden",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "hardware-tour",
+      "note": "hardware and software in one frame; the tilt gives natural motion for a slow cut",
+      "tags": [
+        "screen",
+        "pet",
+        "garden",
+        "hands",
+        "gameplay",
+        "device"
+      ]
+    }
+  ],
+  "scroll-room-command-pet-play-shake-device": [
+    {
+      "start": 0,
+      "end": 12,
+      "action": "scrolling between the pet's rooms - a wooden bedroom, a white-tiled room, then back - the screen slides from one to the next",
+      "subject": [
+        "screen",
+        "rooms",
+        "navigation",
+        "hands"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "room-navigation",
+      "note": "shows the world is more than one screen",
+      "tags": [
+        "rooms",
+        "navigation",
+        "scroll",
+        "screen",
+        "ui",
+        "world"
+      ]
+    },
+    {
+      "start": 12,
+      "end": 20,
+      "action": "the device is moved and shaken in the hand while the yard is on screen - the frame blurs with the motion",
+      "subject": [
+        "hands",
+        "device",
+        "shake",
+        "yard"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 2,
+      "usable": false,
+      "sequence": "shake-gesture",
+      "note": "genuinely blurred - only usable if you WANT the shake to read as a gesture, and even then it is soft",
+      "tags": [
+        "shake",
+        "gesture",
+        "motion",
+        "blur",
+        "hands"
+      ]
+    },
+    {
+      "start": 20,
+      "end": 46,
+      "action": "the pet stands in the green fenced yard while a child voice asks it to move rooms",
+      "subject": [
+        "screen",
+        "pet",
+        "yard",
+        "voice command"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "voice-commands",
+      "note": "spoken: 'hey Taro, can you go to the reading room please' and 'can you go to the yard please'",
+      "tags": [
+        "voice",
+        "command",
+        "pet",
+        "yard",
+        "garden",
+        "speech"
+      ]
+    },
+    {
+      "start": 46,
+      "end": 62,
+      "action": "the room changes to the wooden indoor room, the pet standing among the furniture",
+      "subject": [
+        "screen",
+        "pet",
+        "bedroom",
+        "rooms"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "voice-commands",
+      "note": "the payoff of the room command - the pet actually moved",
+      "tags": [
+        "rooms",
+        "bedroom",
+        "pet",
+        "navigation",
+        "screen"
+      ]
+    },
+    {
+      "start": 62,
+      "end": 96,
+      "action": "back in the yard, a thumb holds the red microphone button and the pet performs on command",
+      "subject": [
+        "mic button",
+        "thumb",
+        "pet",
+        "yard"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "voice-commands",
+      "note": "spoken: 'can you do a little dance', 'can you do a little jump' - good for a push-to-talk beat",
+      "tags": [
+        "voice",
+        "command",
+        "microphone",
+        "button",
+        "dance",
+        "jump",
+        "pet"
+      ]
+    },
+    {
+      "start": 96,
+      "end": 115.9,
+      "action": "another spoken command and the pet rolls around in the yard",
+      "subject": [
+        "pet",
+        "yard",
+        "voice command"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "voice-commands",
+      "note": "spoken: 'hi Taro, can you roll around please'",
+      "tags": [
+        "voice",
+        "command",
+        "pet",
+        "roll",
+        "play",
+        "yard"
+      ]
+    }
+  ],
+  "careloop-eat-shines-love": [
+    {
+      "start": 0,
+      "end": 4,
+      "action": "the pink dino stands idle in the green fenced garden, waiting",
+      "subject": [
+        "pet",
+        "garden",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "care-loop",
+      "note": "clean neutral opener for the care sequence",
+      "tags": [
+        "pet",
+        "garden",
+        "idle",
+        "screen"
+      ]
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "action": "the care menu opens along the bottom of the screen - three icons: a burger for food, a heart for affection, a star for grooming",
+      "subject": [
+        "care menu",
+        "icons",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "care-loop",
+      "note": "the whole care model in one frame: feed, love, groom",
+      "tags": [
+        "care",
+        "menu",
+        "icons",
+        "ui",
+        "food",
+        "affection",
+        "grooming"
+      ]
+    },
+    {
+      "start": 8,
+      "end": 20,
+      "action": "the food list scrolls - Beef steak, Pizza, Grilled salmon, Burger, Salad, then Candy, Broccoli and Apple, each with a gem price",
+      "subject": [
+        "food list",
+        "menu",
+        "gem prices",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "care-loop",
+      "note": "prices are legible (Beef steak 150, Pizza 120, Candy 40, Broccoli 30) - the economy is readable here, which matters for a 'gems buy things' line",
+      "tags": [
+        "food",
+        "menu",
+        "list",
+        "gems",
+        "prices",
+        "feeding",
+        "ui"
+      ]
+    },
+    {
+      "start": 20,
+      "end": 32,
+      "action": "the pet eats in the garden - the food animation plays and the pet reacts",
+      "subject": [
+        "pet",
+        "eating",
+        "garden",
+        "reaction"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "care-loop",
+      "note": "the reward beat after choosing food",
+      "tags": [
+        "feeding",
+        "pet",
+        "eating",
+        "reaction",
+        "garden"
+      ]
+    },
+    {
+      "start": 32,
+      "end": 48,
+      "action": "back to the care menu, then the pet reacting with hearts above its head",
+      "subject": [
+        "care menu",
+        "pet",
+        "hearts",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "care-loop",
+      "tags": [
+        "care",
+        "menu",
+        "pet",
+        "hearts",
+        "affection"
+      ]
+    },
+    {
+      "start": 48,
+      "end": 56,
+      "action": "the affection list - Massage, Forehead kiss, Head rub, Hand hold, Tickle",
+      "subject": [
+        "affection list",
+        "menu",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "care-loop",
+      "note": "unusually specific list of affection actions - strong for an emotional-care point",
+      "tags": [
+        "affection",
+        "menu",
+        "list",
+        "massage",
+        "kiss",
+        "ui"
+      ]
+    },
+    {
+      "start": 56,
+      "end": 64,
+      "action": "the grooming list - Spray perfume, Face powder, Grooming, Hair trim, Brush teeth",
+      "subject": [
+        "grooming list",
+        "menu",
+        "screen"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 5,
+      "usable": true,
+      "sequence": "care-loop",
+      "note": "pairs with the food list for a 'three kinds of care' montage",
+      "tags": [
+        "grooming",
+        "menu",
+        "list",
+        "hygiene",
+        "teeth",
+        "ui"
+      ]
+    },
+    {
+      "start": 64,
+      "end": 100,
+      "action": "the pet in the garden receiving care - item animations and heart reactions play out",
+      "subject": [
+        "pet",
+        "garden",
+        "care",
+        "hearts"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 4,
+      "usable": true,
+      "sequence": "care-loop",
+      "tags": [
+        "care",
+        "pet",
+        "garden",
+        "hearts",
+        "reaction"
+      ]
+    },
+    {
+      "start": 100,
+      "end": 117.6,
+      "action": "the care menu opens once more and the pet settles back to idle in the garden",
+      "subject": [
+        "care menu",
+        "pet",
+        "garden"
+      ],
+      "shot": "close-up",
+      "motion": "handheld",
+      "quality": 3,
+      "usable": true,
+      "sequence": "care-loop",
+      "note": "tail of the take - fine for a closing beat, nothing new happens",
+      "tags": [
+        "care",
+        "menu",
+        "pet",
+        "garden",
+        "idle"
+      ]
+    }
+  ]
+}

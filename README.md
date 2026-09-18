@@ -76,8 +76,11 @@ worked example — read its `edit-plan.json` against the finished video.
 **https://cyrusstudio.space/broll/** — a searchable catalogue of described
 footage, inside Nowa Studio. Sign in with the studio password.
 
+The footage is filed into categories — the factory, the product in use — and a
+search covers all of them at once.
+
 Footage and the knowledge about it are wildly different sizes. The factory
-library is **12.4 GB** of video and **180 KB** of descriptions:
+library alone is **12.4 GB** of video and **180 KB** of descriptions:
 
 | tier | size | what it gets you |
 |---|---|---|

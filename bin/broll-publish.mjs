@@ -5,6 +5,15 @@
 //   node bin/broll-publish.mjs --base https://media.example.com/broll/nowa-factory
 //        [--out dist/broll] [--name nowa-factory] [--proxy-width 640] [--crf 30]
 //        [--no-originals] [--force]
+//        [--title "Nowa factory"] [--description "..."]
+//        [--category nowa-factory-footage] [--category-label "Nowa factory footage"]
+//        [--category-description "..."] [--order 10]
+//
+// A LIBRARY is one published batch of footage. A CATEGORY is the shelf it sits
+// on, and several libraries can share one — that is the whole reason the two
+// are separate fields. To re-file something already published, use
+// bin/broll-meta.mjs instead: it edits the catalogue without re-encoding or
+// re-uploading a byte.
 //
 // Then: rsync -av --delete dist/broll/ you@server:/var/www/broll/nowa-factory/
 //
@@ -50,6 +59,20 @@ const PW = Number(flag("--proxy-width", 640));
 const CRF = Number(flag("--crf", 30));
 const WITH_ORIG = !has("--no-originals");
 const FORCE = has("--force");
+
+// How this library is filed once it is on the server. A library is one
+// published batch of footage; a CATEGORY is the shelf it sits on, and several
+// libraries can share one. The gallery groups by category and the MCP server
+// searches across all of them by default, so this is presentation and
+// navigation — it never changes what a search can find.
+const TITLE = flag("--title", null);
+const DESCRIPTION = flag("--description", null);
+const CATEGORY = flag("--category", null);
+const CATEGORY_LABEL = flag("--category-label", null);
+const CATEGORY_DESC = flag("--category-description", null);
+const ORDER = flag("--order", null);
+
+const titleCase = (slug) => slug.replace(/[-_]+/g, " ").replace(/^./, (c) => c.toUpperCase());
 
 if (!BASE) {
   console.error("--base <https://your.server/path/to/library> is required — it goes into library.json\n" +
@@ -142,6 +165,22 @@ const fingerprint = createHash("sha256")
 const library = {
   library: LIB,
   version: fingerprint,
+  title: TITLE ?? titleCase(LIB),
+  ...(DESCRIPTION ? { description: DESCRIPTION } : {}),
+  // Omitted entirely rather than defaulted: a server that sees no category
+  // files the library as "Unfiled", which is honest. Inventing one from the
+  // library id would produce a category per library and make the grouping
+  // meaningless the first time two libraries belong together.
+  ...(CATEGORY
+    ? {
+        category: {
+          id: CATEGORY.trim().toLowerCase().replace(/[^a-z0-9._-]+/g, "-").replace(/^-|-$/g, ""),
+          label: CATEGORY_LABEL ?? titleCase(CATEGORY),
+          ...(CATEGORY_DESC ? { description: CATEGORY_DESC } : {}),
+          ...(ORDER !== null ? { order: Number(ORDER) } : {}),
+        },
+      }
+    : {}),
   generatedAt: new Date().toISOString(),
   base: BASE.replace(/\/+$/, ""),
   proxyWidth: PW,

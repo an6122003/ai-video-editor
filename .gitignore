@@ -84,3 +84,17 @@ dist/
 
 # Holds the B-roll library bearer token. .mcp.json.example is the template.
 .mcp.json
+
+# Standalone libraries (libraries/<name>/), same rules as a project's broll/:
+# the describe pass and its thumbnails are the work and get committed; contact
+# sheets, proxies and originals are regenerable from the footage and are not.
+libraries/*/sheets/
+libraries/*/review.html
+libraries/*/proxy/
+libraries/*/original/
+# Word-level transcripts are a working artifact of the describe pass. The .srt
+# stays because it is readable without the footage and lets anyone quote the
+# device accurately; the JSON is six times the size and says the same thing.
+libraries/*/transcripts/*.json
+libraries/*/transcripts/*/transcript.json
+libraries/*/transcripts/*/transcript.segments.json
